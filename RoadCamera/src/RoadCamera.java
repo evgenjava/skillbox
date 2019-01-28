@@ -7,9 +7,9 @@ public class RoadCamera
     public static void main(String[] args) throws IOException
     {
         //Параметры программы
-        Integer maxOncomingSpeed = 30; // km/h
+        Integer maxOncomingSpeed = 60; // km/h
         Integer speedFineGrade = 20; // km/h
-        Integer finePerGrade = 500; // RUB
+        Integer finePerGrade = 1000; // RUB
         Integer criminalSpeed = 180; // km/h
 
         //=============================================================
