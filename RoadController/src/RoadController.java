@@ -8,7 +8,7 @@ public class RoadController
     //Integer passengerCarMaxHeight
     public static Integer passengerCarMaxHeight = 2000; // mm
     //Integer controllerMaxHeight
-    public static Integer controllerMaxHeight = 4000; // mm
+    public static Integer controllerMaxHeight = 3500; // mm
 
     //Integer passengerCarPrice
     public static Integer passengerCarPrice = 100; // RUB
