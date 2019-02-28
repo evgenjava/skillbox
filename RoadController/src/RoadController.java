@@ -36,7 +36,7 @@ public class RoadController
             System.out.println(car);
             System.out.println("Скорость: " + Camera.getCarSpeed(car) + " км/ч");
 
-            
+
             /**
              * Проверка на наличие номера в списке номеров нарушителей
              */
