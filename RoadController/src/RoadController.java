@@ -18,7 +18,7 @@ public class RoadController
     public static Integer vehicleAdditionalPrice = 200; // RUB
 
     //Integer maxOncomingSpeed
-    public static Integer maxOncomingSpeed = 30; // km/h
+    public static Integer maxOncomingSpeed = 60; // km/h
     //Integer speedFineGrade
     public static Integer speedFineGrade = 20; // km/h
     //Integer finePerGrade
@@ -36,14 +36,7 @@ public class RoadController
             System.out.println(car);
             System.out.println("Скорость: " + Camera.getCarSpeed(car) + " км/ч");
 
-            /**
-             * Пропускаем автомобили спецтранспорта
-             */
-            if(car.isSpecial()) {
-                openWay();
-                continue;
-            }
-
+            
             /**
              * Проверка на наличие номера в списке номеров нарушителей
              */
@@ -61,6 +54,14 @@ public class RoadController
                 }
             }
             if(Police.wasCalled()) {
+                continue;
+            }
+
+            /**
+             * Пропускаем автомобили спецтранспорта
+             */
+            if(car.isSpecial()) {
+                openWay();
                 continue;
             }
 
@@ -83,7 +84,7 @@ public class RoadController
                 //Грузовой автомобиль
                 if(weight > passengerCarMaxWeight)
                 {
-                    price = passengerCarPrice;
+                    price = cargoCarPrice;   //passengerCarPrice;
                     if(car.hasVehicle()) {
                         price = price + vehicleAdditionalPrice;
                     }
