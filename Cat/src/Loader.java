@@ -35,6 +35,10 @@ public class Loader
             System.out.println("Cat " + i + " Weight - " + cats[i].getWeight() + " Status - " + cats[i].getStatus());
         }
         System.out.println("Осталось в живых после мяучинья - " + Cat.getCatCount());
+
+        Cat clone = cats[0].createATwin();
+        System.out.println(" cats[0] - " + cats[0].getWeight());
+        System.out.println(" clone - " + clone.getWeight());
     }
 
     public static Cat getCittent() {

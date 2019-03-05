@@ -32,6 +32,20 @@ public class Cat
         count++;
     }
 
+    public Cat(Double weight, Double originWeight)
+    {
+        this.weight = weight;
+        this.originWeight = originWeight;
+        minWeight = 1000.0;
+        maxWeight = 9000.0;
+        count++;
+    }
+
+    public Cat createATwin() {
+        count++;
+        return new Cat(this.weight, this.originWeight);
+    }
+
     public void meow()
     {
         weight = weight - 1;
