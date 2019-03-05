@@ -11,7 +11,7 @@ public class Loader {
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
-        TelegramApiBridge bridge = new TelegramApiBridge("149.154.167.40:443", 719857,
+        TelegramApiBridge bridge = new TelegramApiBridge("149.154.167.50:443", 719857,
                 "116418fc8fe7c94af47225f0860cf85d");
 
 
