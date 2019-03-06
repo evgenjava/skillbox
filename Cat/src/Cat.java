@@ -6,9 +6,10 @@ public class Cat
     private Double originWeight;
     private Double weight;
 
-    private Double minWeight;
-    private Double maxWeight;
+    private Double minWeight = 1000.0;
+    private Double maxWeight = 9000.0;
     private Double massFeed = 0.0;
+    private String status = "Playing";
 
     public static Integer getCatCount() {
         return count;
@@ -18,8 +19,6 @@ public class Cat
     {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
-        minWeight = 1000.0;
-        maxWeight = 9000.0;
         count++;
     }
 
@@ -27,8 +26,6 @@ public class Cat
     {
         this.weight = weight;
         originWeight = weight;
-        minWeight = 1000.0;
-        maxWeight = 9000.0;
         count++;
     }
 
@@ -36,26 +33,43 @@ public class Cat
     {
         this.weight = weight;
         this.originWeight = originWeight;
-        minWeight = 1000.0;
-        maxWeight = 9000.0;
         count++;
     }
 
     public Cat createATwin() {
-        count++;
-        return new Cat(this.weight, this.originWeight);
+        Cat clone = null;
+        if (isLive()) {
+            clone = new Cat(this.weight, this.originWeight);
+        }
+        else {
+            System.out.println(" Из трупа клон не создать ...");
+        }
+        return clone;
     }
 
     public void meow()
     {
-        weight = weight - 1;
-        //System.out.println("Meow");
+        if (isLive()) {
+            weight = weight - 1;
+            setStatus();
+            System.out.println("Meow");
+        }
+        else {
+            System.out.println(" Труп не мяучит ...");
+        }
+
     }
 
     public void gotoWC() {
-        Double wc = 100.0 * Math.random();
-        weight = weight - wc;
-        System.out.println("Go to WC weight - " + wc);
+        if (isLive()) {
+            Double wc = 100.0 * Math.random();
+            weight = weight - wc;
+            setStatus();
+            System.out.println("Go to WC weight wc - " + wc);
+        }
+        else {
+            System.out.println(" Труп не ходит в туалет ...");
+        }
     }
 
     public Double getMassFeed() {
@@ -63,13 +77,27 @@ public class Cat
     }
     public void feed(Double amount)
     {
-        weight = weight + amount;
-        massFeed = massFeed + amount;
+        if (isLive()) {
+            weight = weight + amount;
+            massFeed = massFeed + amount;
+            setStatus();
+        }
+        else {
+            System.out.println(" Труп ничего не ест ...");
+        }
+
     }
 
     public void drink(Double amount)
     {
-        weight = weight + amount;
+        if (isLive()) {
+            weight = weight + amount;
+            massFeed = massFeed + amount;
+            setStatus();
+        }
+        else {
+            System.out.println(" Труп ничего не пьёт ...");
+        }
     }
 
     public Double getWeight()
@@ -77,21 +105,29 @@ public class Cat
         return weight;
     }
 
-    public String getStatus()
+    public String getStatus() {
+        return status;
+    }
+
+    public boolean isLive() {
+        return status.equals("Playing") || status.equals("Sleeping") ? true : false;
+    }
+
+    private void setStatus()
     {
         if(weight < minWeight) {
             count--;
-            return "Dead";
+            status = "Dead";
         }
         else if(weight > maxWeight) {
             count--;
-            return "Exploded";
+            status = "Exploded";
         }
         else if(weight > originWeight) {
-            return "Sleeping";
+            status = "Sleeping";
         }
         else {
-            return "Playing";
+            status = "Playing";
         }
     }
 }

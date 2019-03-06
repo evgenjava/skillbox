@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c923ca6-ffa7-4d9b-a780-7f3fdd425a2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cat/out/production/Cat/Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/out/production/Cat/Cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cat/out/production/Cat/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/out/production/Cat/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cat/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/src/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cat/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WindowApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WindowApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WindowApp/out/production/WindowApp/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WindowApp/out/production/WindowApp/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WindowApp/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WindowApp/src/Loader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/telegram.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="75">
               <caret line="5" column="34" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
@@ -25,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Loader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="660">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,10 +63,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="212" />
-    <option name="y" value="92" />
-    <option name="width" value="3298" />
-    <option name="height" value="1845" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -94,11 +100,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551898242451" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/telegram-api-bridge.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WindowApp" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -145,9 +151,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="85" y="37" width="1319" height="738" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1053" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11974623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12179487" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -209,15 +215,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/telegram.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="75">
           <caret line="5" column="34" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state relative-caret-position="660">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
