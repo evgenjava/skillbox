@@ -3,33 +3,33 @@ import core.Camera;
 
 public class RoadController
 {
-    //Double passengerCarMaxWeight
-    public static Double passengerCarMaxWeight = 3500.0; // kg
-    //Integer passengerCarMaxHeight
-    public static Integer passengerCarMaxHeight = 2000; // mm
-    //Integer controllerMaxHeight
-    public static Integer controllerMaxHeight = 3500; // mm
+    //double passengerCarMaxWeight
+    public static double passengerCarMaxWeight = 3500.0; // kg
+    //int passengerCarMaxHeight
+    public static int passengerCarMaxHeight = 2000; // mm
+    //int controllerMaxHeight
+    public static int controllerMaxHeight = 3500; // mm
 
-    //Integer passengerCarPrice
-    public static Integer passengerCarPrice = 100; // RUB
-    //Integer cargoCarPrice
-    public static Integer cargoCarPrice = 250; // RUB
-    //Integer vehicleAdditionalPrice
-    public static Integer vehicleAdditionalPrice = 200; // RUB
+    //int passengerCarPrice
+    public static int passengerCarPrice = 100; // RUB
+    //int cargoCarPrice
+    public static int cargoCarPrice = 250; // RUB
+    //int vehicleAdditionalPrice
+    public static int vehicleAdditionalPrice = 200; // RUB
 
-    //Integer maxOncomingSpeed
-    public static Integer maxOncomingSpeed = 60; // km/h
-    //Integer speedFineGrade
-    public static Integer speedFineGrade = 20; // km/h
-    //Integer finePerGrade
-    public static Integer finePerGrade = 500; // RUB
-    //Integer criminalSpeed
-    public static Integer criminalSpeed = 160; // km/h
+    //int maxOncomingSpeed
+    public static int maxOncomingSpeed = 60; // km/h
+    //int speedFineGrade
+    public static int speedFineGrade = 20; // km/h
+    //int finePerGrade
+    public static int finePerGrade = 500; // RUB
+    //int criminalSpeed
+    public static int criminalSpeed = 160; // km/h
 
     public static void main(String[] args)
     {
-        //Integer i
-        for(Integer i = 0; i < 10; i++)
+        //int i
+        for(int i = 0; i < 10; i++)
         {
             //Car car
             Car car = Camera.getNextCar();
@@ -40,8 +40,8 @@ public class RoadController
             /**
              * Проверка на наличие номера в списке номеров нарушителей
              */
-            //Boolean policeCalled
-            Boolean policeCalled = false;
+            //boolean policeCalled
+            boolean policeCalled = false;
             //String criminalNumber
             for(String criminalNumber : Police.getCriminalNumbers())
             {
@@ -68,10 +68,10 @@ public class RoadController
             /**
              * Проверяем высоту и массу автомобиля, вычисляем стоимость проезда
              */
-            //Integer carHeight
-            Integer carHeight = car.getHeight();
-            //Integer price
-            Integer price = 0;
+            //int carHeight
+            int carHeight = car.getHeight();
+            //int price
+            int price = 0;
             if(carHeight > controllerMaxHeight)
             {
                 blockWay("высота вашего ТС превышает высоту пропускного пункта!");
@@ -79,8 +79,8 @@ public class RoadController
             }
             else if(carHeight > passengerCarMaxHeight)
             {
-                //Double weight
-                Double weight = WeightMeter.getWeight(car);
+                //double weight
+                double weight = WeightMeter.getWeight(car);
                 //Грузовой автомобиль
                 if(weight > passengerCarMaxWeight)
                 {
@@ -101,8 +101,8 @@ public class RoadController
             /**
              * Проверка скорости подъезда и выставление штрафа
              */
-            //Integer carSpeed
-            Integer carSpeed = Camera.getCarSpeed(car);
+            //int carSpeed
+            int carSpeed = Camera.getCarSpeed(car);
             if(carSpeed > criminalSpeed)
             {
                 Police.call("cкорость автомобиля - " + carSpeed + " км/ч, номер - " + car.getNumber());
@@ -111,10 +111,10 @@ public class RoadController
             }
             else if(carSpeed > maxOncomingSpeed)
             {
-                //Integer overSpeed
-                Integer overSpeed = carSpeed - maxOncomingSpeed;
-                //Integer totalFine
-                Integer totalFine = finePerGrade * (1 + overSpeed / speedFineGrade);
+                //int overSpeed
+                int overSpeed = carSpeed - maxOncomingSpeed;
+                //int totalFine
+                int totalFine = finePerGrade * (1 + overSpeed / speedFineGrade);
                 System.out.println("Вы превысили скорость! Штраф: " + totalFine + " руб.");
                 price = price + totalFine;
             }

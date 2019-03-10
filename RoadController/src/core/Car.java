@@ -3,12 +3,12 @@ package core;
 public class Car
 {
     private String number;
-    private Integer height;
-    private Double weight;
-    private Boolean hasVehicle;
-    private Boolean isSpecial;
+    private int height;
+    private double weight;
+    private boolean hasVehicle;
+    private boolean isSpecial;
 
-    public Car(String carNumber, Integer carHeight, Double carWeight, Boolean carHasVehicle)
+    public Car(String carNumber, int carHeight, double carWeight, boolean carHasVehicle)
     {
         number = carNumber;
         height = carHeight;
@@ -31,17 +31,17 @@ public class Car
         return number;
     }
 
-    public Integer getHeight()
+    public int getHeight()
     {
         return height;
     }
 
-    public Boolean isSpecial()
+    public boolean isSpecial()
     {
         return isSpecial;
     }
 
-    public Boolean hasVehicle()
+    public boolean hasVehicle()
     {
         return hasVehicle;
     }
