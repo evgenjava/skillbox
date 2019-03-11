@@ -10,8 +10,13 @@ public class Loader  {
         String fullName = new BufferedReader(new InputStreamReader(System.in)).readLine().trim();
 
         String[] fio = fullName.split(" ");
-        System.out.println("Фамимля :  " + fio[0]);
-        System.out.println("Имя :      " + fio[1]);
-        System.out.println("Отчество : " + fio[2]);
+        if (fio.length >= 3 ) {
+            System.out.println("Фамимля :  " + fio[0]);
+            System.out.println("Имя :      " + fio[1]);
+            System.out.println("Отчество : " + fio[2]);
+        }
+        else {
+            System.out.println("Чего-то забыливвести!!!");
+        }
     }
 }
