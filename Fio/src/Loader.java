@@ -16,7 +16,7 @@ public class Loader  {
             System.out.println("Отчество : " + fio[2]);
         }
         else {
-            System.out.println("Чего-то забыливвести!!!");
+            System.out.println("Чего-то забыли ввести!!!");
         }
     }
 }
