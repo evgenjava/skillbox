@@ -7,7 +7,7 @@ import java.util.HashSet;
  */
 public class Police
 {
-    private static Boolean called = false;
+    private static boolean called = false;
     private static HashSet<String> criminalNumbers;
 
     public static HashSet<String> getCriminalNumbers()

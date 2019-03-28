@@ -9,7 +9,7 @@ public class Loader  {
         System.out.println("Введите Фамилию Имя Отчество :");
         String fullName = new BufferedReader(new InputStreamReader(System.in)).readLine().trim();
 
-        String[] fio = fullName.split(" ");
+        String[] fio = fullName.split("[\\d\\s,.|?:;]+");
         if (fio.length >= 3 ) {
             System.out.println("Фамимля :  " + fio[0]);
             System.out.println("Имя :      " + fio[1]);

@@ -6,7 +6,7 @@ public class Loader
 
     public static void main(String[] args) throws IOException
     {
-        String text = "Вася заработал 5300 рублей, Петя - 756311 рубля, а Маша - 13000 рублей";
+        String text = "Вася заработал 5300 рублей, Петя - 756311 рубля, а Миша - 13000 рублей";
         int totalSumma = 0;
         int index = 0;
         while(index < text.length() ) {
