@@ -3,10 +3,12 @@ import org.javagram.response.AuthAuthorization;
 import org.javagram.response.AuthCheckedPhone;
 import org.javagram.response.AuthSentCode;
 import org.javagram.response.object.User;
+import org.javagram.response.object.UserContact;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Loader {
 
@@ -18,11 +20,11 @@ public class Loader {
 
             BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
-            TelegramApiBridge bridge = new TelegramApiBridge("149.154.167.50:443", appId ,
+            TelegramApiBridge bridge = new TelegramApiBridge("149.154.167.40:443", appId ,
                 appHash);
 
-            System.out.println("Введите номер телефона: ");
-            phoneNumber = console.readLine().trim();
+            //System.out.println("Введите номер телефона: ");
+            phoneNumber = "9996624444";//console.readLine().trim();
             AuthCheckedPhone checkPhone = bridge.authCheckPhone(phoneNumber);
 
             System.out.println("Зарегистрирован? - " + checkPhone.isRegistered());
@@ -30,8 +32,8 @@ public class Loader {
 
             AuthSentCode sentCode = bridge.authSendCode(phoneNumber);
 
-            System.out.println("Введите код :");
-            String code = console.readLine().trim();
+            //System.out.println("Введите код :");
+            String code = "22222";//console.readLine().trim();
 
             AuthAuthorization authAuthorization = bridge.authSignIn(code);
             User user = authAuthorization.getUser();
@@ -39,6 +41,11 @@ public class Loader {
             System.out.println("Имя     :" + user.getFirstName());
             System.out.println("Фамилия :" + user.getLastName());
             System.out.println("Телефон :" + user.getPhone());
+
+            ArrayList<UserContact> contacts = bridge.contactsGetContacts();
+            for (UserContact uc : contacts) {
+                System.out.println(user.getFirstName() + " " + uc.getLastName() + " : " + uc.getPhone());
+            }
             
     }
 }
