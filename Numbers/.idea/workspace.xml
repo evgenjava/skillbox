@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83e7457d-aaaa-440d-9aa3-22b4cc740c2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Fio01/Fio01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Salary/Salary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharCodes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CharCodes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharCodes/out/production/CharCodes/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CharCodes/out/production/CharCodes/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharCodes/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CharCodes/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Fio/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83e7457d-aaaa-440d-9aa3-22b4cc740c2e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,9 +41,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="280" />
-    <option name="y" value="77" />
-    <option name="width" value="2975" />
-    <option name="height" value="1763" />
+    <option name="width" value="3530" />
+    <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -60,8 +50,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,6 +73,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552308056920" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PhoneBook" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,9 +115,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="112" y="31" width="1190" height="705" extended-state="0" />
+    <frame x="112" y="0" width="1412" height="830" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11238938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0954142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

@@ -35,15 +35,15 @@ public class Loader {
         do {
             System.out.println("Введите номер: ");
             number = reader.readLine().trim();
+            if (number.equalsIgnoreCase("exit")) {
+                break;
+            }
             ms = System.currentTimeMillis();
             boolean isThisNumber = numbers.contains(number.toUpperCase());
             ms = System.currentTimeMillis() - ms;
             System.out.println(isThisNumber + " (" + ms + " ms)");
         } while (!number.equals("exit"));
-        //System.out.println(numbers.size());
-       // for (int i = 0; i < numbers.size(); i++) {
-       //     System.out.println(numbers.get(i));
-       // }
+
     }
 
     private static void generateFederal() {

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f9c3c53-2d51-4c35-ab50-ca08bf5e99ad" name="Default Changelist" comment="" />
+    <list default="true" id="4f9c3c53-2d51-4c35-ab50-ca08bf5e99ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Colors/Colors.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gibddd2/Gibddd2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/Colors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/out/production/Lookcolor/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Numbers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Numbers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Series/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Series/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Loader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1244">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="347">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -43,9 +61,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="width" value="1332" />
-    <option name="height" value="741" />
+    <option name="x" value="80" />
+    <option name="y" value="20" />
+    <option name="width" value="3780" />
+    <option name="height" value="2015" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -54,6 +73,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,12 +90,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TelegramExperiments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AirParking" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -117,9 +136,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="0" width="1332" height="741" extended-state="0" />
+    <frame x="32" y="8" width="1512" height="806" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27570093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09504132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -128,7 +147,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48022598" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18740399" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -150,8 +169,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1244">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="347">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>

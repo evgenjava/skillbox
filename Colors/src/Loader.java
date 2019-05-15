@@ -1,7 +1,6 @@
 public class Loader {
-
     private static String[] colors = {
-           "Красный", "Оранжевый", "Жёлтый", "Зелёный",
+            "Красный", "Оранжевый", "Жёлтый", "Зелёный",
             "Голубой", "Синий", "Фиолетовый"
     };
     public static void main(String[] args) {

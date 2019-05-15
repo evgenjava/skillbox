@@ -24,6 +24,7 @@ public class Loader {
                 appHash);
 
             //System.out.println("Введите номер телефона: ");
+            //Все мои номера в Telegram заблокированы.........
             phoneNumber = "9996624444";//console.readLine().trim();
             AuthCheckedPhone checkPhone = bridge.authCheckPhone(phoneNumber);
 

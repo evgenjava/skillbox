@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c923ca6-ffa7-4d9b-a780-7f3fdd425a2f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Colors/Colors.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gibddd2/Gibddd2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/Colors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/out/production/Lookcolor/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AirParking/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AirParking/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessBoard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gibddd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gibddd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TelegramExperiments/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TelegramExperiments/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibddd/out/production/Gibddd/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gibddd/out/production/Gibddd/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibddd/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gibddd/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Numbers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Numbers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Series/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Series/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/telegram.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="85">
               <caret line="5" column="34" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
@@ -32,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Loader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="74" lean-forward="true" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+            <state relative-caret-position="680">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +78,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="width" value="3673" />
+    <option name="height" value="1993" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -71,8 +87,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,12 +109,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551898242451" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Medicin" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -151,10 +167,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1053" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1469" height="797" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123931624" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06387509" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -163,7 +178,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46186897" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46105918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -216,15 +231,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/telegram.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="85">
           <caret line="5" column="34" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="74" lean-forward="true" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+        <state relative-caret-position="680">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
