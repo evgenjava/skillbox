@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Camera
 {
-    public static HashMap<String, Integer> carsSpeed = new HashMap<>();
+    private static HashMap<String, Integer> carsSpeed = new HashMap<>();
 
     public static Car getNextCar()
     {
