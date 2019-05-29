@@ -6,3 +6,7 @@
 
 Класс WeightMeter служит обёрткой для получения веса передаваемого в него автомобиля.
 Здесь непонятно зачем в RoadController вес можно получить напрямую car.getWeight() 
+
+wget –http-user=ivadimn@gmail.com –http-passwd=Ivn7922448 http://api.apixu.com/v1/current.json?key=bf896688bd294c4f90e173753192905&q=London
+
+wget -q -O- http://api.apixu.com/v1/current.json?key=bf896688bd294c4f90e173753192905&q=London | grep 'a href' | head
