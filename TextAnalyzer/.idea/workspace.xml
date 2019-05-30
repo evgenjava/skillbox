@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="341183e2-fff8-4242-b704-ec5b76684dcb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TextAnalyzer/TextAnalyzerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TextAnalyzer/TextAnalyzerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextAnalyzerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="341183e2-fff8-4242-b704-ec5b76684dcb" name="Default" comment="" />
     <ignored path="TextAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TextAnalyzerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="345">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -64,8 +60,6 @@
               <folding>
                 <element signature="e#116#117#0" expanded="true" />
                 <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
                 <element signature="e#1262#1263#0" expanded="true" />
                 <element signature="e#1326#1327#0" expanded="true" />
               </folding>
@@ -96,10 +90,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="24" />
-    <option name="width" value="1756" />
-    <option name="height" value="991" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -322,10 +314,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="24" width="1756" height="991" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="741" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21077283" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21396054" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Palette&#9;" order="3" />
@@ -402,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TextAnalyzerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="345">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

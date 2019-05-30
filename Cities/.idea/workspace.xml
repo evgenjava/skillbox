@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9887c2f-334b-49ae-ad9f-0e091bad78c2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../TextAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TextAnalyzer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextAnalyzer/out/production/TextAnalyzer/TextAnalyzerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TextAnalyzer/out/production/TextAnalyzer/TextAnalyzerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextAnalyzer/src/TextAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextAnalyzer/src/TextAnalyzerTest.java" afterDir="false" />
     </list>
     <ignored path="Cities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +57,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1772" />
-    <option name="height" value="915" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -68,7 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -79,13 +76,14 @@
             <path>
               <item name="Cities" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,9 +239,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1772" height="915" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="741" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19837587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20182094" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Palette&#9;" order="3" />
