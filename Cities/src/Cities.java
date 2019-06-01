@@ -11,29 +11,38 @@ public class Cities
             "Ufa", "Volgograd", "Yakutsk", "Zvenigorod"
     };
 
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args)
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String city = "";
+        String nextCity = "";
         String previousCity = "";
         for(;;)
         {
             try {
-                System.out.println(previousCity.length() == 0 ?
-                        "Please, type first city:" : "Please, type next city name:");
-            }
-            catch(NullPointerException ex) {
-                previousCity = "";
-                System.out.println("Please, type next city name:");
-            }
-            String city = reader.readLine();
-            if(previousCity.length() > 0 && isNextCity(previousCity, city)) {
-                System.out.println("This city is wrong! Try again!");
-                continue;
-            }
 
-            String nextCity = searchNextCity(city);
-            System.out.println("My city is: " + nextCity);
-            previousCity = nextCity;
+                try {
+                    System.out.println(previousCity.length() == 0 ?
+                            "Please, type first city:" : "Please, type next city name:");
+                } catch (NullPointerException ex) {
+                    previousCity = "";
+                    System.out.println("Please, type next city name:");
+                }
+
+                city = reader.readLine();
+                if (previousCity.length() > 0 && isNextCity(previousCity, city)) {
+                    System.out.println("This city is wrong! Try again!");
+                    continue;
+                }
+                nextCity = searchNextCity(city);
+                System.out.println("My city is: " + nextCity);
+            }
+            catch(IOException | StringIndexOutOfBoundsException siex) {
+                System.out.println("Error! Try again!");
+            }
+            finally {
+                previousCity = nextCity;
+            }
 
         }
     }
