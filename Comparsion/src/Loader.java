@@ -1,53 +1,53 @@
 public class Loader {
     public static void main(String[] args) {
-        Integer dimaAge = 19;
-        Integer mishaAge = 20;
-        Integer vasiaAge = 30;
+        int katyaAge = 19;
+        int mishaAge = 20;
+        int vasiaAge = 30;
 
-        Integer oldest = 0;
-        Integer youngest = 0;
-        Integer middle = 0;
+        int max = -1;
+        int min = -1;
+        int middle = -1;
 
-        if (dimaAge > mishaAge) {
-            if (dimaAge > vasiaAge) {
-                oldest = dimaAge;
+        if (katyaAge > mishaAge) {
+            if (katyaAge > vasiaAge) {
+                max = katyaAge;
                 if (mishaAge > vasiaAge) {
                     middle = mishaAge;
-                    youngest = vasiaAge;
+                    min = vasiaAge;
                 }
                 else {
                     middle = vasiaAge;
-                    youngest = mishaAge;
+                    min = mishaAge;
                 }
             }
             else {
-                oldest = vasiaAge;
-                middle = dimaAge;
-                youngest = mishaAge;
+                max = vasiaAge;
+                middle = katyaAge;
+                min = mishaAge;
             }
         }
         else {
             if (mishaAge > vasiaAge) {
-                oldest = mishaAge;
-                if (dimaAge > vasiaAge) {
-                    middle = dimaAge;
-                    youngest = vasiaAge;
+                max = mishaAge;
+                if (katyaAge > vasiaAge) {
+                    middle = katyaAge;
+                    min = vasiaAge;
                 }
                 else {
                     middle = vasiaAge;
-                    youngest = dimaAge;
+                    min = katyaAge;
                 }
             }
             else {
-                oldest = vasiaAge;
+                max = vasiaAge;
                 middle = mishaAge;
-                youngest = dimaAge;
+                min = katyaAge;
             }
         }
 
-        System.out.println("Most old: " + oldest);
-        System.out.println("Most young: " + youngest);
-        System.out.println("Middle: " + middle);
+        System.out.println("MAX = " + max);
+        System.out.println("MIN =  " + min);
+        System.out.println("MIDDLE = " + middle);
 
 
     }

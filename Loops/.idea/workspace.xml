@@ -4,8 +4,9 @@
     <list default="true" id="e4e26fcd-3177-4359-a724-dde3b793b985" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Booleans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Booleans/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Comparsion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Comparsion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RoadController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RoadController/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RoadController/src/RoadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RoadController/src/RoadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comparsion/out/production/Comparsion/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comparsion/out/production/Comparsion/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comparsion/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Comparsion/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +55,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,12 +72,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549026817318" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RoadController" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,8 +121,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2572079" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26100153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
