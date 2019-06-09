@@ -4,41 +4,43 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
 
-public class PhoneNumberFrom {
+public class CodeForm {
 
-    private final String welcomInput = "Введите код страны и номер мобильного телефона";
+    private final String welcomInput = "На данный номер телефона было отправлено\n" +
+            "SMS - сообщение с кодом подтверждения.\n" +
+            "Пожалуйства, введите этот код в поле ниже:";
+
     private JPanel rootPanel;
     private JPanel pnlMain;
     private JPanel pnlLogo;
     private JPanel pnlWelcomInput;
     private JTextPane txtWelcomInput;
-    private JPanel pnlPhoneNumber;
-    private JTextField txtPhoneNumber;
+    private JPanel pnlCode;
     private JPanel pnlNext;
     private JButton btnNext;
+    private JPasswordField txtCode;
+    private JPanel pnlPhoneNumbet;
+    private JLabel lblPhoneNumber;
 
     private ChangePanel changePanel;
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
-    public PhoneNumberFrom() {
-
+    public CodeForm() {
         pnlMain.setLayout(new BoxLayout(pnlMain, BoxLayout.Y_AXIS));
         btnNext.setBackground(new Color(21, 61, 242));
         txtWelcomInput.setText(welcomInput);
-
         btnNext.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (changePanel != null) {
-                    changePanel.next(txtPhoneNumber.getText());
+                    changePanel.next(txtCode.getPassword().toString());
                 }
             }
         });
+    }
+
+    public void setPhoneNumber(String number) {
+        lblPhoneNumber.setText(number);
     }
 
     public JPanel getRootPanel() {

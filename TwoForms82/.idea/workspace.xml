@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a7bb2ca-eaa0-434e-8814-f2d596d619e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Fio/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fio01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Fio01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/out/production/GUI/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/out/production/GUI/Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/out/production/GUI/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/out/production/GUI/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/src/Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/src/Form.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/src/Form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUI/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javagram/src/core/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javagram/src/core/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javagram/src/ui/ListItemForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javagram/src/ui/ListItemForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Screens/3 - регистрация.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Screens/3 - регистрация.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Screens/5 - настройки профиля.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Screens/5 - настройки профиля.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Screens/6 - добавление контакта.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/Warner b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/UserProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/Chat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/core/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/core/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="45" column="31" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="180">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -281,8 +285,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="45" column="31" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="45" selection-end-column="31" />
+        <state relative-caret-position="180">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

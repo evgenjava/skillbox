@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.ControlPanel">
+  <grid id="27dc6" binding="rootPanel" layout-manager="FlowLayout" hgap="5" vgap="0" flow-align="2">
+    <constraints>
+      <xy x="20" y="20" width="500" height="26"/>
+    </constraints>
+    <properties>
+      <enabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="56eb5" class="javax.swing.JButton" binding="btnDown">
+        <constraints/>
+        <properties>
+          <maximumSize width="40" height="26"/>
+          <minimumSize width="40" height="26"/>
+          <preferredSize width="40" height="26"/>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="361f4" class="javax.swing.JButton" binding="btnClose">
+        <constraints/>
+        <properties>
+          <maximumSize width="45" height="26"/>
+          <minimumSize width="45" height="26"/>
+          <opaque value="false"/>
+          <preferredSize width="45" height="26"/>
+          <text value="x"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

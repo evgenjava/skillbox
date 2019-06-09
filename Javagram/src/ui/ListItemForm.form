@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.ListItemForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="309" height="52"/>
+    </constraints>
+    <properties>
+      <maximumSize width="250" height="50"/>
+      <preferredSize width="250" height="40"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="42c53" binding="pnlItem" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <maximumSize width="250" height="50"/>
+          <minimumSize width="250" height="50"/>
+          <preferredSize width="250" height="50"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="c12d2" binding="pnlPhoto" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="West"/>
+            <properties>
+              <autoscrolls value="true"/>
+              <background color="-2363905"/>
+              <preferredSize width="50" height="0"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="9d4e9" binding="pnlRight" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="East"/>
+            <properties>
+              <preferredSize width="5" height="0"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="5824c" binding="pnlContact" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e8a41" class="javax.swing.JLabel">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <font name="Nakula" size="9" style="0"/>
+                  <text value="2 мин"/>
+                </properties>
+              </component>
+              <component id="a77fb" class="javax.swing.JTextPane" binding="paneName">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <text value="Андрей Петров"/>
+                </properties>
+              </component>
+              <component id="3d58e" class="javax.swing.JTextPane" binding="paneLast">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <preferredSize width="30" height="23"/>
+                  <text value="Хорошо! До встречи ..."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.MessagesForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="659" height="454"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="8b595" binding="pnlFloor" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="119aa" binding="pnlInfo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-14181902"/>
+              <maximumSize width="2147483647" height="40"/>
+              <minimumSize width="300" height="40"/>
+              <preferredSize width="300" height="40"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="16bdf" class="javax.swing.JLabel" binding="lblName">
+                <constraints/>
+                <properties>
+                  <foreground color="-2363905"/>
+                  <text value="Вадим Иванов"/>
+                </properties>
+              </component>
+              <component id="21b85" class="javax.swing.JButton" binding="btnSetup">
+                <constraints/>
+                <properties>
+                  <maximumSize width="30" height="30"/>
+                  <minimumSize width="30" height="30"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value="*"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ae243" binding="pnlMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <focusCycleRoot value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <splitpane id="b8d93" binding="paneContent">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <continuousLayout value="false"/>
+                  <dividerLocation value="250"/>
+                  <dividerSize value="5"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="9ccec" binding="pnlList" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties>
+                      <minimumSize width="200" height="0"/>
+                      <preferredSize width="200" height="0"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="cfcae" binding="pnlSearch" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <maximumSize width="2147483647" height="30"/>
+                          <minimumSize width="0" height="30"/>
+                          <preferredSize width="0" height="30"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="b6fab" class="javax.swing.JButton" binding="btnSearch">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="30"/>
+                              <opaque value="false"/>
+                              <preferredSize width="30" height="30"/>
+                              <text value="S"/>
+                            </properties>
+                          </component>
+                          <component id="d22bc" class="javax.swing.JTextField" binding="txtSearch">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <text value="Поиск"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="97202" binding="pnlAddButton" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="South"/>
+                        <properties>
+                          <maximumSize width="2147483647" height="50"/>
+                          <minimumSize width="0" height="50"/>
+                          <preferredSize width="0" height="50"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <grid id="4f2db" binding="pnlBottomGapList" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="South"/>
+                            <properties>
+                              <maximumSize width="2147483647" height="10"/>
+                              <minimumSize width="0" height="10"/>
+                              <preferredSize width="0" height="10"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="e040e" binding="pnlTopGapList" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <maximumSize width="2147483647" height="10"/>
+                              <minimumSize width="0" height="10"/>
+                              <preferredSize width="0" height="10"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="f9590" binding="pnlLeftGapList" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <inheritsPopupMenu value="false"/>
+                              <maximumSize width="20" height="2147483647"/>
+                              <minimumSize width="20" height="0"/>
+                              <preferredSize width="20" height="0"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="b9c9f" binding="pnlButton" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="Center"/>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="3b643" class="javax.swing.JButton" binding="btnAdd">
+                                <constraints border-constraint="West"/>
+                                <properties>
+                                  <foreground color="-1314561"/>
+                                  <maximumSize width="30" height="30"/>
+                                  <minimumSize width="30" height="30"/>
+                                  <preferredSize width="30" height="30"/>
+                                  <text value="+"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                      <grid id="b4fc1" binding="pnlContacts" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints border-constraint="Center"/>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="fc" binding="pnlChat" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="8ba40" binding="pnlCurrentChat" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <maximumSize width="2147483647" height="30"/>
+                          <minimumSize width="0" height="30"/>
+                          <preferredSize width="0" height="30"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <grid id="279" binding="pnlSmallPhoto" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <background color="-2363905"/>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="0"/>
+                              <preferredSize width="30" height="0"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <component id="7a446" class="javax.swing.JButton" binding="btnEdit">
+                            <constraints border-constraint="East"/>
+                            <properties>
+                              <preferredSize width="30" height="30"/>
+                              <text value="/"/>
+                            </properties>
+                          </component>
+                          <component id="17b42" class="javax.swing.JTextPane" binding="paneCurrentName">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <margin top="6" left="5" bottom="3" right="3"/>
+                              <text value="Петр Сергеев"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="403de" binding="pnlLeftBorder" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="West"/>
+                        <properties>
+                          <preferredSize width="20" height="0"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                      <grid id="10549" binding="pnlRightBorder" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="East"/>
+                        <properties>
+                          <maximumSize width="20" height="2147483647"/>
+                          <minimumSize width="20" height="0"/>
+                          <preferredSize width="20" height="0"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                      <grid id="a05b2" binding="pnlInputText" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="South"/>
+                        <properties>
+                          <maximumSize width="2147483647" height="50"/>
+                          <minimumSize width="0" height="50"/>
+                          <preferredSize width="0" height="50"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <grid id="3846f" binding="pnlTopGap" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <maximumSize width="2147483647" height="10"/>
+                              <minimumSize width="0" height="10"/>
+                              <preferredSize width="0" height="10"/>
+                              <requestFocusEnabled value="false"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="c316f" binding="pnlBottomGap" layout-manager="BorderLayout" hgap="5" vgap="5">
+                            <constraints border-constraint="South"/>
+                            <properties>
+                              <maximumSize width="2147483647" height="10"/>
+                              <minimumSize width="0" height="10"/>
+                              <preferredSize width="0" height="10"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="2e78b" binding="pnlLeftGap" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <maximumSize width="2147483647" height="20"/>
+                              <minimumSize width="0" height="20"/>
+                              <preferredSize width="20" height="0"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="5d9c3" binding="pnlRightGap" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="East"/>
+                            <properties>
+                              <maximumSize width="20" height="2147483647"/>
+                              <minimumSize width="20" height="0"/>
+                              <preferredSize width="20" height="0"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="2b0a3" binding="pnlText" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="Center"/>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="bc970" class="javax.swing.JButton" binding="btnSend">
+                                <constraints border-constraint="East"/>
+                                <properties>
+                                  <maximumSize width="40" height="30"/>
+                                  <minimumSize width="40" height="30"/>
+                                  <preferredSize width="40" height="30"/>
+                                  <text value="-&gt;"/>
+                                </properties>
+                              </component>
+                              <component id="1dcc5" class="javax.swing.JTextPane" binding="paneMessage">
+                                <constraints border-constraint="Center"/>
+                                <properties>
+                                  <background color="-14181902"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                      <grid id="7e6a6" binding="pnlMessages" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints border-constraint="Center"/>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

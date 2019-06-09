@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.InputMessageForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="475" height="57"/>
+    </constraints>
+    <properties>
+      <maximumSize width="2147483647" height="48"/>
+      <minimumSize width="80" height="48"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="50813" binding="pnlTopGap" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <preferredSize width="0" height="10"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="45cff" binding="pnlTime" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties>
+          <preferredSize width="0" height="15"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="1b1c3" binding="pnlTimeGap" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="East"/>
+            <properties>
+              <maximumSize width="100" height="2147483647"/>
+              <minimumSize width="100" height="0"/>
+              <preferredSize width="100" height="0"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <component id="55cad" class="javax.swing.JLabel" binding="lblTime">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <font size="9"/>
+              <horizontalAlignment value="4"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Вчера 21:40"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="eb5a6" binding="pnlRightGap" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="East"/>
+        <properties>
+          <preferredSize width="100" height="0"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="146dc" class="javax.swing.JTextPane" binding="paneMessage">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <text value="Какое-то сообщение.."/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
