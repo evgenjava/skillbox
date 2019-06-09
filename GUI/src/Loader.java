@@ -2,14 +2,16 @@ import javax.swing.*;
 
 public class Loader {
 
-    private static final int WIDTH = 800;
-    private static final int HEGHT = 600;
+    private static final int WIDTH = 400;
+    private static final int HEGHT = 200;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        frame.setSize(WIDTH, HEGHT);
+
 
         Form form = new Form();
+        frame.setSize(WIDTH, HEGHT);
+
         frame.setContentPane(form.getRootPanel());
 
         frame.setLocationByPlatform(true);
