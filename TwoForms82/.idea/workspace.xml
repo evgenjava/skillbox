@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a7bb2ca-eaa0-434e-8814-f2d596d619e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Javagram/src/core/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Javagram/src/core/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Javagram/src/ui/ListItemForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Javagram/src/ui/ListItemForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/Warner b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/UserProfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/Chat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/Contact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/core/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/core/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -167,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="211" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Javagram" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GUI" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,7 +194,7 @@
     <frame x="140" y="11" width="1702" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1783555" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1783555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -222,7 +204,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3290398" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23536299" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23536299" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39929742" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

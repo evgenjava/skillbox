@@ -43,7 +43,7 @@ public class Loader
                 for (int j = 0; j < 7000; j++) {
                     cats[i].meow();
                 }
-                System.out.println(" После мячинья Cat " + i + " Weight - " + cats[i].getWeight() + " Status - " + cats[i].getStatus());
+                System.out.println(" После мяучинья Cat " + i + " Weight - " + cats[i].getWeight() + " Status - " + cats[i].getStatus());
                 break;
             }
         }
