@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a7bb2ca-eaa0-434e-8814-f2d596d619e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormFIO.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FormFIO.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormFIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FormFIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormFIOCompact.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FormFIOCompact.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormFIOCompact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FormFIOCompact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,60 +22,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FormFIOCompact.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/FormFIOCompact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+            <state relative-caret-position="420">
+              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#947#1306#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
                 <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
                 <element signature="e#1750#1751#0" expanded="true" />
                 <element signature="e#1826#1827#0" expanded="true" />
                 <element signature="e#1906#1907#0" expanded="true" />
                 <element signature="e#1982#1983#0" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FormFIOCompact.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FormFIO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1105#1490#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-                <element signature="e#2620#2621#0" expanded="true" />
-                <element signature="e#2716#2717#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FormFIO.form">
+        <entry file="file://$PROJECT_DIR$/src/ui/FormFIOCompact.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ui/FormFIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1056#1461#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
+                <element signature="e#2792#2793#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#2888#2889#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/FormFIO.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="650">
+              <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/PersonFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,9 +112,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/FormFIO.form" />
         <option value="$PROJECT_DIR$/src/FormFIO.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FormFIOCompact.form" />
         <option value="$PROJECT_DIR$/src/FormFIOCompact.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ui/FormFIOCompact.java" />
+        <option value="$PROJECT_DIR$/src/ui/PersonFrame.java" />
+        <option value="$PROJECT_DIR$/src/ui/FormFIO.java" />
       </list>
     </option>
   </component>
@@ -114,7 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -132,24 +150,31 @@
               <item name="TwoForms82" type="b2602c69:ProjectViewProjectNode" />
               <item name="TwoForms82" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FormFIO" type="e9f4de52:FormNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TwoForms82" type="b2602c69:ProjectViewProjectNode" />
               <item name="TwoForms82" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FormFIOCompact" type="e9f4de52:FormNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="FormFIO" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="211" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../GUI" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,16 +217,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="11" width="1702" height="976" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1783555" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18077388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3290398" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23536299" />
@@ -212,6 +235,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3290398" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -223,54 +247,64 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FormFIO.form">
+    <entry file="file://$PROJECT_DIR$/src/ui/FormFIOCompact.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FormFIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1105#1490#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2716#2717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FormFIOCompact.form">
+    <entry file="file://$PROJECT_DIR$/src/ui/FormFIO.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FormFIOCompact.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/FormFIOCompact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+        <state relative-caret-position="420">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#947#1306#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
             <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
             <element signature="e#1750#1751#0" expanded="true" />
             <element signature="e#1826#1827#0" expanded="true" />
             <element signature="e#1906#1907#0" expanded="true" />
             <element signature="e#1982#1983#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="650">
+          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/PersonFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/FormFIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1056#1461#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2888#2889#0" expanded="true" />
           </folding>
         </state>
       </provider>

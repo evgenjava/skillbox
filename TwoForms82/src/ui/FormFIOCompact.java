@@ -1,9 +1,11 @@
+package ui;
+
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.event.*;
 
-public class FormFIOCompact {
+public class FormFIOCompact extends JPanel{
     private JPanel rootPanel;
     private JTextField txtFio;
     private JButton btnChange;
@@ -21,6 +23,7 @@ public class FormFIOCompact {
     private ChangeListenerCompact listenerCompact;
 
     public FormFIOCompact() {
+        add(rootPanel);
         txtFio.setColumns(100);
         btnChange.addActionListener(new ActionListener() {
             @Override
@@ -59,6 +62,10 @@ public class FormFIOCompact {
             }
         });
 
+    }
+
+    public void addChangeListener(ActionListener listener) {
+        btnChange.addActionListener(listener);
     }
 
     public JPanel getRootPanel() {

@@ -1,10 +1,13 @@
+package ui;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class FormFIO {
+public class FormFIO extends JPanel {
+
     private JPanel rootPanel;
     private JTextField txtLname;
     private JTextField txtFname;
@@ -23,14 +26,15 @@ public class FormFIO {
 
 
     public FormFIO() {
-        btnChange.addActionListener(new ActionListener() {
+        add(rootPanel);
+       /**btnChange.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (checkInputData() && listener != null) {
                     listener.changePanel(txtLname.getText(), txtFname.getText(), txtMname.getText());
                 }
             }
-        });
+        });**/
         btnChange.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
@@ -44,6 +48,9 @@ public class FormFIO {
         });
     }
 
+    public void addChangeListener(ActionListener listener) {
+        btnChange.addActionListener(listener);
+    }
     private boolean checkInputData() {
         if (txtLname.getText().length() == 0) {
             JOptionPane.showMessageDialog(rootPanel, "Необходимо ввести Фамилию", "Ошибка", JOptionPane.ERROR_MESSAGE);

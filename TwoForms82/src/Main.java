@@ -1,9 +1,9 @@
+import ui.FormFIO;
+import ui.FormFIOCompact;
+import ui.PersonFrame;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
-import java.awt.event.ContainerEvent;
-import java.awt.event.ContainerListener;
 
 public class Main {
 
@@ -38,12 +38,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        frame.setContentPane(createFormFIO("", "", "").getRootPanel());
+        /**frame.setContentPane(createFormFIO("", "", "").getRootPanel());
         frame.setSize(WIDTH, HEIGHT);
         frame.setLocationByPlatform(true);
         frame.setTitle("Персональные данные");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setVisible(true);
+        frame.setVisible(true); **/
+
+        PersonFrame personFrame = new PersonFrame();
 
     }
 
