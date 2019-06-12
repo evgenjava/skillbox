@@ -3,16 +3,18 @@ package ui;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import java.awt.event.*;
+import java.awt.event.ActionListener;
 
-public class FormFIOCompact extends BasePanel {
-    private JPanel rootPanel;
+public class FormFullName  extends BasePanel {
     private JLabel lblFio;
     private JTextField txtFio;
-    private JButton btnChange;
     private JProgressBar pbLenght;
+    private JButton btnChange;
+    private JPanel rootPanel;
 
-
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 
     @Override
     public String[] getData() {
@@ -30,7 +32,7 @@ public class FormFIOCompact extends BasePanel {
 
 
 
-    public FormFIOCompact() {
+    public FormFullName() {
         add(rootPanel);
         txtFio.setDocument(new BasePanel.TextFilter());
         txtFio.setColumns(100);
@@ -72,5 +74,4 @@ public class FormFIOCompact extends BasePanel {
         pbLenght.setString(Integer.toString(length));
         pbLenght.setValue(length);
     }
-
 }

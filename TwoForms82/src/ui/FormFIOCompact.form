@@ -2,91 +2,64 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.FormFIOCompact">
   <grid id="27dc6" binding="rootPanel" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="430" height="125"/>
+      <xy x="20" y="20" width="346" height="200"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="28229" class="javax.swing.JTextField" binding="txtFio">
+      <vspacer id="deba2">
         <constraints>
-          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
-        <properties/>
-      </component>
-      <component id="5fe70" class="javax.swing.JButton" binding="btnChange">
+      </vspacer>
+      <component id="48d25" class="javax.swing.JLabel" binding="lblFio">
         <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Сменить панель"/>
-        </properties>
-      </component>
-      <component id="6cb83" class="javax.swing.JLabel" binding="lblFio">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Ф.И.О"/>
-        </properties>
-      </component>
-      <component id="21a6c" class="javax.swing.JProgressBar" binding="pbLenght">
-        <constraints>
-          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <requestFocusEnabled value="false"/>
-          <string value="0"/>
-          <stringPainted value="true"/>
+          <text value="Ф.И.О."/>
         </properties>
       </component>
-      <vspacer id="37cbf">
+      <component id="29bb6" class="javax.swing.JTextField" binding="txtFio">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
-      </vspacer>
-      <vspacer id="39c83">
+        <properties>
+          <maximumSize width="200" height="2147483647"/>
+          <minimumSize width="200" height="30"/>
+          <preferredSize width="200" height="30"/>
+        </properties>
+      </component>
+      <component id="3aaeb" class="javax.swing.JProgressBar" binding="pbLenght">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
-      </vspacer>
-      <hspacer id="74544">
+        <properties>
+          <preferredSize width="146" height="20"/>
+        </properties>
+      </component>
+      <hspacer id="37e">
         <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-      </hspacer>
-      <hspacer id="9372e">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-      </hspacer>
-      <hspacer id="f7f08">
-        <constraints>
-          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-      </hspacer>
-      <hspacer id="a002c">
-        <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
       </hspacer>
-      <vspacer id="ba8c1">
+      <component id="6b6f3" class="javax.swing.JButton" binding="btnChange">
         <constraints>
-          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
-      </vspacer>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

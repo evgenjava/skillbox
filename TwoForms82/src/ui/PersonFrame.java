@@ -15,14 +15,14 @@ public class PersonFrame extends JFrame {
 
     private BasePanel currentPanel;
     private FormFIO formFIO;
-    private FormFIOCompact formFIOCompact;
+    private FormFullName formFullName;
 
     public PersonFrame() {
 
         formFIO = new FormFIO();
-        formFIOCompact = new FormFIOCompact();
+        formFullName = new FormFullName();
         formFIO.addChangeListener((e) -> changePanel());
-        formFIOCompact.addChangeListener((e) -> changePanel());
+        formFullName.addChangeListener((e) -> changePanel());
         changePanel();
         setSize(WIDTH, HEIGHT);
         setLocationByPlatform(true);
@@ -43,7 +43,7 @@ public class PersonFrame extends JFrame {
             Person person = createPerson(currentPanel);
             if (currentPanel == formFIO) {
                 if(!checkData(person)) return;
-                currentPanel = formFIOCompact;
+                currentPanel = formFullName;
             }
             else {
                 currentPanel = formFIO;
