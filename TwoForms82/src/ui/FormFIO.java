@@ -1,12 +1,16 @@
 package ui;
 
 import javax.swing.*;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultFormatterFactory;
+import javax.swing.text.PlainDocument;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class FormFIO extends JPanel {
+public class FormFIO extends BasePanel {
 
     private JPanel rootPanel;
     private JTextField txtLname;
@@ -17,75 +21,38 @@ public class FormFIO extends JPanel {
     private JLabel lblName;
     private JLabel lblOtchestvo;
 
-    public interface ChangeListener {
-        public void changePanel(String lname, String fname, String mname);
+    @Override
+    public String[] getData() {
+        return new String[] {txtLname.getText(), txtFname.getText(), txtMname.getText()};
     }
 
-    private ChangeListener listener;
-
-
+    @Override
+    public void setData(String[] data) {
+        txtLname.setText(data[0]);
+        txtFname.setText(data[1]);
+        txtMname.setText(data[2]);
+    }
 
     public FormFIO() {
+        txtLname.setDocument(new BasePanel.TextFilter());
+        txtFname.setDocument(new BasePanel.TextFilter());
+        txtMname.setDocument(new BasePanel.TextFilter());
+        txtLname.requestFocusInWindow();
         add(rootPanel);
-       /**btnChange.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (checkInputData() && listener != null) {
-                    listener.changePanel(txtLname.getText(), txtFname.getText(), txtMname.getText());
-                }
-            }
-        });**/
-        btnChange.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyReleased(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER && e.isControlDown()) {
-                    if (checkInputData() && listener != null) {
-                        listener.changePanel(txtLname.getText(), txtFname.getText(), txtMname.getText());
-                    }
-                }
-
-            }
-        });
     }
 
     public void addChangeListener(ActionListener listener) {
         btnChange.addActionListener(listener);
     }
-    private boolean checkInputData() {
-        if (txtLname.getText().length() == 0) {
-            JOptionPane.showMessageDialog(rootPanel, "Необходимо ввести Фамилию", "Ошибка", JOptionPane.ERROR_MESSAGE);
-            return false;
-        }
-        if (txtFname.getText().length() == 0) {
-            JOptionPane.showMessageDialog(rootPanel, "Необходимо ввести Имя", "Ошибка", JOptionPane.ERROR_MESSAGE);
-            return false;
-        }
-        if (txtMname.getText().length() == 0) {
-            int result = JOptionPane.showConfirmDialog(rootPanel, "Вы уверены, что не хотите ввести Отчество",
-                    "Отчество", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-            return result == JOptionPane.YES_OPTION;
-        }
-        return true;
-    }
-
-    public void setData(String lname, String fname, String mname) {
-        txtLname.setText(lname);
-        txtFname.setText(fname);
-        txtMname.setText(mname);
-    }
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        txtLname = new JTextField();
-        txtLname.requestFocusInWindow();
-
     }
 
     public JPanel getRootPanel() {
         return rootPanel;
     }
 
-    public void setListener(ChangeListener listener) {
-        this.listener = listener;
-    }
+
+
 }
