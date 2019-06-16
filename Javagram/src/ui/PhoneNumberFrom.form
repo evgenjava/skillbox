@@ -36,6 +36,7 @@
             <properties>
               <maximumSize width="200" height="100"/>
               <minimumSize width="200" height="100"/>
+              <opaque value="false"/>
               <preferredSize width="200" height="100"/>
             </properties>
             <border type="none"/>
@@ -45,6 +46,7 @@
                 <properties>
                   <maximumSize width="200" height="50"/>
                   <minimumSize width="200" height="50"/>
+                  <opaque value="false"/>
                   <preferredSize width="200" height="50"/>
                   <text value="Введите код страны и номер мобильного телефона"/>
                 </properties>

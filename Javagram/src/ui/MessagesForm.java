@@ -1,7 +1,6 @@
 package ui;
 
 import core.Chat;
-import core.Message;
 
 import javax.swing.*;
 import java.awt.*;
@@ -32,19 +31,10 @@ public class MessagesForm {
     private JPanel pnlLeftBorder;
     private JPanel pnlRightBorder;
     private JPanel pnlInputText;
-    private JPanel pnlTopGap;
-    private JPanel pnlBottomGap;
-    private JPanel pnlLeftGap;
     private JButton btnSend;
-    private JTextPane paneMessage;
-    private JPanel pnlBottomGapList;
-    private JPanel pnlTopGapList;
-    private JPanel pnlLeftGapList;
-    private JPanel pnlRightGap;
-    private JPanel pnlText;
-    private JPanel pnlButton;
     private JPanel pnlChat;
     private JPanel pnlMessages;
+    private JTextField txtMessage;
 
     private List<Chat> chatList;
     private List<ListItemForm> listItems = new ArrayList<>();
@@ -57,7 +47,7 @@ public class MessagesForm {
         btnSend.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                addOutputMessage(paneMessage.getText());
+                addOutputMessage(txtMessage.getText());
                 pnlMessages.revalidate();
             }
         });
