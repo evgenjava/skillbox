@@ -44,6 +44,7 @@
               <component id="58ffb" class="javax.swing.JTextPane" binding="txtWelcomInput">
                 <constraints/>
                 <properties>
+                  <background color="-6696237"/>
                   <maximumSize width="200" height="50"/>
                   <minimumSize width="200" height="50"/>
                   <opaque value="false"/>
