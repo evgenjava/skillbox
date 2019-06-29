@@ -2,10 +2,6 @@ package ui;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
 
 public class PhoneNumberFrom {
 
@@ -13,33 +9,33 @@ public class PhoneNumberFrom {
     private JPanel rootPanel;
     private JPanel pnlMain;
     private JPanel pnlLogo;
-    private JPanel pnlWelcomInput;
-    private JTextPane txtWelcomInput;
-    private JPanel pnlPhoneNumber;
-    private JTextField txtPhoneNumber;
-    private JPanel pnlNext;
-    private JButton btnNext;
+    /**
+     * private JPanel pnlMain;
+     * private JTextPane txtWelcomInput;
+     * private JTextField txtPhoneNumber;
+     * private JButton btnNext;
+     **/
 
     private ChangePanel changePanel;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+        pnlMain = new MainPanel();
     }
 
     public PhoneNumberFrom() {
 
-        pnlMain.setLayout(new BoxLayout(pnlMain, BoxLayout.Y_AXIS));
-        btnNext.setBackground(new Color(21, 61, 242));
-        txtWelcomInput.setText(welcomInput);
+        /**pnlMain.setLayout(new BoxLayout(pnlMain, BoxLayout.Y_AXIS));
+         btnNext.setBackground(new Color(21, 61, 242));
+         txtWelcomInput.setText(welcomInput);
 
-        btnNext.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (changePanel != null) {
-                    changePanel.next(txtPhoneNumber.getText());
-                }
-            }
-        });
+         btnNext.addActionListener(new ActionListener() {
+        @Override public void actionPerformed(ActionEvent e) {
+        if (changePanel != null) {
+        changePanel.next(txtPhoneNumber.getText());
+        }
+        }
+        });**/
     }
 
     public JPanel getRootPanel() {
@@ -65,58 +61,10 @@ public class PhoneNumberFrom {
      * @noinspection ALL
      */
     private void $$$setupUI$$$() {
+        createUIComponents();
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
-        pnlMain = new JPanel();
-        pnlMain.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
         rootPanel.add(pnlMain, BorderLayout.CENTER);
-        pnlLogo = new JPanel();
-        pnlLogo.setLayout(new BorderLayout(0, 0));
-        pnlLogo.setMaximumSize(new Dimension(100, 100));
-        pnlLogo.setMinimumSize(new Dimension(100, 100));
-        pnlLogo.setPreferredSize(new Dimension(100, 100));
-        pnlMain.add(pnlLogo);
-        final JLabel label1 = new JLabel();
-        label1.setHorizontalAlignment(0);
-        label1.setText("LOGOTIP");
-        label1.setVerifyInputWhenFocusTarget(false);
-        pnlLogo.add(label1, BorderLayout.CENTER);
-        pnlWelcomInput = new JPanel();
-        pnlWelcomInput.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        pnlWelcomInput.setMaximumSize(new Dimension(200, 100));
-        pnlWelcomInput.setMinimumSize(new Dimension(200, 100));
-        pnlWelcomInput.setPreferredSize(new Dimension(200, 100));
-        pnlMain.add(pnlWelcomInput);
-        txtWelcomInput = new JTextPane();
-        txtWelcomInput.setBackground(new Color(-6696237));
-        txtWelcomInput.setMaximumSize(new Dimension(200, 50));
-        txtWelcomInput.setMinimumSize(new Dimension(200, 50));
-        txtWelcomInput.setPreferredSize(new Dimension(200, 50));
-        txtWelcomInput.setText("Введите код страны и номер мобильного телефона");
-        pnlWelcomInput.add(txtWelcomInput);
-        pnlPhoneNumber = new JPanel();
-        pnlPhoneNumber.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        pnlPhoneNumber.setMaximumSize(new Dimension(200, 40));
-        pnlPhoneNumber.setMinimumSize(new Dimension(200, 40));
-        pnlPhoneNumber.setPreferredSize(new Dimension(200, 40));
-        pnlMain.add(pnlPhoneNumber);
-        txtPhoneNumber = new JTextField();
-        txtPhoneNumber.setMaximumSize(new Dimension(200, 30));
-        txtPhoneNumber.setMinimumSize(new Dimension(200, 30));
-        txtPhoneNumber.setPreferredSize(new Dimension(200, 30));
-        txtPhoneNumber.setText("+7");
-        pnlPhoneNumber.add(txtPhoneNumber);
-        pnlNext = new JPanel();
-        pnlNext.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 20));
-        pnlNext.setMaximumSize(new Dimension(150, 60));
-        pnlNext.setMinimumSize(new Dimension(150, 60));
-        pnlNext.setPreferredSize(new Dimension(150, 60));
-        pnlNext.putClientProperty("html.disable", Boolean.FALSE);
-        pnlMain.add(pnlNext);
-        btnNext = new JButton();
-        btnNext.setForeground(new Color(-2363905));
-        btnNext.setText("ПРОДОЛЖИТЬ");
-        pnlNext.add(btnNext);
     }
 
     /**
@@ -125,4 +73,5 @@ public class PhoneNumberFrom {
     public JComponent $$$getRootComponent$$$() {
         return rootPanel;
     }
+
 }

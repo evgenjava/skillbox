@@ -10,7 +10,7 @@ import java.util.List;
 public class Main {
 
     public static final int WIDTH = 700;
-    public static final int HEIGHT = 400;
+    public static final int HEIGHT = 500;
 
     public static String[] names = {"Андрей Пертров", "Петр Сергеев", "Дмитрий Петров"};
     public static JFrame frame = new JFrame();
