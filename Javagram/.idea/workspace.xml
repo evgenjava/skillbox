@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e56953-8474-420a-9cd6-b5d47ee7cdb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/META-INF/Javagram.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/LogoPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/LogoPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MainPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BigButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BigButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/LogoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LogoPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/BigButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/BigButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ControlPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ControlPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ControlPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../List1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TwoForms82/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoForms82/.idea/workspace.xml" afterDir="false" />
@@ -28,15 +28,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.form">
-          <provider selected="true" editor-type-id="ui-designer" />
+        <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="28" column="66" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/ControlButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+            <state relative-caret-position="405">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +57,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="method#$$$setupUI$$$#0;class#ControlPanel#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/PhoneNumberFrom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+            <state relative-caret-position="451">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1246#1247#0" expanded="true" />
@@ -98,23 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/BigButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/LogoPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="256">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/Contact.java" />
         <option value="$PROJECT_DIR$/src/Message.java" />
         <option value="$PROJECT_DIR$/src/Chat.java" />
-        <option value="$PROJECT_DIR$/src/ui/ControlPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/ChangePanel.java" />
         <option value="$PROJECT_DIR$/src/ui/CodeForm.form" />
         <option value="$PROJECT_DIR$/src/ui/TestForm.form" />
@@ -171,14 +180,16 @@
         <option value="$PROJECT_DIR$/src/ui/MessagesForm.form" />
         <option value="$PROJECT_DIR$/src/ui/RootPanel.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/ui/ControlPanel.form" />
         <option value="$PROJECT_DIR$/src/ui/LogoPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/WelcomPane.java" />
         <option value="$PROJECT_DIR$/src/ui/TextInput.java" />
         <option value="$PROJECT_DIR$/src/ui/MainPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" />
-        <option value="$PROJECT_DIR$/src/ui/PhoneNumberFrom.form" />
+        <option value="$PROJECT_DIR$/src/ui/ControlPanel.java" />
+        <option value="$PROJECT_DIR$/src/ui/ControlButton.java" />
         <option value="$PROJECT_DIR$/src/ui/BigButton.java" />
+        <option value="$PROJECT_DIR$/src/ui/ControlPanel.form" />
+        <option value="$PROJECT_DIR$/src/ui/PhoneNumberFrom.form" />
+        <option value="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" />
       </list>
     </option>
   </component>
@@ -209,6 +220,12 @@
               <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
               <item name="Javagram" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -228,6 +245,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="CodeForm" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -238,10 +262,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="367" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/buttons" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/buttons" />
       <recent name="$PROJECT_DIR$/res/images" />
       <recent name="$PROJECT_DIR$/res/fonts" />
       <recent name="$PROJECT_DIR$/images" />
@@ -423,16 +448,6 @@
     <entry file="file://$PROJECT_DIR$/src/ui/InputMessageForm.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -442,9 +457,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -457,16 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -509,13 +511,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#ControlPanel#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ControlButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/BigButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/PhoneNumberFrom.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/PhoneNumberFrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="451">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1246#1247#0" expanded="true" />
@@ -523,16 +571,6 @@
             <element signature="e#1337#1338#0" expanded="true" />
             <element signature="e#1383#1384#0" expanded="true" />
             <element signature="method#$$$setupUI$$$#0;class#PhoneNumberFrom#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/BigButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

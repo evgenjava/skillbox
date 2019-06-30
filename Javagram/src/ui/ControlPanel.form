@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.ControlPanel">
-  <grid id="27dc6" binding="rootPanel" layout-manager="FlowLayout" hgap="5" vgap="0" flow-align="2">
+  <grid id="27dc6" binding="rootPanel" layout-manager="FlowLayout" hgap="10" vgap="6" flow-align="2">
     <constraints>
-      <xy x="20" y="20" width="905" height="26"/>
+      <xy x="20" y="20" width="905" height="30"/>
     </constraints>
     <properties>
+      <background color="-1579033"/>
       <enabled value="false"/>
-      <maximumSize width="905" height="26"/>
-      <minimumSize width="905" height="26"/>
-      <preferredSize width="905" height="26"/>
+      <maximumSize width="905" height="30"/>
+      <minimumSize width="905" height="30"/>
+      <preferredSize width="905" height="30"/>
     </properties>
     <border type="none"/>
     <children>
-      <component id="56eb5" class="javax.swing.JButton" binding="btnDown">
+      <component id="56eb5" class="javax.swing.JButton" binding="btnDown" custom-create="true">
         <constraints/>
         <properties>
-          <maximumSize width="40" height="26"/>
-          <minimumSize width="40" height="26"/>
-          <preferredSize width="40" height="26"/>
-          <text value="-"/>
+          <maximumSize width="18" height="18"/>
+          <minimumSize width="18" height="18"/>
+          <opaque value="false"/>
+          <preferredSize width="18" height="18"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="361f4" class="javax.swing.JButton" binding="btnClose">
+      <component id="361f4" class="javax.swing.JButton" binding="btnClose" custom-create="true">
         <constraints/>
         <properties>
-          <maximumSize width="45" height="26"/>
-          <minimumSize width="45" height="26"/>
+          <maximumSize width="18" height="18"/>
+          <minimumSize width="18" height="18"/>
           <opaque value="false"/>
-          <preferredSize width="45" height="26"/>
-          <text value="x"/>
+          <preferredSize width="18" height="18"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

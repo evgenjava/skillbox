@@ -19,8 +19,7 @@ public class BigButton extends JButton {
     public BigButton(String caption) {
         this.caption = caption;
         Color color = new Color(0, 181, 234);
-        setBorder(BorderFactory.createLineBorder(color, 0));
-        //setBackground(color);
+        setBorderPainted(false);
         try {
             font = Font.createFont(Font.TRUETYPE_FONT, new File("res/fonts/OpenSansLight.ttf"));
             background = ImageIO.read(new File("res/images/button-background.png"));
@@ -41,6 +40,12 @@ public class BigButton extends JButton {
         }
         g.setFont(font.deriveFont(24.0F));
         g.setColor(Color.WHITE);
-        g.drawString(caption,40, 40);
+
+        FontMetrics fontMetrics = g.getFontMetrics();
+        int sWidth = fontMetrics.stringWidth(caption);
+        int chHeight = fontMetrics.getAscent();
+
+        g.drawString(caption,(WIDTH - sWidth) / 2, (HEIGHT + chHeight) / 2 - fontMetrics.getDescent());
+
     }
 }

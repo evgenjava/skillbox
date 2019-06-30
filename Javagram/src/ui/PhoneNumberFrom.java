@@ -1,10 +1,9 @@
 package ui;
 
 import javax.swing.*;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledDocument;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -33,6 +32,7 @@ public class PhoneNumberFrom {
     public PhoneNumberFrom() {
 
         $$$setupUI$$$();
+
         try {
             Font font = Font.createFont(Font.TRUETYPE_FONT, new File("res/fonts/OpenSansLight.ttf"));
             paneWelcom.setFont(font.deriveFont(18.0F));
@@ -45,16 +45,15 @@ public class PhoneNumberFrom {
 
         paneWelcom.setText(welcomInput);
         //pnlMain.setLayout(new BoxLayout(pnlMain, BoxLayout.Y_AXIS));
-        /**btnNext.setBackground(new Color(21, 61, 242));
-         txtWelcomInput.setText(welcomInput);
 
          btnNext.addActionListener(new ActionListener() {
-        @Override public void actionPerformed(ActionEvent e) {
-        if (changePanel != null) {
-        changePanel.next(txtPhoneNumber.getText());
-        }
-        }
-        });**/
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (changePanel != null) {
+                    changePanel.next(txtPhone.getText());
+                }
+            }
+         });
     }
 
     public JPanel getRootPanel() {
