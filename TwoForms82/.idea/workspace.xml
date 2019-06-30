@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7bb2ca-eaa0-434e-8814-f2d596d619e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/BigButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/BigButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../List1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
