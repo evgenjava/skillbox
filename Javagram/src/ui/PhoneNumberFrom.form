@@ -7,26 +7,66 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="13d84" binding="pnlMain" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
+      <grid id="13d84" binding="pnlMain" custom-create="true" layout-manager="FlowLayout" hgap="450" vgap="40" flow-align="1">
         <constraints border-constraint="Center"/>
         <properties>
           <inheritsPopupMenu value="false"/>
           <maximumSize width="905" height="596"/>
           <minimumSize width="905" height="596"/>
+          <opaque value="false"/>
           <preferredSize width="905" height="596"/>
         </properties>
         <border type="none"/>
         <children>
-          <grid id="3f07b" binding="pnlLogo" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+          <grid id="3f07b" binding="pnlLogo" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints/>
             <properties>
               <maximumSize width="165" height="168"/>
               <minimumSize width="165" height="168"/>
+              <opaque value="false"/>
               <preferredSize width="165" height="168"/>
             </properties>
             <border type="none"/>
             <children/>
           </grid>
+          <component id="dec70" class="javax.swing.JTextPane" binding="paneWelcom" custom-create="true">
+            <constraints/>
+            <properties>
+              <foreground color="-1"/>
+              <margin top="10" left="10" bottom="10" right="10"/>
+              <opaque value="false"/>
+              <text value="Введите код страны и номер вашего мобильногог телефона"/>
+            </properties>
+          </component>
+          <component id="d7486" class="javax.swing.JTextField" binding="txtPhone" custom-create="true">
+            <constraints/>
+            <properties>
+              <caretColor color="-1"/>
+              <foreground color="-1"/>
+              <horizontalAlignment value="10"/>
+              <margin top="2" left="5" bottom="2" right="5"/>
+              <minimumSize width="400" height="46"/>
+              <opaque value="false"/>
+              <preferredSize width="400" height="46"/>
+              <requestFocusEnabled value="true"/>
+              <scrollOffset value="0"/>
+            </properties>
+          </component>
+          <component id="c24fd" class="javax.swing.JButton" binding="btnNext" custom-create="true">
+            <constraints/>
+            <properties>
+              <background color="-16730646"/>
+              <foreground color="-1"/>
+              <inheritsPopupMenu value="false"/>
+              <label value="ПРОДОЛЖИТЬ"/>
+              <maximumSize width="337" height="65"/>
+              <minimumSize width="337" height="65"/>
+              <opaque value="false"/>
+              <preferredSize width="337" height="65"/>
+              <selected value="true"/>
+              <text value="ПРОДОЛЖИТЬ"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

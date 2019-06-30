@@ -17,10 +17,10 @@ public class LogoPanel extends JPanel {
     public LogoPanel(String size) {
         String filename;
         if (size.equals(MINI)) {
-            filename = "/res/images/logo-mini.png";
+            filename = "res/images/logo-mini.png";
         }
         else {
-            filename = "/res/images/logo.png";
+            filename = "res/images/logo.png";
         }
 
         try {
@@ -31,7 +31,7 @@ public class LogoPanel extends JPanel {
     }
 
     @Override
-    public void paintComponents(Graphics g) {
+    public void paintComponent(Graphics g) {
         super.paintComponents(g);
         if (logotip != null) {
             g.drawImage(logotip, 0, 0, null);
