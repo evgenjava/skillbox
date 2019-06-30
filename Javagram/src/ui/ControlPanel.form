@@ -2,10 +2,13 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.ControlPanel">
   <grid id="27dc6" binding="rootPanel" layout-manager="FlowLayout" hgap="5" vgap="0" flow-align="2">
     <constraints>
-      <xy x="20" y="20" width="500" height="26"/>
+      <xy x="20" y="20" width="905" height="26"/>
     </constraints>
     <properties>
       <enabled value="false"/>
+      <maximumSize width="905" height="26"/>
+      <minimumSize width="905" height="26"/>
+      <preferredSize width="905" height="26"/>
     </properties>
     <border type="none"/>
     <children>

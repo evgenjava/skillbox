@@ -56,6 +56,9 @@ public class ControlPanel {
         rootPanel = new JPanel();
         rootPanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 0));
         rootPanel.setEnabled(false);
+        rootPanel.setMaximumSize(new Dimension(905, 26));
+        rootPanel.setMinimumSize(new Dimension(905, 26));
+        rootPanel.setPreferredSize(new Dimension(905, 26));
         btnDown = new JButton();
         btnDown.setMaximumSize(new Dimension(40, 26));
         btnDown.setMinimumSize(new Dimension(40, 26));
@@ -77,4 +80,5 @@ public class ControlPanel {
     public JComponent $$$getRootComponent$$$() {
         return rootPanel;
     }
+
 }

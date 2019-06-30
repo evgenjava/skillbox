@@ -2,17 +2,22 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.PhoneNumberFrom">
   <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="675" height="400"/>
+      <xy x="20" y="20" width="905" height="596"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
       <grid id="13d84" binding="pnlMain" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
         <constraints border-constraint="Center"/>
-        <properties/>
+        <properties>
+          <inheritsPopupMenu value="false"/>
+          <maximumSize width="905" height="596"/>
+          <minimumSize width="905" height="596"/>
+          <preferredSize width="905" height="596"/>
+        </properties>
         <border type="none"/>
         <children>
-          <grid id="3f07b" binding="pnlLogo" layout-manager="BorderLayout" hgap="0" vgap="0">
+          <grid id="3f07b" binding="pnlLogo" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints/>
             <properties>
               <maximumSize width="165" height="168"/>

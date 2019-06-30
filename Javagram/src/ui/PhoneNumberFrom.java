@@ -21,6 +21,7 @@ public class PhoneNumberFrom {
     private void createUIComponents() {
         // TODO: place custom component creation code here
         pnlMain = new MainPanel();
+        pnlLogo = new LogoPanel(LogoPanel.LARGE);
     }
 
     public PhoneNumberFrom() {
@@ -64,7 +65,16 @@ public class PhoneNumberFrom {
         createUIComponents();
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
+        pnlMain.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 40));
+        pnlMain.setInheritsPopupMenu(false);
+        pnlMain.setMaximumSize(new Dimension(905, 596));
+        pnlMain.setMinimumSize(new Dimension(905, 596));
+        pnlMain.setPreferredSize(new Dimension(905, 596));
         rootPanel.add(pnlMain, BorderLayout.CENTER);
+        pnlLogo.setMaximumSize(new Dimension(165, 168));
+        pnlLogo.setMinimumSize(new Dimension(165, 168));
+        pnlLogo.setPreferredSize(new Dimension(165, 168));
+        pnlMain.add(pnlLogo);
     }
 
     /**
