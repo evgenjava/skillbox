@@ -11,41 +11,28 @@ public class PhoneNumberFrom {
 
     private final String welcomInput = "Введите код страны и номер\nвашего мобильного телефона";
     private JPanel rootPanel;
-    private JPanel pnlMain;
-    private JPanel pnlLogo;
-    private JTextPane paneWelcom;
+    private MainPanel mainPanel;
+    private WelcomPane paneWelcom;
     private JTextField txtPhone;
-    private JButton btnNext;
+    private BigButton btnNext;
 
 
     private ChangePanel changePanel;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        pnlMain = new MainPanel(MainPanel.LARGE);
-        pnlLogo = new LogoPanel(LogoPanel.LARGE);
-        paneWelcom = new WelcomPane(new Dimension(380, 40));
+        mainPanel = new MainPanel(MainPanel.LARGE);
+        paneWelcom = new WelcomPane(new Dimension(380, 60), welcomInput);
         txtPhone = new TextInput(TextInput.PHONE_INPUT);
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
     }
 
     public PhoneNumberFrom() {
 
+
         $$$setupUI$$$();
-
-        try {
-            Font font = Font.createFont(Font.TRUETYPE_FONT, new File("res/fonts/OpenSansLight.ttf"));
-            paneWelcom.setFont(font.deriveFont(18.0F));
-            txtPhone.setFont(font.deriveFont(40.0F));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        paneWelcom.setText(welcomInput);
-        //pnlMain.setLayout(new BoxLayout(pnlMain, BoxLayout.Y_AXIS));
-
+        createUIComponents();
+        paneWelcom.setFontSize(18.0F);
         btnNext.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -54,6 +41,11 @@ public class PhoneNumberFrom {
                 }
             }
         });
+
+        mainPanel.addComponent(paneWelcom, 270);
+        mainPanel.addComponent(txtPhone, 10);
+        mainPanel.addComponent(btnNext, 35);
+        rootPanel.add(mainPanel, BorderLayout.CENTER);
     }
 
     public JPanel getRootPanel() {
@@ -72,50 +64,11 @@ public class PhoneNumberFrom {
      * @noinspection ALL
      */
     private void $$$setupUI$$$() {
-        createUIComponents();
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
-        pnlMain.setLayout(new FlowLayout(FlowLayout.CENTER, 450, 40));
-        pnlMain.setInheritsPopupMenu(false);
-        pnlMain.setMaximumSize(new Dimension(905, 596));
-        pnlMain.setMinimumSize(new Dimension(905, 596));
-        pnlMain.setOpaque(false);
-        pnlMain.setPreferredSize(new Dimension(905, 596));
-        rootPanel.add(pnlMain, BorderLayout.CENTER);
-        pnlLogo.setMaximumSize(new Dimension(165, 168));
-        pnlLogo.setMinimumSize(new Dimension(165, 168));
-        pnlLogo.setOpaque(false);
-        pnlLogo.setPreferredSize(new Dimension(165, 168));
-        pnlMain.add(pnlLogo);
-        paneWelcom.setForeground(new Color(-1));
-        paneWelcom.setMargin(new Insets(10, 10, 10, 10));
-        paneWelcom.setMaximumSize(new Dimension(380, 140));
-        paneWelcom.setMinimumSize(new Dimension(380, 40));
-        paneWelcom.setOpaque(false);
-        paneWelcom.setPreferredSize(new Dimension(380, 40));
-        paneWelcom.setText("Введите код страны и номер вашего мобильногог телефона");
-        pnlMain.add(paneWelcom);
-        txtPhone.setCaretColor(new Color(-1));
-        txtPhone.setForeground(new Color(-1));
-        txtPhone.setHorizontalAlignment(10);
-        txtPhone.setMargin(new Insets(2, 5, 2, 5));
-        txtPhone.setMinimumSize(new Dimension(400, 46));
-        txtPhone.setOpaque(false);
-        txtPhone.setPreferredSize(new Dimension(400, 46));
-        txtPhone.setRequestFocusEnabled(true);
-        txtPhone.setScrollOffset(0);
-        pnlMain.add(txtPhone);
-        btnNext.setBackground(new Color(-16730646));
-        btnNext.setForeground(new Color(-1));
-        btnNext.setInheritsPopupMenu(false);
-        btnNext.setLabel("ПРОДОЛЖИТЬ");
-        btnNext.setMaximumSize(new Dimension(337, 65));
-        btnNext.setMinimumSize(new Dimension(337, 65));
-        btnNext.setOpaque(false);
-        btnNext.setPreferredSize(new Dimension(337, 65));
-        btnNext.setSelected(true);
-        btnNext.setText("ПРОДОЛЖИТЬ");
-        pnlMain.add(btnNext);
+        rootPanel.setMaximumSize(new Dimension(905, 622));
+        rootPanel.setMinimumSize(new Dimension(905, 622));
+        rootPanel.setPreferredSize(new Dimension(905, 622));
     }
 
     /**

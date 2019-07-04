@@ -48,7 +48,7 @@ public class PhonePanel extends MainPanel {
 
     private void createUIComponents() {
         pnlLogo = new LogoPanel(LogoPanel.LARGE);
-        paneWelcom = new WelcomPane(new Dimension(380, 140));
+        paneWelcom = new WelcomPane(new Dimension(380, 140), "text");
         txtPhone = new TextInput(TextInput.PHONE_INPUT);
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
     }

@@ -3,7 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="030c9b77-ce00-4eaa-9118-b54ccdb0a01d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel$PhoneFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel$PhoneFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel$PhoneVerifyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhonePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhonePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/WelcomPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/WelcomPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/BigButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/BigButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhonePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhonePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/TextInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/WelcomPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/WelcomPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+            <state relative-caret-position="285">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,13 +90,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1812" />
     <option name="height" value="981" />
@@ -80,7 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,7 +117,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,9 +165,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1812" height="981" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21201815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -196,8 +215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

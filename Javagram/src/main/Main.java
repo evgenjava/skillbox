@@ -1,3 +1,5 @@
+package main;
+
 import core.Chat;
 import core.Contact;
 import ui.*;
@@ -18,13 +20,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //frame.setContentPane(createFormNumberForm().getRootPanel());
-        frame.setContentPane(new PhonePanel());
+        frame.setContentPane(createFormNumberForm().getRootPanel());
+        //frame.setContentPane(new PhonePanel());
         frame.setSize(WIDTH, HEIGHT);
         frame.setLocationByPlatform(true);
         frame.setTitle("Javagram");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        //frame.setUndecorated(true);
+        frame.setUndecorated(true);
         frame.setVisible(true);
     }
 

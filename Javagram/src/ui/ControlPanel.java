@@ -49,12 +49,12 @@ public class ControlPanel {
     private void $$$setupUI$$$() {
         createUIComponents();
         rootPanel = new JPanel();
-        rootPanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 6));
+        rootPanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 8));
         rootPanel.setBackground(new Color(-1579033));
         rootPanel.setEnabled(false);
-        rootPanel.setMaximumSize(new Dimension(905, 30));
-        rootPanel.setMinimumSize(new Dimension(905, 30));
-        rootPanel.setPreferredSize(new Dimension(905, 30));
+        rootPanel.setMaximumSize(new Dimension(905, 35));
+        rootPanel.setMinimumSize(new Dimension(905, 35));
+        rootPanel.setPreferredSize(new Dimension(905, 35));
         btnDown.setMaximumSize(new Dimension(18, 18));
         btnDown.setMinimumSize(new Dimension(18, 18));
         btnDown.setOpaque(false);

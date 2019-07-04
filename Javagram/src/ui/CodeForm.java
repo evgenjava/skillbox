@@ -1,5 +1,7 @@
 package ui;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -14,14 +16,11 @@ public class CodeForm {
             "Пожалуйства, введите этот код в поле ниже:";
 
     private JPanel rootPanel;
-    private JPanel pnlMain;
-    private JPanel pnlLogo;
-    private JPanel pnlCode;
-    private JPanel pnlNext;
-    private JButton btnNext;
-    private JPasswordField txtCode;
-    private JTextPane panePhone;
-    private JTextPane paneWelcom;
+    private MainPanel pnlMain;
+    private BigButton btnNext;
+    private CodeInput txtCode;
+    private WelcomPane panePhone;
+    private WelcomPane paneWelcom;
 
 
     private ChangePanel changePanel;
@@ -29,26 +28,15 @@ public class CodeForm {
     private void createUIComponents() {
         // TODO: place custom component creation code here
         pnlMain = new MainPanel(MainPanel.MINI);
-        pnlLogo = new LogoPanel(LogoPanel.MINI);
-        panePhone = new WelcomPane(new Dimension(380, 40));
-        paneWelcom = new WelcomPane(new Dimension(380, 140));
+        panePhone = new WelcomPane(new Dimension(380, 40), "");
+        paneWelcom = new WelcomPane(new Dimension(380, 60), welcomInput);
     }
 
     public CodeForm() {
         $$$setupUI$$$();
-        try {
-            Font font = Font.createFont(Font.TRUETYPE_FONT, new File("res/fonts/OpenSansLight.ttf"));
-            panePhone.setFont(font.deriveFont(32.0F));
-            paneWelcom.setFont(font.deriveFont(16.0F));
 
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        btnNext.setBackground(new Color(21, 61, 242));
-        paneWelcom.setText(welcomInput);
+        panePhone.setFontSize(32.0F);
+        paneWelcom.setFontSize(16.0F);
         btnNext.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -79,52 +67,9 @@ public class CodeForm {
      * @noinspection ALL
      */
     private void $$$setupUI$$$() {
-        createUIComponents();
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
         rootPanel.setMaximumSize(new Dimension(905, 596));
-        pnlMain.setLayout(new FlowLayout(FlowLayout.CENTER, 450, 20));
-        pnlMain.setMaximumSize(new Dimension(905, 596));
-        pnlMain.setMinimumSize(new Dimension(905, 596));
-        pnlMain.setPreferredSize(new Dimension(905, 596));
-        rootPanel.add(pnlMain, BorderLayout.CENTER);
-        pnlLogo.setMaximumSize(new Dimension(124, 98));
-        pnlLogo.setMinimumSize(new Dimension(124, 98));
-        pnlLogo.setOpaque(false);
-        pnlLogo.setPreferredSize(new Dimension(124, 98));
-        pnlMain.add(pnlLogo);
-        panePhone.setForeground(new Color(-1));
-        panePhone.setMargin(new Insets(10, 10, 10, 10));
-        panePhone.setOpaque(false);
-        panePhone.setText("+7 999 2125549");
-        pnlMain.add(panePhone);
-        paneWelcom.setForeground(new Color(-1));
-        paneWelcom.setMargin(new Insets(10, 10, 10, 10));
-        paneWelcom.setOpaque(false);
-        paneWelcom.setText("На данный номер телефона было отправлено");
-        pnlMain.add(paneWelcom);
-        pnlCode = new JPanel();
-        pnlCode.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        pnlCode.setMaximumSize(new Dimension(200, 40));
-        pnlCode.setMinimumSize(new Dimension(150, 40));
-        pnlCode.setPreferredSize(new Dimension(150, 40));
-        pnlMain.add(pnlCode);
-        txtCode = new JPasswordField();
-        txtCode.setMaximumSize(new Dimension(150, 150));
-        txtCode.setMinimumSize(new Dimension(150, 30));
-        txtCode.setPreferredSize(new Dimension(150, 30));
-        pnlCode.add(txtCode);
-        pnlNext = new JPanel();
-        pnlNext.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 20));
-        pnlNext.setMaximumSize(new Dimension(150, 60));
-        pnlNext.setMinimumSize(new Dimension(150, 60));
-        pnlNext.setPreferredSize(new Dimension(150, 60));
-        pnlNext.putClientProperty("html.disable", Boolean.FALSE);
-        pnlMain.add(pnlNext);
-        btnNext = new JButton();
-        btnNext.setForeground(new Color(-2363905));
-        btnNext.setText("ПРОДОЛЖИТЬ");
-        pnlNext.add(btnNext);
     }
 
     /**

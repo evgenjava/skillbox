@@ -1,5 +1,7 @@
 package ui;
 
+import main.UIResources;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -21,33 +23,47 @@ public class TextInput extends JTextField {
     private final int HEIGHT = 46;
 
     private BufferedImage icon;
+    private Font font;
 
     public TextInput(int typeInput) {
 
         Border border = BorderFactory.createMatteBorder(0, 0, 2, 0, Color.WHITE);
         setBorder(border);
+        setMargin(new Insets(2, 5, 2,5));
         setOpaque(false);
+        setForeground(Color.WHITE);
+        loadFont(UIResources.OPEN_SANS_LIGHT);
         switch(typeInput) {
             case PHONE_INPUT:
-                setIcon("res/images/icon-phone.png");
-
+                loadIcon(UIResources.ICON_PHONE);
+                setFont(font.deriveFont(40.0F));
                 setPreferredSize(new Dimension(PHONE_WIDTH, HEIGHT));
                 setMaximumSize(new Dimension(PHONE_WIDTH, HEIGHT));
                 setMinimumSize(new Dimension(PHONE_WIDTH, HEIGHT));
-
                 setDocument(new MainPanel.PhoneFilter());
-                setInputVerifier(new MainPanel.PhoneVerifyer());
                 setText("    +7");
                 break;
             case CODE_INPUT:
-                setIcon("res/images/icon-lock.png");
+                loadIcon(UIResources.ICON_LOCK);
                 setPreferredSize(new Dimension(CODE_WIDTH, HEIGHT));
                 setHorizontalAlignment(JTextField.CENTER);
+                setPreferredSize(new Dimension(CODE_WIDTH, HEIGHT));
+                setMaximumSize(new Dimension(CODE_WIDTH, HEIGHT));
+                setMinimumSize(new Dimension(CODE_WIDTH, HEIGHT));
                 break;
         }
     }
 
-    private void setIcon(String fileName) {
+    private void loadFont(String fontName) {
+        try {
+            font = Font.createFont(Font.TRUETYPE_FONT, new File(fontName));
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private void loadIcon(String fileName) {
 
         try {
             icon = ImageIO.read(new File(fileName));
