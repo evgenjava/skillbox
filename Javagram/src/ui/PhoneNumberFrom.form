@@ -34,7 +34,10 @@
             <properties>
               <foreground color="-1"/>
               <margin top="10" left="10" bottom="10" right="10"/>
+              <maximumSize width="380" height="140"/>
+              <minimumSize width="380" height="40"/>
               <opaque value="false"/>
+              <preferredSize width="380" height="40"/>
               <text value="Введите код страны и номер вашего мобильногог телефона"/>
             </properties>
           </component>

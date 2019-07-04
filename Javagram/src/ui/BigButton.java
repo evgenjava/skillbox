@@ -28,8 +28,11 @@ public class BigButton extends JButton {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        setSize(WIDTH, HEIGHT);
-        setText(caption);
+        setMaximumSize(new Dimension(WIDTH, HEIGHT));
+        setMinimumSize(new Dimension(WIDTH, HEIGHT));
+        setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        setOpaque(false);
+        //setText(caption);
     }
 
     @Override

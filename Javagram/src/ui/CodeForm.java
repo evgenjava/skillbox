@@ -28,10 +28,10 @@ public class CodeForm {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        pnlMain = new MainPanel();
+        pnlMain = new MainPanel(MainPanel.MINI);
         pnlLogo = new LogoPanel(LogoPanel.MINI);
-        panePhone = new WelcomPane();
-        paneWelcom = new WelcomPane();
+        panePhone = new WelcomPane(new Dimension(380, 40));
+        paneWelcom = new WelcomPane(new Dimension(380, 140));
     }
 
     public CodeForm() {

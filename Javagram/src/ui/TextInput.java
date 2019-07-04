@@ -26,10 +26,15 @@ public class TextInput extends JTextField {
 
         Border border = BorderFactory.createMatteBorder(0, 0, 2, 0, Color.WHITE);
         setBorder(border);
+        setOpaque(false);
         switch(typeInput) {
             case PHONE_INPUT:
                 setIcon("res/images/icon-phone.png");
+
                 setPreferredSize(new Dimension(PHONE_WIDTH, HEIGHT));
+                setMaximumSize(new Dimension(PHONE_WIDTH, HEIGHT));
+                setMinimumSize(new Dimension(PHONE_WIDTH, HEIGHT));
+
                 setDocument(new MainPanel.PhoneFilter());
                 setInputVerifier(new MainPanel.PhoneVerifyer());
                 setText("    +7");

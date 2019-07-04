@@ -8,7 +8,12 @@ import java.awt.*;
 
 public class WelcomPane extends JTextPane {
 
-    public WelcomPane() {
+    public WelcomPane(Dimension size) {
+        setPreferredSize(size);
+        setOpaque(false);
+        setMargin(new Insets(10, 10, 10, 10));
+        setForeground(Color.WHITE);
+        setText("Some text message");
         StyledDocument doc = getStyledDocument();
         SimpleAttributeSet center = new SimpleAttributeSet();
         StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);

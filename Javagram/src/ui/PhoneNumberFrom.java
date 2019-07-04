@@ -22,9 +22,9 @@ public class PhoneNumberFrom {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        pnlMain = new MainPanel();
+        pnlMain = new MainPanel(MainPanel.LARGE);
         pnlLogo = new LogoPanel(LogoPanel.LARGE);
-        paneWelcom = new WelcomPane();
+        paneWelcom = new WelcomPane(new Dimension(380, 40));
         txtPhone = new TextInput(TextInput.PHONE_INPUT);
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
     }
@@ -46,14 +46,14 @@ public class PhoneNumberFrom {
         paneWelcom.setText(welcomInput);
         //pnlMain.setLayout(new BoxLayout(pnlMain, BoxLayout.Y_AXIS));
 
-         btnNext.addActionListener(new ActionListener() {
+        btnNext.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (changePanel != null) {
                     changePanel.next(txtPhone.getText());
                 }
             }
-         });
+        });
     }
 
     public JPanel getRootPanel() {
@@ -89,7 +89,10 @@ public class PhoneNumberFrom {
         pnlMain.add(pnlLogo);
         paneWelcom.setForeground(new Color(-1));
         paneWelcom.setMargin(new Insets(10, 10, 10, 10));
+        paneWelcom.setMaximumSize(new Dimension(380, 140));
+        paneWelcom.setMinimumSize(new Dimension(380, 40));
         paneWelcom.setOpaque(false);
+        paneWelcom.setPreferredSize(new Dimension(380, 40));
         paneWelcom.setText("Введите код страны и номер вашего мобильногог телефона");
         pnlMain.add(paneWelcom);
         txtPhone.setCaretColor(new Color(-1));

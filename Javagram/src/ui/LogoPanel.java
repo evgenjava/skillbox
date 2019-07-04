@@ -17,9 +17,11 @@ public class LogoPanel extends JPanel {
     public LogoPanel(String size) {
         String filename;
         if (size.equals(MINI)) {
+            setSize(124, 98);
             filename = "res/images/logo-mini.png";
         }
         else {
+            setSize(165, 168);
             filename = "res/images/logo.png";
         }
 
@@ -28,6 +30,7 @@ public class LogoPanel extends JPanel {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        setOpaque(false);
     }
 
     @Override
