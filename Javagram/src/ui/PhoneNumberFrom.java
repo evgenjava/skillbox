@@ -13,8 +13,10 @@ public class PhoneNumberFrom {
     private JPanel rootPanel;
     private MainPanel mainPanel;
     private WelcomPane paneWelcom;
-    private JTextField txtPhone;
+    private TextInput txtPhone;
     private BigButton btnNext;
+    private IconPanel textFieldIcon;
+    private EditPanel editPanel;
 
 
     private ChangePanel changePanel;
@@ -25,6 +27,8 @@ public class PhoneNumberFrom {
         paneWelcom = new WelcomPane(new Dimension(380, 60), welcomInput);
         txtPhone = new TextInput(TextInput.PHONE_INPUT);
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
+        textFieldIcon = new IconPanel(IconPanel.ICON_PHONE);
+        editPanel = new EditPanel(TextInput.WIDTH + IconPanel.WIDTH);
     }
 
     public PhoneNumberFrom() {
@@ -43,7 +47,9 @@ public class PhoneNumberFrom {
         });
 
         mainPanel.addComponent(paneWelcom, 270);
-        mainPanel.addComponent(txtPhone, 10);
+        editPanel.addIcon(textFieldIcon);
+        editPanel.addTextField(txtPhone);
+        mainPanel.addComponent(editPanel, 10);
         mainPanel.addComponent(btnNext, 35);
         rootPanel.add(mainPanel, BorderLayout.CENTER);
     }
