@@ -1,5 +1,7 @@
 package ui;
 
+import main.UIResources;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -9,33 +11,45 @@ import java.io.IOException;
 
 public class ControlButton extends JButton {
 
-    public static enum BTN_TYPE {BACK, CLOSE, EDIT, HIDE, PLUS, SEARCH};
+    public static enum BTN_TYPE {BACK, CLOSE, EDIT, HIDE, PLUS, SEARCH, SETTINGS};
 
     private BufferedImage icon;
+    private Dimension size;
 
-    public ControlButton(BTN_TYPE type) {
+    public ControlButton(Dimension size, BTN_TYPE type) {
+        this.size = size;
         switch(type) {
             case BACK:
-                setIcon("res/buttons/icon-back.png");
+                setIcon(UIResources.ICON_BACK);
                 break;
             case CLOSE:
-                setIcon("res/buttons/icon-close.png");
+                setIcon(UIResources.ICON_CLOSE);
+                setOpaque(false);
                 break;
             case EDIT:
-                setIcon("res/buttons/icon-edit.png");
+                setIcon(UIResources.ICON_EDIT);
                 break;
             case HIDE:
-                setIcon("res/buttons/icon-hide.png");
+                setIcon(UIResources.ICON_HIDE);
+                setOpaque(false);
                 break;
             case PLUS:
-                setIcon("res/buttons/icon-plus.png");
+                setIcon(UIResources.ICON_PLUS);
+                setBackground(new Color(242, 242, 242));
                 break;
             case SEARCH:
-                setIcon("res/buttons/icon-search.png");
+                setIcon(UIResources.ICON_SEARCH);
+                setBackground(Color.WHITE);
+                break;
+            case SETTINGS:
+                setIcon(UIResources.ICON_SETTINGS);
+                setBackground(new Color(0, 179, 230));
                 break;
         }
         setBorderPainted(false);
-        setSize(icon.getWidth(), icon.getHeight());
+        setPreferredSize(size);
+        setMinimumSize(size);
+        setMaximumSize(size);
     }
 
     private void setIcon(String fileName) {
@@ -50,7 +64,8 @@ public class ControlButton extends JButton {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (icon != null) {
-            g.drawImage(icon, 0, 0, null);
+
+            g.drawImage(icon, (size.width - icon.getWidth()) / 2, (size.height - icon.getHeight()) / 2, null);
         }
     }
 }

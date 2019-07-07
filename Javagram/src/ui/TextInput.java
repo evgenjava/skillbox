@@ -19,7 +19,6 @@ public class TextInput extends JTextField {
     public static final int LAST_NAME_INPUT = 103;
 
     public static final int WIDTH = 400;
-    private final int CODE_WIDTH = 300;
     private final int HEIGHT = 46;
 
     private Font font;
@@ -31,6 +30,7 @@ public class TextInput extends JTextField {
         setMargin(new Insets(2, 5, 2, 5));
         setOpaque(false);
         setForeground(Color.WHITE);
+        setCaretColor(Color.WHITE);
         loadFont(UIResources.OPEN_SANS_LIGHT);
         switch (typeInput) {
             case PHONE_INPUT:
@@ -41,13 +41,7 @@ public class TextInput extends JTextField {
                 setDocument(new MainPanel.PhoneFilter());
                 setText("+7");
                 break;
-            case CODE_INPUT:
-                setPreferredSize(new Dimension(CODE_WIDTH, HEIGHT));
-                setHorizontalAlignment(JTextField.CENTER);
-                setPreferredSize(new Dimension(CODE_WIDTH, HEIGHT));
-                setMaximumSize(new Dimension(CODE_WIDTH, HEIGHT));
-                setMinimumSize(new Dimension(CODE_WIDTH, HEIGHT));
-                break;
+
         }
     }
 

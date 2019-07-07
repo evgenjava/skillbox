@@ -16,27 +16,42 @@ public class CodeForm {
             "Пожалуйства, введите этот код в поле ниже:";
 
     private JPanel rootPanel;
-    private MainPanel pnlMain;
+    private MainPanel mainPanel;
     private BigButton btnNext;
     private CodeInput txtCode;
     private WelcomPane panePhone;
     private WelcomPane paneWelcom;
+    private IconPanel textFieldIcon;
+    private EditPanel editPanel;
 
 
     private ChangePanel changePanel;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        pnlMain = new MainPanel(MainPanel.MINI);
-        panePhone = new WelcomPane(new Dimension(380, 40), "");
-        paneWelcom = new WelcomPane(new Dimension(380, 60), welcomInput);
+        mainPanel = new MainPanel(MainPanel.MINI);
+        panePhone = new WelcomPane(new Dimension(380, 60), "");
+        paneWelcom = new WelcomPane(new Dimension(380, 80), welcomInput);
+        txtCode = new CodeInput();
+        btnNext = new BigButton("ПРОДОЛЖИТЬ");
+        textFieldIcon = new IconPanel(IconPanel.ICON_LOCK);
+        editPanel = new EditPanel(CodeInput.WIDTH + IconPanel.WIDTH);
     }
 
     public CodeForm() {
-        $$$setupUI$$$();
 
-        panePhone.setFontSize(32.0F);
+        $$$setupUI$$$();
+        createUIComponents();
+        panePhone.setFontSize(40.0F);
         paneWelcom.setFontSize(16.0F);
+        mainPanel.addComponent(panePhone, 180);
+        mainPanel.addComponent(paneWelcom, 25);
+        editPanel.addIcon(textFieldIcon);
+        editPanel.addTextField(txtCode);
+        mainPanel.addComponent(editPanel, 10);
+        mainPanel.addComponent(btnNext, 35);
+        rootPanel.add(mainPanel, BorderLayout.CENTER);
+
         btnNext.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

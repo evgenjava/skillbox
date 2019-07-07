@@ -12,13 +12,15 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="119aa" binding="pnlInfo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+          <grid id="119aa" binding="pnlInfo" layout-manager="FlowLayout" hgap="5" vgap="12" flow-align="2">
             <constraints border-constraint="North"/>
             <properties>
-              <background color="-14181902"/>
-              <maximumSize width="2147483647" height="40"/>
-              <minimumSize width="300" height="40"/>
-              <preferredSize width="300" height="40"/>
+              <autoscrolls value="true"/>
+              <background color="-16731162"/>
+              <maximumSize width="2147483647" height="50"/>
+              <minimumSize width="300" height="50"/>
+              <opaque value="true"/>
+              <preferredSize width="300" height="50"/>
             </properties>
             <border type="none"/>
             <children>
@@ -27,15 +29,6 @@
                 <properties>
                   <foreground color="-2363905"/>
                   <text value="Вадим Иванов"/>
-                </properties>
-              </component>
-              <component id="21b85" class="javax.swing.JButton" binding="btnSetup">
-                <constraints/>
-                <properties>
-                  <maximumSize width="30" height="30"/>
-                  <minimumSize width="30" height="30"/>
-                  <preferredSize width="30" height="30"/>
-                  <text value="*"/>
                 </properties>
               </component>
             </children>
@@ -69,26 +62,19 @@
                       <grid id="cfcae" binding="pnlSearch" layout-manager="BorderLayout" hgap="0" vgap="0">
                         <constraints border-constraint="North"/>
                         <properties>
-                          <maximumSize width="2147483647" height="30"/>
-                          <minimumSize width="0" height="30"/>
-                          <preferredSize width="0" height="30"/>
+                          <background color="-65794"/>
+                          <maximumSize width="2147483647" height="50"/>
+                          <minimumSize width="0" height="50"/>
+                          <opaque value="true"/>
+                          <preferredSize width="0" height="50"/>
                         </properties>
                         <border type="none"/>
                         <children>
-                          <component id="b6fab" class="javax.swing.JButton" binding="btnSearch">
-                            <constraints border-constraint="West"/>
-                            <properties>
-                              <maximumSize width="30" height="30"/>
-                              <minimumSize width="30" height="30"/>
-                              <opaque value="false"/>
-                              <preferredSize width="30" height="30"/>
-                              <text value="S"/>
-                            </properties>
-                          </component>
                           <component id="d22bc" class="javax.swing.JTextField" binding="txtSearch">
                             <constraints border-constraint="Center"/>
                             <properties>
-                              <text value="Поиск"/>
+                              <text value=""/>
+                              <toolTipText value="Поиск"/>
                             </properties>
                           </component>
                         </children>
@@ -101,18 +87,7 @@
                           <preferredSize width="0" height="50"/>
                         </properties>
                         <border type="none"/>
-                        <children>
-                          <component id="3b643" class="javax.swing.JButton" binding="btnAdd">
-                            <constraints/>
-                            <properties>
-                              <foreground color="-1314561"/>
-                              <maximumSize width="30" height="30"/>
-                              <minimumSize width="30" height="30"/>
-                              <preferredSize width="30" height="30"/>
-                              <text value="+"/>
-                            </properties>
-                          </component>
-                        </children>
+                        <children/>
                       </grid>
                       <grid id="b4fc1" binding="pnlContacts" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
                         <constraints border-constraint="Center"/>

@@ -7,9 +7,9 @@
     <properties>
       <background color="-1579033"/>
       <enabled value="false"/>
-      <maximumSize width="905" height="35"/>
-      <minimumSize width="905" height="35"/>
-      <preferredSize width="905" height="35"/>
+      <maximumSize width="905" height="36"/>
+      <minimumSize width="905" height="36"/>
+      <preferredSize width="905" height="36"/>
     </properties>
     <border type="none"/>
     <children>

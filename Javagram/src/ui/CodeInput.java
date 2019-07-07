@@ -12,20 +12,20 @@ import java.io.IOException;
 
 public class CodeInput extends JPasswordField {
 
-    private final int WIDTH = 300;
+    public static final int WIDTH = 150;
     private final int HEIGHT = 46;
 
-    private BufferedImage icon;
     private Font font;
 
     public CodeInput() {
-        Border border = BorderFactory.createMatteBorder(0, 0, 2, 0, Color.WHITE);
+        Border border = BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE);
         setBorder(border);
         setMargin(new Insets(2, 5, 2,5));
         setOpaque(false);
+        setHorizontalAlignment(CENTER);
         setForeground(Color.WHITE);
+        setCaretColor(Color.WHITE);
         loadFont(UIResources.OPEN_SANS_LIGHT);
-        loadIcon(UIResources.ICON_LOCK);
         setFont(font.deriveFont(40.0F));
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setHorizontalAlignment(JTextField.CENTER);
@@ -42,18 +42,5 @@ public class CodeInput extends JPasswordField {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    private void loadIcon(String fileName) {
-        try {
-            icon = ImageIO.read(new File(fileName));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        g.drawImage(icon, 5, 3, null);
     }
 }

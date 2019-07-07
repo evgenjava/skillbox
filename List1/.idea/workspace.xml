@@ -3,33 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="030c9b77-ce00-4eaa-9118-b54ccdb0a01d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/META-INF/Javagram.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/main/UIResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/main/UIResources.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$BTN_TYPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$BTN_TYPE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel$PhoneFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel$PhoneFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel$PhoneVerifyer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MainPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhonePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhonePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/WelcomPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/WelcomPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/BigButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/BigButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/main/UIResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/main/UIResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhoneNumberFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/PhonePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/PhonePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/TextInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/WelcomPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/WelcomPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -100,7 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,7 +111,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,7 +160,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1812" height="981" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21655329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

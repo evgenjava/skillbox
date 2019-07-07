@@ -52,9 +52,9 @@ public class ControlPanel {
         rootPanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 8));
         rootPanel.setBackground(new Color(-1579033));
         rootPanel.setEnabled(false);
-        rootPanel.setMaximumSize(new Dimension(905, 35));
-        rootPanel.setMinimumSize(new Dimension(905, 35));
-        rootPanel.setPreferredSize(new Dimension(905, 35));
+        rootPanel.setMaximumSize(new Dimension(905, 36));
+        rootPanel.setMinimumSize(new Dimension(905, 36));
+        rootPanel.setPreferredSize(new Dimension(905, 36));
         btnDown.setMaximumSize(new Dimension(18, 18));
         btnDown.setMinimumSize(new Dimension(18, 18));
         btnDown.setOpaque(false);
@@ -78,7 +78,7 @@ public class ControlPanel {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        btnDown = new ControlButton(ControlButton.BTN_TYPE.HIDE);
-        btnClose = new ControlButton(ControlButton.BTN_TYPE.CLOSE);
+        btnDown = new ControlButton(new Dimension(18, 18), ControlButton.BTN_TYPE.HIDE);
+        btnClose = new ControlButton(new Dimension(18, 18), ControlButton.BTN_TYPE.CLOSE);
     }
 }
