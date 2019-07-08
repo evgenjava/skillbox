@@ -23,15 +23,7 @@
               <preferredSize width="300" height="50"/>
             </properties>
             <border type="none"/>
-            <children>
-              <component id="16bdf" class="javax.swing.JLabel" binding="lblName">
-                <constraints/>
-                <properties>
-                  <foreground color="-2363905"/>
-                  <text value="Вадим Иванов"/>
-                </properties>
-              </component>
-            </children>
+            <children/>
           </grid>
           <grid id="ae243" binding="pnlMain" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints border-constraint="Center"/>

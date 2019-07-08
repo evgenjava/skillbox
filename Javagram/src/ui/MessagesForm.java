@@ -51,9 +51,12 @@ public class MessagesForm {
         pnlSearch.add(btnSearch, BorderLayout.WEST);
         txtSearch.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE));
         pnlAddButton.add(btnAdd);
-        pnlInfo.add(infoFace);
-        pnlInfo.add(btnSetup);
         lblName.setFont(lightFont.deriveFont(14.0F));
+        lblName.setForeground(Color.WHITE);
+        pnlInfo.add(infoFace);
+        pnlInfo.add(lblName);
+        pnlInfo.add(btnSetup);
+
         pnlContacts.setLayout(new BoxLayout(pnlContacts, BoxLayout.Y_AXIS));
         pnlMessages.setLayout(new BoxLayout(pnlMessages, BoxLayout.Y_AXIS));
         btnSend.addActionListener(new ActionListener() {
@@ -85,6 +88,7 @@ public class MessagesForm {
         btnAdd = new ControlButton(new Dimension(26, 26), ControlButton.BTN_TYPE.PLUS);
         btnSetup = new ControlButton(new Dimension(40, 21), ControlButton.BTN_TYPE.SETTINGS);
         infoFace = new FacePanel(FacePanel.MASK_BLUE_MINI);
+        lblName = new JLabel("Вадим Иванов");
         loadFont(UIResources.OPEN_SANS_LIGHT);
 
     }
@@ -129,7 +133,7 @@ public class MessagesForm {
         pnlFloor.setLayout(new BorderLayout(0, 0));
         rootPanel.add(pnlFloor, BorderLayout.CENTER);
         pnlInfo = new JPanel();
-        pnlInfo.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 14));
+        pnlInfo.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 12));
         pnlInfo.setAutoscrolls(true);
         pnlInfo.setBackground(new Color(-16731162));
         pnlInfo.setMaximumSize(new Dimension(2147483647, 50));
@@ -137,10 +141,6 @@ public class MessagesForm {
         pnlInfo.setOpaque(true);
         pnlInfo.setPreferredSize(new Dimension(300, 50));
         pnlFloor.add(pnlInfo, BorderLayout.NORTH);
-        lblName = new JLabel();
-        lblName.setForeground(new Color(-2363905));
-        lblName.setText("Вадим Иванов");
-        pnlInfo.add(lblName);
         pnlMain = new JPanel();
         pnlMain.setLayout(new BorderLayout(0, 0));
         pnlMain.setFocusCycleRoot(true);
