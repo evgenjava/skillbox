@@ -23,13 +23,15 @@ public class FacePanel extends JPanel {
     private final Dimension sizeNormal = new Dimension(41, 41);
     private final Dimension sizeBig = new Dimension(66, 66);
 
+    private Dimension actualSize;
+
     private BufferedImage mask;
 
     public FacePanel(int maskType) {
         switch(maskType) {
             case MASK_BLUE_MINI:
                 setMask(UIResources.MASK_BLUE_MINI);
-                setBackground(new Color(0, 179, 230));
+                setBackground(UIResources.LIGHT_BLUE_COLOR);
                 setActualSize(sizeMini);
                 break;
             case MASK_DARK_GRAY_BIG:
@@ -66,6 +68,7 @@ public class FacePanel extends JPanel {
     }
 
     private void setActualSize(Dimension size) {
+        actualSize = size;
         setPreferredSize(size);
         setMaximumSize(size);
         setMinimumSize(size);
@@ -77,6 +80,10 @@ public class FacePanel extends JPanel {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Dimension getActualSize() {
+        return actualSize;
     }
 
     @Override

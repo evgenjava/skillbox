@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="030c9b77-ce00-4eaa-9118-b54ccdb0a01d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/META-INF/Javagram.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/main/UIResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/main/UIResources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$BTN_TYPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton$BTN_TYPE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/main/UIResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/main/UIResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/CodeInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/CodeInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/MessagesForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Javagram/src/ui/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/src/ui/TextInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="030c9b77-ce00-4eaa-9118-b54ccdb0a01d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +135,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1812" height="981" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21655329" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21882086" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -209,8 +186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

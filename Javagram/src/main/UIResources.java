@@ -1,5 +1,9 @@
 package main;
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+
 public class UIResources {
 
     public static final String LARGE_LOGO = "res/images/logo.png";
@@ -30,5 +34,45 @@ public class UIResources {
     public static final String MASK_WHITE = "res/mask/mask-white.png";
     public static final String MASK_WHITE_MINI = "res/mask/mask-white-mini.png";
     public static final String MASK_WHITE_ONLINE = "res/mask/mask-white-online.png";
+
+    public static final Color LIGHT_BLUE_COLOR = new Color(0, 181, 234);
+    public static final Color PROMPT_COLOR = new Color(172, 172, 172);
+
+    private static Font OpenSansLigth;
+    private static Font OpenSansRegular;
+    private static Font OpenSansSemiBold;
+
+    public static Font getFont(String fontName) {
+        switch(fontName) {
+            case OPEN_SANS_LIGHT:
+                if (OpenSansLigth == null) {
+                    OpenSansLigth = loadFont(fontName);
+                }
+                return OpenSansLigth;
+            case OPEN_SANS_REGULAR:
+                if (OpenSansRegular == null) {
+                    OpenSansRegular = loadFont(fontName);
+                }
+                return OpenSansRegular;
+            case OPEN_SANS_SEMIBOLD:
+                if (OpenSansSemiBold == null) {
+                    OpenSansSemiBold = loadFont(fontName);
+                }
+                return OpenSansSemiBold;
+             default: return Font.getFont(Font.SANS_SERIF);
+        }
+    }
+
+    private static Font loadFont(String fontName) {
+        Font font = null;
+        try {
+            font = Font.createFont(Font.TRUETYPE_FONT, new File(fontName));
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return font;
+    }
 
 }

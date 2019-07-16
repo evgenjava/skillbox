@@ -1,13 +1,9 @@
 package ui;
 
-import com.sun.org.apache.bcel.internal.classfile.Code;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
 
 public class CodeForm {
 
@@ -16,11 +12,11 @@ public class CodeForm {
             "Пожалуйства, введите этот код в поле ниже:";
 
     private JPanel rootPanel;
-    private MainPanel mainPanel;
+    private LogoPanel mainPanel;
     private BigButton btnNext;
     private CodeInput txtCode;
-    private WelcomPane panePhone;
-    private WelcomPane paneWelcom;
+    private TextPane panePhone;
+    private TextPane paneWelcom;
     private IconPanel textFieldIcon;
     private EditPanel editPanel;
 
@@ -29,9 +25,9 @@ public class CodeForm {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        mainPanel = new MainPanel(MainPanel.MINI);
-        panePhone = new WelcomPane(new Dimension(380, 60), "");
-        paneWelcom = new WelcomPane(new Dimension(380, 80), welcomInput);
+        mainPanel = new LogoPanel(LogoPanel.MINI);
+        panePhone = new TextPane(new Dimension(380, 60), "");
+        paneWelcom = new TextPane(new Dimension(380, 80), welcomInput);
         txtCode = new CodeInput();
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
         textFieldIcon = new IconPanel(IconPanel.ICON_LOCK);
@@ -43,7 +39,9 @@ public class CodeForm {
         $$$setupUI$$$();
         createUIComponents();
         panePhone.setFontSize(40.0F);
+        panePhone.setForeground(Color.WHITE);
         paneWelcom.setFontSize(16.0F);
+        panePhone.setForeground(Color.WHITE);
         mainPanel.addComponent(panePhone, 180);
         mainPanel.addComponent(paneWelcom, 25);
         editPanel.addIcon(textFieldIcon);
@@ -84,7 +82,10 @@ public class CodeForm {
     private void $$$setupUI$$$() {
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
-        rootPanel.setMaximumSize(new Dimension(905, 596));
+        rootPanel.setMaximumSize(new Dimension(905, 630));
+        rootPanel.setMinimumSize(new Dimension(905, 630));
+        rootPanel.setPreferredSize(new Dimension(905, 630));
+        rootPanel.setVerifyInputWhenFocusTarget(true);
     }
 
     /**

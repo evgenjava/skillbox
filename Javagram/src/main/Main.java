@@ -2,6 +2,7 @@ package main;
 
 import core.Chat;
 import core.Contact;
+import core.UserProfile;
 import ui.*;
 
 import javax.swing.*;
@@ -12,7 +13,7 @@ import java.util.List;
 public class Main {
 
     public static final int WIDTH = 905;
-    public static final int HEIGHT = 622;
+    public static final int HEIGHT = 630;
 
     public static String[] names = {"Андрей Пертров", "Петр Сергеев", "Дмитрий Петров"};
     public static JFrame frame = new JFrame();
@@ -36,7 +37,7 @@ public class Main {
             public void next(String param) {
                 Container contentPane = frame.getContentPane();
                 contentPane.removeAll();
-                frame.setContentPane(createCodeForm(param).getRootPanel());
+                frame.setContentPane(createProfileForm().getRootPanel());
                 frame.revalidate();
             }
         };
@@ -68,11 +69,28 @@ public class Main {
         return codeForm;
     }
 
+
+    public static RegistrationForm createRegistrationForm() {
+        RegistrationForm registrationForm = new RegistrationForm();
+        JPanel controlPanel = new ControlPanel().getRootPanel();
+        JPanel rootPanel = registrationForm.getRootPanel();
+        rootPanel.add(controlPanel, BorderLayout.NORTH);
+        return registrationForm;
+    }
+
+    public static ProfileForm createProfileForm() {
+        ProfileForm profileForm = new ProfileForm(new UserProfile());
+        JPanel controlPanel = new ControlPanel().getRootPanel();
+        JPanel rootPanel = profileForm.getRootPanel();
+        rootPanel.add(controlPanel, BorderLayout.NORTH);
+        return profileForm;
+    }
+
     public static MessagesForm createMessagesForm() {
         MessagesForm messagesForm = new MessagesForm();
-        JPanel conntrolPanel = new ControlPanel().getRootPanel();
+        JPanel controlPanel = new ControlPanel().getRootPanel();
         JPanel rootPanel = messagesForm.getRootPanel();
-        rootPanel.add(conntrolPanel, BorderLayout.NORTH);
+        rootPanel.add(controlPanel, BorderLayout.NORTH);
         messagesForm.setChatList(createChatList());
         return messagesForm;
     }

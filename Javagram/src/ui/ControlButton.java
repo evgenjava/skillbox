@@ -21,6 +21,7 @@ public class ControlButton extends JButton {
         switch(type) {
             case BACK:
                 setIcon(UIResources.ICON_BACK);
+                setBackground(Color.BLACK);
                 break;
             case CLOSE:
                 setIcon(UIResources.ICON_CLOSE);

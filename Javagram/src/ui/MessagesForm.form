@@ -12,7 +12,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="119aa" binding="pnlInfo" layout-manager="FlowLayout" hgap="5" vgap="12" flow-align="2">
+          <grid id="119aa" binding="pnlInfo" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="12" flow-align="2">
             <constraints border-constraint="North"/>
             <properties>
               <autoscrolls value="true"/>

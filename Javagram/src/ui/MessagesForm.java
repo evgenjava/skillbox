@@ -3,10 +3,12 @@ package ui;
 import core.Chat;
 import main.UIResources;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,19 +44,21 @@ public class MessagesForm {
     private List<Chat> chatList;
     private List<ListItemForm> listItems = new ArrayList<>();
     private Font lightFont;
-    private FacePanel infoFace;
+    private NamePanel userPanel;
+    private BufferedImage logoMicro;
 
 
     public MessagesForm() {
         createUIComponents();
         $$$setupUI$$$();
+        //поисковая панель
+        setLogo(UIResources.MICRO_LOGO);
         pnlSearch.add(btnSearch, BorderLayout.WEST);
         txtSearch.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE));
+        //кнопка plus
         pnlAddButton.add(btnAdd);
-        lblName.setFont(lightFont.deriveFont(14.0F));
-        lblName.setForeground(Color.WHITE);
-        pnlInfo.add(infoFace);
-        pnlInfo.add(lblName);
+
+        pnlInfo.add(userPanel);
         pnlInfo.add(btnSetup);
 
         pnlContacts.setLayout(new BoxLayout(pnlContacts, BoxLayout.Y_AXIS));
@@ -68,16 +72,6 @@ public class MessagesForm {
         });
     }
 
-    private void loadFont(String font) {
-        try {
-            lightFont = Font.createFont(Font.TRUETYPE_FONT, new File(UIResources.OPEN_SANS_LIGHT));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public JPanel getRootPanel() {
         return rootPanel;
     }
@@ -87,10 +81,32 @@ public class MessagesForm {
         btnSearch = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.SEARCH);
         btnAdd = new ControlButton(new Dimension(26, 26), ControlButton.BTN_TYPE.PLUS);
         btnSetup = new ControlButton(new Dimension(40, 21), ControlButton.BTN_TYPE.SETTINGS);
-        infoFace = new FacePanel(FacePanel.MASK_BLUE_MINI);
-        lblName = new JLabel("Вадим Иванов");
-        loadFont(UIResources.OPEN_SANS_LIGHT);
+        pnlInfo = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                if (logoMicro != null) {
+                    g.drawImage(logoMicro, 25, (getHeight() - logoMicro.getHeight()) / 2, null);
+                }
+            }
+        };
+        pnlInfo.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 12));
+        pnlInfo.setBackground(UIResources.LIGHT_BLUE_COLOR);
+        pnlInfo.setMaximumSize(new Dimension(600, 50));
+        pnlInfo.setMinimumSize(new Dimension(300, 50));
+        pnlInfo.setOpaque(true);
+        pnlInfo.setPreferredSize(new Dimension(300, 50));
+        userPanel = new NamePanel("Вадим Иванов", UIResources.LIGHT_BLUE_COLOR, Color.WHITE, FacePanel.MASK_BLUE_MINI);
+        lightFont = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
 
+    }
+
+    private void setLogo(String fileName) {
+        try {
+            logoMicro = ImageIO.read(new File(fileName));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setChatList(List<Chat> list) {
@@ -127,13 +143,12 @@ public class MessagesForm {
      * @noinspection ALL
      */
     private void $$$setupUI$$$() {
+        createUIComponents();
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
         pnlFloor = new JPanel();
         pnlFloor.setLayout(new BorderLayout(0, 0));
         rootPanel.add(pnlFloor, BorderLayout.CENTER);
-        pnlInfo = new JPanel();
-        pnlInfo.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 12));
         pnlInfo.setAutoscrolls(true);
         pnlInfo.setBackground(new Color(-16731162));
         pnlInfo.setMaximumSize(new Dimension(2147483647, 50));

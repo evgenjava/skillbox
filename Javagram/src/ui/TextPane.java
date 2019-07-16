@@ -10,18 +10,17 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-public class WelcomPane extends JTextPane {
+public class TextPane extends JTextPane {
 
     private Font font;
 
-    public WelcomPane(Dimension size, String message) {
+    public TextPane(Dimension size, String message) {
         loadFont(UIResources.OPEN_SANS_LIGHT);
         setPreferredSize(size);
         setMinimumSize(size);
         setMaximumSize(size);
         setOpaque(false);
         setMargin(new Insets(10, 10, 10, 10));
-        setForeground(Color.WHITE);
         setEditable(false);
         setText(message);
         StyledDocument doc = getStyledDocument();

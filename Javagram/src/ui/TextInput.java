@@ -6,53 +6,86 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.PlainDocument;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class TextInput extends JTextField {
+public class TextInput extends PromptTextField {
 
     public static final int PHONE_INPUT = 100;
-    public static final int CODE_INPUT = 101;
-    public static final int FIRST_NAME_INPUT = 102;
-    public static final int LAST_NAME_INPUT = 103;
+    public static final int NAME_INPUT = 101;
 
-    public static final int WIDTH = 400;
     private final int HEIGHT = 46;
 
     private Font font;
+    private Border border;
+    private int width;
 
-    public TextInput(int typeInput) {
+    public TextInput(int typeInput, String prompt) {
+        super(prompt);
 
-        Border border = BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE);
-        setBorder(border);
-        setMargin(new Insets(2, 5, 2, 5));
+        setMargin(new Insets(2, 5, 3, 5));
         setOpaque(false);
-        setForeground(Color.WHITE);
         setCaretColor(Color.WHITE);
-        loadFont(UIResources.OPEN_SANS_LIGHT);
+        font = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
+
         switch (typeInput) {
             case PHONE_INPUT:
+                border = BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE);
+                setBorder(border);
                 setFont(font.deriveFont(40.0F));
-                setPreferredSize(new Dimension(WIDTH, HEIGHT));
-                setMaximumSize(new Dimension(WIDTH, HEIGHT));
-                setMinimumSize(new Dimension(WIDTH, HEIGHT));
-                setDocument(new MainPanel.PhoneFilter());
-                setText("+7");
+                width = 400;
+                setPreferredSize(new Dimension(width, HEIGHT));
+                setMaximumSize(new Dimension(width, HEIGHT));
+                setMinimumSize(new Dimension(width, HEIGHT));
+                setDocument(new PhoneFilter());
+                setText("+7 ");
+                break;
+            case NAME_INPUT:
+                border = BorderFactory.createMatteBorder(0, 0, 2, 0, Color.WHITE);
+                setBorder(border);
+                setFont(font.deriveFont(38.0F));
+                width = 300;
+                setPreferredSize(new Dimension(width, HEIGHT));
+                setMaximumSize(new Dimension(width, HEIGHT));
+                setMinimumSize(new Dimension(width, HEIGHT));
                 break;
 
         }
     }
 
-    private void loadFont(String fontName) {
-        try {
-            font = Font.createFont(Font.TRUETYPE_FONT, new File(fontName));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+    @Override
+    public int getWidth() {
+        return width;
+    }
+
+    public void setFilter(PlainDocument filter) {
+        setDocument(filter);
+    }
+
+    public static class TextFilter extends PlainDocument {
+        @Override
+        public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            char c = str.charAt(0);
+            if (Character.isLetter(c) || Character.isSpaceChar(c)) {
+                super.insertString(offs, str, a);
+            }
         }
     }
 
+    public static class PhoneFilter extends PlainDocument {
+        private final String symbols = "()-+";
+        @Override
+        public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            char c = str.charAt(0);
+            System.out.println(offs);
+            if (Character.isDigit(c) || Character.isSpaceChar(c) || symbols.indexOf(c) >= 0) {
+                super.insertString(offs, str, a);
+            }
+        }
+    }
 }

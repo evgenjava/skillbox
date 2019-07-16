@@ -4,15 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
 
 public class PhoneNumberFrom {
 
     private final String welcomInput = "Введите код страны и номер\nвашего мобильного телефона";
     private JPanel rootPanel;
-    private MainPanel mainPanel;
-    private WelcomPane paneWelcom;
+    private LogoPanel mainPanel;
+    private TextPane paneWelcom;
     private TextInput txtPhone;
     private BigButton btnNext;
     private IconPanel textFieldIcon;
@@ -23,12 +21,13 @@ public class PhoneNumberFrom {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        mainPanel = new MainPanel(MainPanel.LARGE);
-        paneWelcom = new WelcomPane(new Dimension(380, 60), welcomInput);
-        txtPhone = new TextInput(TextInput.PHONE_INPUT);
+        mainPanel = new LogoPanel(LogoPanel.LARGE);
+        paneWelcom = new TextPane(new Dimension(380, 60), welcomInput);
+        paneWelcom.setForeground(Color.WHITE);
+        txtPhone = new TextInput(TextInput.PHONE_INPUT, "");
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
         textFieldIcon = new IconPanel(IconPanel.ICON_PHONE);
-        editPanel = new EditPanel(TextInput.WIDTH + IconPanel.WIDTH);
+        editPanel = new EditPanel(txtPhone.getWidth() + IconPanel.WIDTH);
     }
 
     public PhoneNumberFrom() {
@@ -72,9 +71,9 @@ public class PhoneNumberFrom {
     private void $$$setupUI$$$() {
         rootPanel = new JPanel();
         rootPanel.setLayout(new BorderLayout(0, 0));
-        rootPanel.setMaximumSize(new Dimension(905, 622));
-        rootPanel.setMinimumSize(new Dimension(905, 622));
-        rootPanel.setPreferredSize(new Dimension(905, 622));
+        rootPanel.setMaximumSize(new Dimension(905, 630));
+        rootPanel.setMinimumSize(new Dimension(905, 630));
+        rootPanel.setPreferredSize(new Dimension(905, 630));
     }
 
     /**

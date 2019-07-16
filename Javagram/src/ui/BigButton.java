@@ -21,19 +21,14 @@ public class BigButton extends JButton {
 
     public BigButton(String caption) {
         this.caption = caption;
-        Color color = new Color(0, 181, 234);
+        Color color = UIResources.LIGHT_BLUE_COLOR;
 
-
-        //Border border = BorderFactory.createLineBorder(color ,4 ,true);
-        //setBorder(border);
         setBackground(color);
         setForeground(Color.WHITE);
         setBorderPainted(false);
+        font = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
         try {
-            font = Font.createFont(Font.TRUETYPE_FONT, new File(UIResources.OPEN_SANS_LIGHT));
             background = ImageIO.read(new File(UIResources.BUTTON_BACKGROUND));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,7 +37,6 @@ public class BigButton extends JButton {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setFont(font.deriveFont(24.F));
         setOpaque(false);
-        //setText(caption);
     }
 
     @Override
