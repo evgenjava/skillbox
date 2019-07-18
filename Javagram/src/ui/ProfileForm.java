@@ -23,16 +23,17 @@ public class ProfileForm {
         blackPanel = new BlackPanel();
         bottomBlackPanel = new BottomBlackPanel();
         btnExit = new ExitButton();
-        phonePane = new TextPane(new Dimension(100, 30), "+7999 212 55 49");
+        phonePane = new TextPane(new Dimension(150, 30), "+7999 212 55 49");
         phonePane.setForeground(Color.WHITE);
+        phonePane.setFontSize(18.0F);
     }
 
     public ProfileForm(UserProfile uf) {
         this.userProfile = uf;
         createUIComponents();
         JPanel eastPanel = createEastPanel();
-        eastPanel.add(btnExit);
         eastPanel.add(phonePane);
+        eastPanel.add(btnExit);
         bottomBlackPanel.addEastPanel(eastPanel);
         rootPanel.add(blackPanel, BorderLayout.CENTER);
         rootPanel.add(bottomBlackPanel, BorderLayout.SOUTH);
@@ -45,8 +46,8 @@ public class ProfileForm {
     private JPanel createEastPanel() {
         FlowLayout flowLayout = new FlowLayout(FlowLayout.RIGHT);
         Dimension bSize = btnExit.getPreferredSize();
-        flowLayout.setHgap(40);
-        flowLayout.setVgap((BottomBlackPanel.HEIGHT - bSize.height) / 2);
+        flowLayout.setHgap(20);
+        flowLayout.setVgap(20);//(BottomBlackPanel.HEIGHT - bSize.height) / 2);
         JPanel panel = new JPanel(flowLayout);
         panel.setOpaque(false);
         panel.setPreferredSize(new Dimension(400, BottomBlackPanel.HEIGHT));

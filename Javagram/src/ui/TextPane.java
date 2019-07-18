@@ -15,7 +15,7 @@ public class TextPane extends JTextPane {
     private Font font;
 
     public TextPane(Dimension size, String message) {
-        loadFont(UIResources.OPEN_SANS_LIGHT);
+        font = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
         setPreferredSize(size);
         setMinimumSize(size);
         setMaximumSize(size);
@@ -27,16 +27,6 @@ public class TextPane extends JTextPane {
         SimpleAttributeSet center = new SimpleAttributeSet();
         StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);
         doc.setParagraphAttributes(0, doc.getLength(), center, false);
-    }
-
-    private void loadFont(String fontName) {
-        try {
-            font = Font.createFont(Font.TRUETYPE_FONT, new File(fontName));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     public void setFontSize(float size) {
