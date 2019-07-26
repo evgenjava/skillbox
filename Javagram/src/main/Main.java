@@ -24,7 +24,7 @@ public class Main {
         frame.setContentPane(createFormNumberForm().getRootPanel());
         //frame.setContentPane(new PhonePanel());
         frame.setSize(WIDTH, HEIGHT);
-        frame.setLocationByPlatform(true);
+        frame.setLocationRelativeTo(null);
         frame.setTitle("Javagram");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setUndecorated(true);
@@ -32,14 +32,11 @@ public class Main {
     }
 
     public static PhoneNumberFrom createFormNumberForm() {
-        ChangePanel change = new ChangePanel() {
-            @Override
-            public void next(String param) {
-                Container contentPane = frame.getContentPane();
-                contentPane.removeAll();
-                frame.setContentPane(createProfileForm().getRootPanel());
-                frame.revalidate();
-            }
+        ChangePanel change = (param) -> {
+            Container contentPane = frame.getContentPane();
+            contentPane.removeAll();
+            frame.setContentPane(createCodeForm(param).getRootPanel());
+            frame.revalidate();
         };
 
         PhoneNumberFrom phoneNumberFrom = new PhoneNumberFrom();
@@ -51,15 +48,13 @@ public class Main {
     }
 
     public static CodeForm createCodeForm(String param) {
-        ChangePanel change = new ChangePanel() {
-            @Override
-            public void next(String param) {
-                Container contentPane = frame.getContentPane();
-                contentPane.removeAll();
-                frame.setContentPane(createMessagesForm().getRootPanel());
-                frame.revalidate();
-            }
+        ChangePanel change = (param1) -> {
+            Container contentPane = frame.getContentPane();
+            contentPane.removeAll();
+            frame.setContentPane(createMessagesForm().getRootPanel());
+            frame.revalidate();
         };
+
         CodeForm codeForm = new CodeForm();
         JPanel conntrolPanel = new ControlPanel().getRootPanel();
         JPanel rootPanel = codeForm.getRootPanel();
@@ -79,11 +74,32 @@ public class Main {
     }
 
     public static ProfileForm createProfileForm() {
-        ProfileForm profileForm = new ProfileForm(new UserProfile());
+        UserProfile userProfile = new UserProfile();
+        userProfile.setFirstName("Вадим");
+        userProfile.setLastName("Иванов");
+        ProfileForm profileForm = new ProfileForm(userProfile);
         JPanel controlPanel = new ControlPanel().getRootPanel();
         JPanel rootPanel = profileForm.getRootPanel();
         rootPanel.add(controlPanel, BorderLayout.NORTH);
         return profileForm;
+    }
+
+    public static AddContactForm createAddContactForm() {
+
+        AddContactForm addContactForm = new AddContactForm();
+        JPanel controlPanel = new ControlPanel().getRootPanel();
+        JPanel rootPanel = addContactForm.getRootPanel();
+        rootPanel.add(controlPanel, BorderLayout.NORTH);
+        return addContactForm;
+    }
+
+    public static EditContactForm createEditContactForm() {
+        Contact contact = new Contact("Екатерина Савельева", "+7 999 212-55-49" );
+        EditContactForm editContactForm = new EditContactForm(contact);
+        JPanel controlPanel = new ControlPanel().getRootPanel();
+        JPanel rootPanel = editContactForm.getRootPanel();
+        rootPanel.add(controlPanel, BorderLayout.NORTH);
+        return editContactForm;
     }
 
     public static MessagesForm createMessagesForm() {
@@ -98,7 +114,7 @@ public class Main {
     public static List<Chat> createChatList() {
         List<Chat> list = new ArrayList<>();
         for (int i = 0; i < names.length; i++) {
-            list.add(new Chat(new Contact(names[i])));
+            list.add(new Chat(new Contact(names[i], "+79992125549")));
         }
         return list;
     }

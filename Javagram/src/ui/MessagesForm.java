@@ -21,6 +21,7 @@ public class MessagesForm {
     private JLabel lblName;
     private ControlButton btnSetup;
     private ControlButton btnAdd;
+    private ControlButton btnEdit;
     private JPanel pnlContacts;
     private JPanel pnlMain;
     private JSplitPane paneContent;
@@ -30,11 +31,6 @@ public class MessagesForm {
     private JTextField txtSearch;
     private JPanel pnlAddButton;
     private JPanel pnlCurrentChat;
-    private JPanel pnlSmallPhoto;
-    private JButton btnEdit;
-    private JTextPane paneCurrentName;
-    private JPanel pnlLeftBorder;
-    private JPanel pnlRightBorder;
     private JPanel pnlInputText;
     private JButton btnSend;
     private JPanel pnlChat;
@@ -45,6 +41,8 @@ public class MessagesForm {
     private List<ListItemForm> listItems = new ArrayList<>();
     private Font lightFont;
     private NamePanel userPanel;
+    private NamePanel pnlContact;
+    private JPanel pnlContainer;
     private BufferedImage logoMicro;
 
 
@@ -57,10 +55,19 @@ public class MessagesForm {
         txtSearch.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE));
         //кнопка plus
         pnlAddButton.add(btnAdd);
+        Dimension containerSize = new Dimension(btnSetup.getWidth() + userPanel.getWidth() + 250,
+                btnSetup.getHeight());
 
-        pnlInfo.add(userPanel);
-        pnlInfo.add(btnSetup);
-
+        pnlContainer.setPreferredSize(containerSize);
+        pnlContainer.setMinimumSize(containerSize);
+        pnlContainer.setMaximumSize(containerSize);
+        pnlContainer.setBackground(UIResources.LIGHT_BLUE_COLOR);
+        pnlContainer.add(btnSetup, BorderLayout.EAST);
+        pnlContainer.add(userPanel, BorderLayout.CENTER);
+        pnlInfo.add(pnlContainer, BorderLayout.EAST);
+        //pnlInfo.add(btnSetup);
+        pnlCurrentChat.add(pnlContact, BorderLayout.WEST);
+        pnlCurrentChat.add(btnEdit, BorderLayout.EAST);
         pnlContacts.setLayout(new BoxLayout(pnlContacts, BoxLayout.Y_AXIS));
         pnlMessages.setLayout(new BoxLayout(pnlMessages, BoxLayout.Y_AXIS));
         btnSend.addActionListener(new ActionListener() {
@@ -80,7 +87,8 @@ public class MessagesForm {
         // TODO: place custom component creation code here
         btnSearch = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.SEARCH);
         btnAdd = new ControlButton(new Dimension(26, 26), ControlButton.BTN_TYPE.PLUS);
-        btnSetup = new ControlButton(new Dimension(40, 21), ControlButton.BTN_TYPE.SETTINGS);
+        btnSetup = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.SETTINGS);
+        btnEdit = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.EDIT);
         pnlInfo = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -90,13 +98,17 @@ public class MessagesForm {
                 }
             }
         };
-        pnlInfo.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 12));
+
+        pnlInfo.setLayout(new BorderLayout());
         pnlInfo.setBackground(UIResources.LIGHT_BLUE_COLOR);
         pnlInfo.setMaximumSize(new Dimension(600, 50));
         pnlInfo.setMinimumSize(new Dimension(300, 50));
         pnlInfo.setOpaque(true);
         pnlInfo.setPreferredSize(new Dimension(300, 50));
-        userPanel = new NamePanel("Вадим Иванов", UIResources.LIGHT_BLUE_COLOR, Color.WHITE, FacePanel.MASK_BLUE_MINI);
+        userPanel = new NamePanel("Вадим Иванов", UIResources.LIGHT_BLUE_COLOR, Color.WHITE,
+                FacePanel.MASK_BLUE_MINI, 50);
+        pnlContact = new NamePanel("Петр Сергеев", Color.WHITE, Color.BLACK, FacePanel.MASK_WHITE_MINI, 50);
+        pnlContainer = new JPanel(new BorderLayout());
         lightFont = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
 
     }
@@ -196,25 +208,11 @@ public class MessagesForm {
         paneContent.setRightComponent(pnlChat);
         pnlCurrentChat = new JPanel();
         pnlCurrentChat.setLayout(new BorderLayout(0, 0));
-        pnlCurrentChat.setMaximumSize(new Dimension(2147483647, 30));
-        pnlCurrentChat.setMinimumSize(new Dimension(0, 30));
-        pnlCurrentChat.setPreferredSize(new Dimension(0, 30));
+        pnlCurrentChat.setBackground(new Color(-1));
+        pnlCurrentChat.setMaximumSize(new Dimension(2147483647, 50));
+        pnlCurrentChat.setMinimumSize(new Dimension(0, 50));
+        pnlCurrentChat.setPreferredSize(new Dimension(0, 50));
         pnlChat.add(pnlCurrentChat, BorderLayout.NORTH);
-        pnlSmallPhoto = new JPanel();
-        pnlSmallPhoto.setLayout(new BorderLayout(0, 0));
-        pnlSmallPhoto.setBackground(new Color(-2363905));
-        pnlSmallPhoto.setMaximumSize(new Dimension(30, 30));
-        pnlSmallPhoto.setMinimumSize(new Dimension(30, 0));
-        pnlSmallPhoto.setPreferredSize(new Dimension(30, 0));
-        pnlCurrentChat.add(pnlSmallPhoto, BorderLayout.WEST);
-        btnEdit = new JButton();
-        btnEdit.setPreferredSize(new Dimension(30, 30));
-        btnEdit.setText("/");
-        pnlCurrentChat.add(btnEdit, BorderLayout.EAST);
-        paneCurrentName = new JTextPane();
-        paneCurrentName.setMargin(new Insets(6, 5, 3, 3));
-        paneCurrentName.setText("Петр Сергеев");
-        pnlCurrentChat.add(paneCurrentName, BorderLayout.CENTER);
         pnlLeftBorder = new JPanel();
         pnlLeftBorder.setLayout(new BorderLayout(0, 0));
         pnlLeftBorder.setPreferredSize(new Dimension(20, 0));
@@ -239,8 +237,8 @@ public class MessagesForm {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         pnlInputText.add(spacer1, gbc);
         btnSend = new JButton();
-        btnSend.setMaximumSize(new Dimension(40, 30));
-        btnSend.setMinimumSize(new Dimension(40, 30));
+        btnSend.setMaximumSize(new Dimension(62, 45));
+        btnSend.setMinimumSize(new Dimension(62, 45));
         btnSend.setPreferredSize(new Dimension(40, 30));
         btnSend.setText("->");
         gbc = new GridBagConstraints();
@@ -274,6 +272,9 @@ public class MessagesForm {
         gbc.fill = GridBagConstraints.VERTICAL;
         pnlInputText.add(spacer5, gbc);
         txtMessage = new JTextField();
+        txtMessage.setMaximumSize(new Dimension(2147483647, 45));
+        txtMessage.setMinimumSize(new Dimension(64, 45));
+        txtMessage.setPreferredSize(new Dimension(64, 45));
         gbc = new GridBagConstraints();
         gbc.gridx = 1;
         gbc.gridy = 1;

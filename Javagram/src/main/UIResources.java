@@ -26,6 +26,7 @@ public class UIResources {
     public static final String ICON_PLUS = "res/buttons/icon-plus.png";
     public static final String ICON_SEARCH = "res/buttons/icon-search.png";
     public static final String ICON_SETTINGS = "res/buttons/icon-settings.png";
+    public static final String ICON_TRASH = "res/buttons/icon-trash.png";
 
     public static final String MASK_BLUE_MINI = "res/mask/mask-blue-mini.png";
     public static final String MASK_DARK_GRAY_BIG = "res/mask/mask-dark-gray-big.png";
@@ -37,6 +38,9 @@ public class UIResources {
 
     public static final Color LIGHT_BLUE_COLOR = new Color(0, 181, 234);
     public static final Color PROMPT_COLOR = new Color(172, 172, 172);
+    public static final Color DARK_GRAY_COLOR = new Color(0x12, 0x12, 0x12);
+    public static final Color GRAY_COLOR = new Color(0xa7, 0xa7, 0xa7);
+
 
     private static Font OpenSansLigth;
     private static Font OpenSansRegular;

@@ -19,7 +19,7 @@ public class BottomBlackPanel extends JPanel {
 
     public BottomBlackPanel() {
         setLayout(new BorderLayout());
-        setBackground(Color.BLACK);
+        setBackground(UIResources.DARK_GRAY_COLOR);
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setMaximumSize(new Dimension(WIDTH, HEIGHT));
         setMinimumSize(new Dimension(WIDTH, HEIGHT));

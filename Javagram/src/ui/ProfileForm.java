@@ -7,14 +7,20 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
-import static ui.BottomBlackPanel.HEIGHT;
 
 public class ProfileForm {
+
+    private final String settingProfile = "Настройки профиля";
+
     private JPanel rootPanel;
     private BlackPanel blackPanel;
     private BottomBlackPanel bottomBlackPanel;
+    private TextPane settingProfilePane;
     private ExitButton btnExit;
     private TextPane phonePane;
+    private TextInput txtFirstName;
+    private TextInput txtLastName;
+    private BigButton btnSave;
     private UserProfile userProfile;
 
 
@@ -22,19 +28,32 @@ public class ProfileForm {
         // TODO: place custom component creation code here
         blackPanel = new BlackPanel();
         bottomBlackPanel = new BottomBlackPanel();
+        settingProfilePane = new TextPane(new Dimension(450, 50), settingProfile);
+        txtFirstName = new TextInput(300, TextInput.NAME_INPUT, "Имя");
+        txtLastName = new TextInput(300, TextInput.NAME_INPUT, "Фамилия");
+        btnSave = new BigButton("СОХРАНИТЬ");
         btnExit = new ExitButton();
         phonePane = new TextPane(new Dimension(150, 30), "+7999 212 55 49");
-        phonePane.setForeground(Color.WHITE);
-        phonePane.setFontSize(18.0F);
+
     }
 
     public ProfileForm(UserProfile uf) {
         this.userProfile = uf;
         createUIComponents();
+        settingProfilePane.setForeground(UIResources.LIGHT_BLUE_COLOR);
+        settingProfilePane.setFontSize(40.0F);
+        phonePane.setForeground(UIResources.PROMPT_COLOR);
+        phonePane.setFontSize(18.0F);
+        txtFirstName.setText(uf.getFirstName());
+        txtLastName.setText(uf.getLastName());
         JPanel eastPanel = createEastPanel();
         eastPanel.add(phonePane);
         eastPanel.add(btnExit);
         bottomBlackPanel.addEastPanel(eastPanel);
+        blackPanel.addComponent(settingProfilePane, 60);
+        blackPanel.addComponent(txtFirstName, 60);
+        blackPanel.addComponent(txtLastName, 20);
+        blackPanel.addComponent(btnSave, 120);
         rootPanel.add(blackPanel, BorderLayout.CENTER);
         rootPanel.add(bottomBlackPanel, BorderLayout.SOUTH);
     }
@@ -45,9 +64,8 @@ public class ProfileForm {
 
     private JPanel createEastPanel() {
         FlowLayout flowLayout = new FlowLayout(FlowLayout.RIGHT);
-        Dimension bSize = btnExit.getPreferredSize();
         flowLayout.setHgap(20);
-        flowLayout.setVgap(20);//(BottomBlackPanel.HEIGHT - bSize.height) / 2);
+        flowLayout.setVgap(20);
         JPanel panel = new JPanel(flowLayout);
         panel.setOpaque(false);
         panel.setPreferredSize(new Dimension(400, BottomBlackPanel.HEIGHT));

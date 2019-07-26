@@ -1,13 +1,20 @@
 package core;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Contact {
     private String name;
-    private Image avatar;
+    private String phone;
+    private BufferedImage avatar;
 
-    public Contact(String name) {
+    public Contact(String name, String phone) {
         this.name = name;
+        this.phone = phone;
+    }
+
+    public String getPhone() {
+        return phone;
     }
 
     public String getName() {

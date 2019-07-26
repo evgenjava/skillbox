@@ -23,8 +23,7 @@ public class PhoneNumberFrom {
         // TODO: place custom component creation code here
         mainPanel = new LogoPanel(LogoPanel.LARGE);
         paneWelcom = new TextPane(new Dimension(380, 60), welcomInput);
-        paneWelcom.setForeground(Color.WHITE);
-        txtPhone = new TextInput(TextInput.PHONE_INPUT, "");
+        txtPhone = new TextInput(400, TextInput.PHONE_INPUT, "");
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
         textFieldIcon = new IconPanel(IconPanel.ICON_PHONE);
         editPanel = new EditPanel(txtPhone.getWidth() + IconPanel.WIDTH);
@@ -35,6 +34,7 @@ public class PhoneNumberFrom {
 
         $$$setupUI$$$();
         createUIComponents();
+        paneWelcom.setForeground(Color.WHITE);
         paneWelcom.setFontSize(18.0F);
         btnNext.addActionListener(new ActionListener() {
             @Override
@@ -45,6 +45,7 @@ public class PhoneNumberFrom {
             }
         });
 
+        txtPhone.setWidth(400);
         mainPanel.addComponent(paneWelcom, 270);
         editPanel.addIcon(textFieldIcon);
         editPanel.addTextField(txtPhone);

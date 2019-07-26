@@ -40,4 +40,8 @@ public class UserProfile {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 }

@@ -15,22 +15,23 @@ public class NamePanel extends JPanel {
     private FacePanel pnlFace;
     private Font font;
 
-    public NamePanel(String name, Color background, Color foreground, int mask) {
+
+    public NamePanel(String name, Color background, Color foreground, int mask, int heightParent) {
         this.name = name;
         this.background = background;
         this.foreground = foreground;
         setOpaque(false);
-
-        setLayout(new BorderLayout());
         font = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
         lblName = new JLabel(name);
         lblName.setFont(font.deriveFont(14.0F));
-        lblName.setForeground(Color.WHITE);
+        lblName.setForeground(foreground);
         pnlFace = new FacePanel(mask);
-        setActualSize(new Dimension(calculateWidth(), pnlFace.getActualSize().height));
-        add(pnlFace, BorderLayout.WEST);
-        ((BorderLayout) getLayout()).setHgap(5);
-        add(lblName, BorderLayout.CENTER);
+        setActualSize(new Dimension(calculateWidth(), heightParent));
+        FlowLayout layout = new FlowLayout();
+        layout.setVgap((heightParent - pnlFace.getActualSize().height) / 2);
+        setLayout(layout);
+        add(pnlFace);
+        add(lblName);
     }
 
 
@@ -64,4 +65,6 @@ public class NamePanel extends JPanel {
         int widthName =  fontMetrics.stringWidth(name);
         return widthFacePanel + widthName + 10;
     }
+
+
 }

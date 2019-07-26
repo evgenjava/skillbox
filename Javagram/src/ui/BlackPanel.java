@@ -1,5 +1,7 @@
 package ui;
 
+import main.UIResources;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,7 +12,7 @@ public class BlackPanel extends JPanel {
 
 
     public BlackPanel() {
-        setBackground(Color.BLACK);
+        setBackground(UIResources.DARK_GRAY_COLOR);
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setMaximumSize(new Dimension(WIDTH, HEIGHT));

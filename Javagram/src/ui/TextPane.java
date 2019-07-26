@@ -20,7 +20,7 @@ public class TextPane extends JTextPane {
         setMinimumSize(size);
         setMaximumSize(size);
         setOpaque(false);
-        setMargin(new Insets(10, 10, 10, 10));
+        //setMargin(new Insets(10, 10, 10, 10));
         setEditable(false);
         setText(message);
         StyledDocument doc = getStyledDocument();

@@ -29,6 +29,7 @@ public class ControlButton extends JButton {
                 break;
             case EDIT:
                 setIcon(UIResources.ICON_EDIT);
+                setBackground(Color.WHITE);
                 break;
             case HIDE:
                 setIcon(UIResources.ICON_HIDE);
@@ -44,7 +45,7 @@ public class ControlButton extends JButton {
                 break;
             case SETTINGS:
                 setIcon(UIResources.ICON_SETTINGS);
-                setBackground(new Color(0, 179, 230));
+                setBackground(UIResources.LIGHT_BLUE_COLOR);
                 break;
         }
         setBorderPainted(false);

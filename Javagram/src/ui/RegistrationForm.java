@@ -19,8 +19,8 @@ public class RegistrationForm {
         // TODO: place custom component creation code here
         mainPanel = new LogoPanel(LogoPanel.MINI);
         paneWelcom = new TextPane(new Dimension(380, 60), welcomInput);
-        txtFirstName = new TextInput(TextInput.NAME_INPUT, "Имя");
-        txtLastName = new TextInput(TextInput.NAME_INPUT, "Фамилия");
+        txtFirstName = new TextInput(300, TextInput.NAME_INPUT, "Имя");
+        txtLastName = new TextInput(300, TextInput.NAME_INPUT, "Фамилия");
         btnClose = new BigButton("ЗАВЕРШИТЬ");
     }
 

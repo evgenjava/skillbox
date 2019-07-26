@@ -10,25 +10,30 @@ public class MainFrame extends JFrame {
 
     private DefaultListModel<String> listModel = new DefaultListModel<String>();
     private JList list = new JList();
+    private JComponent rootPane;
 
     public MainFrame() {
 
-        getRootPane().setLayout(new BorderLayout());
+        rootPane = getRootPane();
+        rootPane.setLayout(new BoxLayout(rootPane, BoxLayout.Y_AXIS));
+        //getRootPane().setLayout(new BorderLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setLocationByPlatform(true);
         createList();
-        getRootPane().add(list, BorderLayout.CENTER);
+        //getRootPane().add(list, BorderLayout.CENTER);
         setVisible(true);
     }
 
 
     private void createList() {
         for (int i = 0; i < items.length; i++) {
-            listModel.add(i, items[i]);
+            //listModel.add(i, items[i]);
+            Message msg = new Message(items[i]);
+            addIn(new MessageInPanel(msg), 20);
         }
-        list.setModel(listModel);
-        list.setCellRenderer(new ItemRenderer());
+        //list.setModel(listModel);
+        //list.setCellRenderer(new ItemRenderer());
     }
 
     private class ItemRenderer implements ListCellRenderer<String> {
@@ -42,32 +47,14 @@ public class MainFrame extends JFrame {
                                                       String value, int index,
                                                       boolean isSelected,
                                                       boolean cellHasFocus) {
-
-            JPanel component = new JPanel();
-            component.setSize(300, 40);
-            component.setLayout(new BorderLayout());
-            topPanel.setSize(300, 10);
-            bottomPanel.setSize(300, 10);
-            pane.setForeground(Color.BLACK);
-            System.out.println("----------------------------------------");
-            System.out.println("IS Selected = " + isSelected + " index = " + index + " value " + value);
-            if (isSelected) {
-                topPanel.setBackground(Color.YELLOW);
-                bottomPanel.setBackground(Color.YELLOW);
-                pane.setForeground(Color.YELLOW);
-                pane.setBackground(Color.GRAY);
-            }
-            else {
-                topPanel.setBackground(Color.BLUE);
-                bottomPanel.setBackground(Color.BLUE);
-                pane.setBackground(Color.WHITE);
-                pane.setForeground(Color.BLACK);
-            }
-            pane.setText(value);
-            component.add(topPanel, BorderLayout.NORTH);
-            component.add(bottomPanel, BorderLayout.SOUTH);
-            component.add(pane, BorderLayout.CENTER);
-            return component;
+           Message msg =new Message(value);
+           return new MessageInPanel(msg);
         }
+    }
+
+    public void addIn(JComponent component, int deltaY){
+        rootPane.add(Box.createRigidArea(new Dimension(0, deltaY)));
+        component.setAlignmentX(Box.LEFT_ALIGNMENT);
+        rootPane.add(component);
     }
 }

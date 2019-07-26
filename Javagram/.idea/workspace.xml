@@ -2,11 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e56953-8474-420a-9cd6-b5d47ee7cdb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../GUI Components/icon-trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/buttons/icon-trash.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/META-INF/Javagram.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/UIResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/main/UIResources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BlackPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BlackPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BottomBlackPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BottomBlackPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/NamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/NamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm$ExitButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm$ExitButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/RegistrationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/RegistrationForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$PhoneFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$PhoneFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$TextFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$TextFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UIResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UIResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/BlackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/BlackPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ControlButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ControlButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MessagesForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MessagesForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MessagesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MessagesForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/NamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/NamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/ProfileForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ProfileForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/RegistrationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TextInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/TextPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TextPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame$ItemRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame$ItemRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/src/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/src/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Series/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Series/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,132 +55,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/MessagesForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="88" column="96" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
-              <folding>
-                <element signature="e#11541#11542#0" expanded="true" />
-                <element signature="e#11573#11574#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/NamePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1336#1337#0" expanded="true" />
-                <element signature="e#1401#1402#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/ProfileForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="initializer##0;class#ProfileForm#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/UserProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-              <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ui/TextPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/UIResources.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/ControlButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/ProfileForm.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/BottomBlackPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,143 +67,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/User.java" />
-        <option value="$PROJECT_DIR$/src/Contact.java" />
-        <option value="$PROJECT_DIR$/src/Message.java" />
-        <option value="$PROJECT_DIR$/src/Chat.java" />
-        <option value="$PROJECT_DIR$/src/ui/ChangePanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/TestForm.form" />
-        <option value="$PROJECT_DIR$/src/core/Chat.java" />
-        <option value="$PROJECT_DIR$/src/core/Contact.java" />
-        <option value="$PROJECT_DIR$/src/ui/ListItemForm.form" />
-        <option value="$PROJECT_DIR$/src/ui/ListItemForm.java" />
-        <option value="$PROJECT_DIR$/src/ui/InputMessageForm.java" />
-        <option value="$PROJECT_DIR$/src/ui/OutputMessageForm.java" />
-        <option value="$PROJECT_DIR$/src/ui/InputMessageForm.form" />
-        <option value="$PROJECT_DIR$/src/ui/OutputMessageForm.form" />
-        <option value="$PROJECT_DIR$/src/ui/RootPanel.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Resources.java" />
-        <option value="$PROJECT_DIR$/src/UIResources.java" />
-        <option value="$PROJECT_DIR$/src/ui/IconPanle.java" />
-        <option value="$PROJECT_DIR$/src/ui/EditPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/IconPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/WelcomPane.java" />
-        <option value="$PROJECT_DIR$/src/ui/CodeInput.java" />
-        <option value="$PROJECT_DIR$/src/ui/ControlPanel.form" />
-        <option value="$PROJECT_DIR$/src/ui/ControlPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/PhonePanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/BigButton.java" />
-        <option value="$PROJECT_DIR$/src/ui/FacePanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/NamePanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/MessagesForm.form" />
-        <option value="$PROJECT_DIR$/src/ui/MessagesForm.java" />
-        <option value="$PROJECT_DIR$/src/ui/RegistrationForm.form" />
-        <option value="$PROJECT_DIR$/src/main/UIResources.java" />
-        <option value="$PROJECT_DIR$/src/ui/PromptTextField.java" />
-        <option value="$PROJECT_DIR$/src/ui/RegistrationForm.java" />
-        <option value="$PROJECT_DIR$/src/ui/PhoneNumberFrom.form" />
-        <option value="$PROJECT_DIR$/src/ui/CodeForm.form" />
-        <option value="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" />
-        <option value="$PROJECT_DIR$/src/ui/CodeForm.java" />
-        <option value="$PROJECT_DIR$/src/ui/MainPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/TextInput.java" />
-        <option value="$PROJECT_DIR$/src/ui/LogoPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/BlackPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/ControlButton.java" />
-        <option value="$PROJECT_DIR$/src/ui/ProfileForm.form" />
-        <option value="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" />
-        <option value="$PROJECT_DIR$/src/core/UserProfile.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/ui/TextPane.java" />
-        <option value="$PROJECT_DIR$/src/ui/ProfileForm.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="83" />
-    <option name="width" value="1843" />
-    <option name="height" value="977" />
-  </component>
+  <component name="ProjectId" id="1OVbBX5WcxuurnryP1lH4osUmYM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Javagram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Javagram" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="251" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/images" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../List1" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\skillbox\Javagram\res\buttons" />
+      <recent name="$PROJECT_DIR$/res" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/images" />
       <recent name="$PROJECT_DIR$/res/mask" />
       <recent name="$PROJECT_DIR$/res/buttons" />
       <recent name="$PROJECT_DIR$/res/fonts" />
       <recent name="$PROJECT_DIR$/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,394 +137,18 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="83" width="1843" height="977" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28245124" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25263157" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956383" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32956383" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32748538" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.059180576" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27910864" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25263157" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956383" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32956383" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3285151" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.059180576" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Javagram$Main.ic" NAME="Main Coverage Results" MODIFIED="1562237176292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ui/TestForm.form" />
-    <entry file="file://$PROJECT_DIR$/src/ui/TestForm.java" />
-    <entry file="file://$PROJECT_DIR$/src/core/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ChangePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/InputMessageForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/OutputMessageForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/OutputMessageForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/InputMessageForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="1300" column="18" selection-start-line="1300" selection-start-column="18" selection-end-line="1300" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/CodeInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ListItemForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/PhonePanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/ui/IconPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ControlPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/FacePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
-          <folding>
-            <element signature="e#2741#2742#0" expanded="true" />
-            <element signature="e#2774#2775#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ListItemForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/EditPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/RegistrationForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/PromptTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/RegistrationForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="initializer##0;class#RegistrationForm#0" expanded="true" />
-            <element signature="e#1914#1915#0" expanded="true" />
-            <element signature="e#1946#1947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/PhoneNumberFrom.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/CodeForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/LogoPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="52" column="5" selection-start-line="48" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/BlackPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MessagesForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/BigButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="34" column="27" selection-start-line="22" selection-start-column="9" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/PhoneNumberFrom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="16" selection-start-line="21" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/TextInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MessagesForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="88" column="96" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
-          <folding>
-            <element signature="e#11541#11542#0" expanded="true" />
-            <element signature="e#11573#11574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/NamePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/UserProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ControlButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ProfileForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/BottomBlackPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/UIResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ProfileForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#ProfileForm#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/TextPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
