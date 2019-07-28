@@ -11,6 +11,7 @@ public class UIResources {
     public static final String MICRO_LOGO = "res/images/logo-micro.png";
     public static final String BACKGROUND = "res/images/background.png";
     public static final String BUTTON_BACKGROUND = "res/images/button-background.png";
+    public static final String BUTTON_SEND = "res/buttons/button-send.png";
 
     public static final String ICON_LOCK = "res/images/icon-lock.png";
     public static final String ICON_PHONE = "res/images/icon-phone.png";
@@ -39,7 +40,7 @@ public class UIResources {
     public static final Color LIGHT_BLUE_COLOR = new Color(0, 181, 234);
     public static final Color PROMPT_COLOR = new Color(172, 172, 172);
     public static final Color DARK_GRAY_COLOR = new Color(0x12, 0x12, 0x12);
-    public static final Color GRAY_COLOR = new Color(0xa7, 0xa7, 0xa7);
+    public static final Color GRAY_COLOR = new Color(0xe0, 0xe0, 0xe0);
 
 
     private static Font OpenSansLigth;

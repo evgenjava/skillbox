@@ -107,7 +107,7 @@
                         <border type="none"/>
                         <children/>
                       </grid>
-                      <grid id="a05b2" binding="pnlInputText" layout-manager="BorderLayout" hgap="0" vgap="100">
+                      <grid id="a05b2" binding="pnlInputText" layout-manager="GridBagLayout">
                         <constraints border-constraint="South"/>
                         <properties>
                           <maximumSize width="2147483647" height="65"/>
@@ -115,7 +115,58 @@
                           <preferredSize width="0" height="65"/>
                         </properties>
                         <border type="none"/>
-                        <children/>
+                        <children>
+                          <component id="f1e3f" class="javax.swing.JTextPane" binding="paneOutputMessage">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="50"/>
+                              </grid>
+                              <gridbag weightx="0.8" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <background color="-2039584"/>
+                              <maximumSize width="2147483647" height="45"/>
+                              <minimumSize width="7" height="45"/>
+                              <preferredSize width="7" height="45"/>
+                            </properties>
+                          </component>
+                          <hspacer id="10b81">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                          </hspacer>
+                          <vspacer id="29cc7">
+                            <constraints>
+                              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                          </vspacer>
+                          <vspacer id="1a02b">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                          </vspacer>
+                          <hspacer id="660f2">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="9a9c6" class="javax.swing.JButton" binding="btnSend" custom-create="true">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <maximumSize width="62" height="45"/>
+                              <minimumSize width="62" height="45"/>
+                              <preferredSize width="62" height="45"/>
+                              <text value="Button"/>
+                            </properties>
+                          </component>
+                        </children>
                       </grid>
                       <grid id="7e6a6" binding="pnlMessages" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
                         <constraints border-constraint="Center"/>

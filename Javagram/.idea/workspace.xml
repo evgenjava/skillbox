@@ -2,50 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e56953-8474-420a-9cd6-b5d47ee7cdb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GUI Components/icon-trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/buttons/icon-trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/META-INF/Javagram.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/Contact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/UserProfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/UIResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/main/UIResources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BlackPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BlackPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BottomBlackPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BottomBlackPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/NamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/NamePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm$ExitButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm$ExitButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/RegistrationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/RegistrationForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$PhoneFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$PhoneFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$TextFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$TextFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/button-send.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UIResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UIResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/BlackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/BlackPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ControlButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ControlButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MessagesForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MessagesForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MessagesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MessagesForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/NamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/NamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PhoneNumberFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ProfileForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ProfileForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/RegistrationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TextInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TextPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TextPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../List1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame$ItemRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame$ItemRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../List1/src/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/src/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Series/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Series/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
