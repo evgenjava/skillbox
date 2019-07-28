@@ -12,6 +12,12 @@ public class UIResources {
     public static final String BACKGROUND = "res/images/background.png";
     public static final String BUTTON_BACKGROUND = "res/images/button-background.png";
     public static final String BUTTON_SEND = "res/buttons/button-send.png";
+    public static final String IN_BOTTOM = "res/images/message-in-bottom.png";
+    public static final String IN_TOP = "res/images/message-in-top.png";
+    public static final String IN_LEFT = "res/images/message-in-left.png";
+    public static final String OUT_TOP = "res/images/message-out-top.png";
+    public static final String OUT_BOTTOM = "res/images/message-out-bottom.png";
+    public static final String OUT_RIGHT = "res/images/message-out-right.png";
 
     public static final String ICON_LOCK = "res/images/icon-lock.png";
     public static final String ICON_PHONE = "res/images/icon-phone.png";
@@ -37,10 +43,12 @@ public class UIResources {
     public static final String MASK_WHITE_MINI = "res/mask/mask-white-mini.png";
     public static final String MASK_WHITE_ONLINE = "res/mask/mask-white-online.png";
 
-    public static final Color LIGHT_BLUE_COLOR = new Color(0, 181, 234);
+    public static final Color LIGHT_BLUE_COLOR = new Color(0x0, 0xa8, 0xdb);
+    public static final Color VIOLET_COLOR = new Color(0x4b, 0x41, 0xac);
     public static final Color PROMPT_COLOR = new Color(172, 172, 172);
     public static final Color DARK_GRAY_COLOR = new Color(0x12, 0x12, 0x12);
-    public static final Color GRAY_COLOR = new Color(0xe0, 0xe0, 0xe0);
+    public static final Color GRAY_COLOR = new Color(0xe7, 0xe7, 0xe7);
+    public static final Color GRAY_COLOR2 = new Color(0xc3, 0xc3, 0xc3);
 
 
     private static Font OpenSansLigth;

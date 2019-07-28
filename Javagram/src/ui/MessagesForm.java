@@ -1,29 +1,31 @@
 package ui;
 
 import core.Chat;
+import core.Message;
 import main.UIResources;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
+
 
 public class MessagesForm {
     private JPanel rootPanel;
     private JPanel pnlFloor;
     private JPanel pnlInfo;
-    private JLabel lblName;
     private ControlButton btnSetup;
     private ControlButton btnAdd;
     private ControlButton btnEdit;
-    private JPanel pnlContacts;
     private JPanel pnlMain;
-    private JSplitPane paneContent;
     private JPanel pnlList;
+    private JSplitPane paneContent;
     private JPanel pnlSearch;
     private ControlButton btnSearch;
     private JTextField txtSearch;
@@ -34,16 +36,25 @@ public class MessagesForm {
     private JPanel pnlMessages;
     private JTextPane paneOutputMessage;
     private JButton btnSend;
+    private JScrollPane pnlChatList;
+    private JList list;
 
-    private List<Chat> chatList;
-    private List<ListItemForm> listItems = new ArrayList<>();
+    private ArrayList<Chat> chatList;
+
     private Font lightFont;
     private Font regularFont;
-    private NamePanel userPanel;
-    private NamePanel pnlContact;
+    private ImageLabel userLabel;
+    private ImageLabel contactLabel;
     private JPanel pnlContainer;
     private BufferedImage logoMicro;
     private BufferedImage btnSendImage;
+
+    private DefaultListModel<Chat> listModel = new DefaultListModel<>();
+
+    private ActionListener btnSendListener = (e) -> {
+        addOut(new MessageOutPanel(new Message("Какое-то сообщенте ")), 20);
+        pnlMessages.revalidate();
+    };
 
 
     public MessagesForm() {
@@ -51,35 +62,25 @@ public class MessagesForm {
         $$$setupUI$$$();
 
         logoMicro = loadImage(UIResources.MICRO_LOGO);
-        btnSendImage = loadImage(UIResources.BUTTON_SEND);
+
         pnlSearch.add(btnSearch, BorderLayout.WEST);
         txtSearch.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 0, Color.WHITE));
-
         pnlAddButton.add(btnAdd);
-        Dimension containerSize = new Dimension(btnSetup.getWidth() + userPanel.getWidth() + 250,
+        userLabel.setText("Вадим Иванов");
+        contactLabel.setText("Петр Сергеев");
+        Dimension containerSize = new Dimension(btnSetup.getWidth() + userLabel.getWidth() + 200,
                 btnSetup.getHeight());
-
-        pnlContainer.setPreferredSize(containerSize);
-        pnlContainer.setMinimumSize(containerSize);
-        pnlContainer.setMaximumSize(containerSize);
+        setActualSize(pnlContainer, containerSize);
         pnlContainer.setBackground(UIResources.LIGHT_BLUE_COLOR);
         pnlContainer.add(btnSetup, BorderLayout.EAST);
-        pnlContainer.add(userPanel, BorderLayout.CENTER);
+        pnlContainer.add(userLabel, BorderLayout.CENTER);
         pnlInfo.add(pnlContainer, BorderLayout.EAST);
-        //pnlInfo.add(btnSetup);
-        pnlCurrentChat.add(pnlContact, BorderLayout.WEST);
+
+        pnlCurrentChat.add(contactLabel, BorderLayout.WEST);
         pnlCurrentChat.add(btnEdit, BorderLayout.EAST);
         paneOutputMessage.setForeground(UIResources.DARK_GRAY_COLOR);
         paneOutputMessage.setFont(regularFont.deriveFont(20.0F));
-        pnlContacts.setLayout(new BoxLayout(pnlContacts, BoxLayout.Y_AXIS));
-        pnlMessages.setLayout(new BoxLayout(pnlMessages, BoxLayout.Y_AXIS));
-        /*btnSend.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                addOutputMessage(txtMessage.getText());
-                pnlMessages.revalidate();
-            }
-        });*/
+        btnSend.addActionListener(btnSendListener);
     }
 
     public JPanel getRootPanel() {
@@ -87,20 +88,24 @@ public class MessagesForm {
     }
 
     private void createUIComponents() {
-        // TODO: place custom component creation code here
-        btnSearch = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.SEARCH);
-        btnAdd = new ControlButton(new Dimension(26, 26), ControlButton.BTN_TYPE.PLUS);
-        btnSetup = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.SETTINGS);
-        btnEdit = new ControlButton(new Dimension(50, 50), ControlButton.BTN_TYPE.EDIT);
+        pnlMessages = new JPanel();
+        pnlMessages.setLayout(new BoxLayout(pnlMessages, BoxLayout.Y_AXIS));
+        //кнопки
+        btnSearch = new ControlButton(new Dimension(50, 50), ControlButton.SEARCH);
+        btnAdd = new ControlButton(new Dimension(26, 26), ControlButton.PLUS);
+        btnSetup = new ControlButton(new Dimension(50, 50), ControlButton.SETTINGS);
+        btnEdit = new ControlButton(new Dimension(50, 50), ControlButton.EDIT);
+        btnSendImage = loadImage(UIResources.BUTTON_SEND);
         btnSend = new JButton() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                if (btnSendImage != null) {
-                    g.drawImage(btnSendImage, 0, 0, null);
-                }
+                g.drawImage(btnSendImage, 0, 0, null);
             }
         };
+
+        //----------------------------------------------------
+        //верхняя годубая панель
         pnlInfo = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -113,16 +118,15 @@ public class MessagesForm {
 
         pnlInfo.setLayout(new BorderLayout());
         pnlInfo.setBackground(UIResources.LIGHT_BLUE_COLOR);
-        pnlInfo.setMaximumSize(new Dimension(600, 50));
-        pnlInfo.setMinimumSize(new Dimension(300, 50));
-        pnlInfo.setPreferredSize(new Dimension(300, 50));
-        userPanel = new NamePanel("Вадим Иванов", UIResources.LIGHT_BLUE_COLOR, Color.WHITE,
-                FacePanel.MASK_BLUE_MINI, 50);
-        pnlContact = new NamePanel("Петр Сергеев", Color.WHITE, Color.BLACK, FacePanel.MASK_WHITE_MINI, 50);
+        setActualSize(pnlInfo, new Dimension(600, 50));
+        //контейнер для userLabel и btnSetup
         pnlContainer = new JPanel(new BorderLayout());
+        //--------------------------------------------------
+        userLabel = new ImageLabel(ImageLabel.MINI_BLUE_ICON, UIResources.LIGHT_BLUE_COLOR, Color.WHITE);
+        contactLabel = new ImageLabel(ImageLabel.MINI_WHITE_ICON, Color.WHITE, UIResources.DARK_GRAY_COLOR);
+
         lightFont = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
         regularFont = UIResources.getFont(UIResources.OPEN_SANS_REGULAR);
-
     }
 
     private BufferedImage loadImage(String fileName) {
@@ -134,31 +138,57 @@ public class MessagesForm {
         return null;
     }
 
-    public void setChatList(List<Chat> list) {
-        pnlContacts.removeAll();
-        chatList = list;
-        for (int i = 0; i < list.size(); i++) {
-            ListItemForm form = new ListItemForm();
-            Chat chat = list.get(i);
-            form.setName(chat.getWith().getName());
-            form.setLast("last message...");
-            pnlContacts.add(form.getRootPanel());
+    public void setChatList(ArrayList<Chat> l) {
+        chatList = l;
+        for (int i = 0; i < l.size(); i++) {
+            listModel.add(i, chatList.get(i));
         }
-        addInputMessages("Какое-то входящее сообщение ..");
-        addOutputMessage("Какое-то исходящее сообщение ..");
+        list.setModel(listModel);
+        list.setCellRenderer(new ContactRenderer());
+
+        addIn(new MessageInPanel(new Message("Какое-то сообщенте ")), 20);
+        addIn(new MessageInPanel(new Message("Какое-то сообщенте ")), 20);
+        //addOut(new MessageOutPanel(new Message("Какое-то сообщенте ")), 20);
     }
 
-    private void addInputMessages(String msg) {
-        InputMessageForm inputMessageForm = new InputMessageForm();
-        inputMessageForm.setTextMessage(msg);
-        pnlMessages.add(inputMessageForm.getRootPanel());
+    public void addIn(JComponent component, int deltaY) {
+        pnlMessages.add(Box.createRigidArea(new Dimension(0, deltaY)));
+        component.setAlignmentX(Box.LEFT_ALIGNMENT);
+        pnlMessages.add(component);
+        pnlMessages.revalidate();
     }
 
-    private void addOutputMessage(String msg) {
-        OutputMessageForm outputMessageForm = new OutputMessageForm();
-        outputMessageForm.setTextMessage(msg);
-        pnlMessages.add(outputMessageForm.getRootPanel());
+    public void addOut(JComponent component, int deltaY) {
+        pnlMessages.add(Box.createRigidArea(new Dimension(0, deltaY)));
+        component.setAlignmentX(Box.RIGHT_ALIGNMENT);
+        pnlMessages.add(component);
+        pnlMessages.revalidate();
     }
+
+    private void setActualSize(JComponent component, Dimension size) {
+        component.setMaximumSize(size);
+        component.setMinimumSize(size);
+        component.setPreferredSize(size);
+    }
+
+    private class ContactRenderer implements ListCellRenderer<Chat> {
+
+        @Override
+        public Component getListCellRendererComponent(JList<? extends Chat> list,
+                                                      Chat value, int index,
+                                                      boolean isSelected, boolean cellHasFocus) {
+            ChatItemPanel pnlChat;
+            if (isSelected) {
+                pnlChat = new ChatItemPanel(value.getWith(), ChatItemPanel.SELECTED_ONLINE);
+            } else {
+                pnlChat = new ChatItemPanel(value.getWith(), ChatItemPanel.ONLINE);
+            }
+            pnlChat.setLastTime(value.getLastMessage().getTime());
+            pnlChat.setText(value.getLastMessage().getText());
+            return pnlChat;
+        }
+    }
+
 
     /**
      * Method generated by IntelliJ IDEA GUI Designer
@@ -213,9 +243,10 @@ public class MessagesForm {
         pnlAddButton.setMinimumSize(new Dimension(0, 50));
         pnlAddButton.setPreferredSize(new Dimension(0, 50));
         pnlList.add(pnlAddButton, BorderLayout.SOUTH);
-        pnlContacts = new JPanel();
-        pnlContacts.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        pnlList.add(pnlContacts, BorderLayout.CENTER);
+        pnlChatList = new JScrollPane();
+        pnlList.add(pnlChatList, BorderLayout.CENTER);
+        list = new JList();
+        pnlChatList.setViewportView(list);
         pnlChat = new JPanel();
         pnlChat.setLayout(new BorderLayout(0, 0));
         paneContent.setRightComponent(pnlChat);
@@ -277,8 +308,7 @@ public class MessagesForm {
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         pnlInputText.add(btnSend, gbc);
-        pnlMessages = new JPanel();
-        pnlMessages.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        pnlMessages.setBackground(new Color(-1));
         pnlChat.add(pnlMessages, BorderLayout.CENTER);
     }
 

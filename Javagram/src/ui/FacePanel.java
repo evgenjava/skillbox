@@ -67,7 +67,7 @@ public class FacePanel extends JPanel {
         }
     }
 
-    private void setActualSize(Dimension size) {
+    public void setActualSize(Dimension size) {
         actualSize = size;
         setPreferredSize(size);
         setMaximumSize(size);
@@ -90,7 +90,8 @@ public class FacePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (mask != null) {
-            g.drawImage(mask, 0, 0, null);
+            g.drawImage(mask, (actualSize.width - mask.getWidth()) / 2,
+                    (actualSize.height - mask.getWidth()) / 2, null);
         }
     }
 }

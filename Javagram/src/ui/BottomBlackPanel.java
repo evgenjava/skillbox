@@ -23,12 +23,10 @@ public class BottomBlackPanel extends JPanel {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setMaximumSize(new Dimension(WIDTH, HEIGHT));
         setMinimumSize(new Dimension(WIDTH, HEIGHT));
-        btnBack = new ControlButton(new Dimension(35, 35), ControlButton.BTN_TYPE.BACK);
+        btnBack = new ControlButton(new Dimension(35, 35), ControlButton.BACK);
         JPanel westPanel = createWestPanel();
         westPanel.add(btnBack);
         add(westPanel, BorderLayout.WEST);
-
-
     }
 
     private JPanel createWestPanel() {

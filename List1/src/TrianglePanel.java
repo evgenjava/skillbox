@@ -12,9 +12,11 @@ public class TrianglePanel extends JPanel
     private final int width = 20;
     private BufferedImage image;
     private int height;
+    private int typePanel;
 
     public TrianglePanel(int typePanel, int height) {
         this.height = height;
+        this.typePanel = typePanel;
         setOpaque(false);
         switch(typePanel) {
             case IN_LEFT :
@@ -45,7 +47,12 @@ public class TrianglePanel extends JPanel
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (image != null) {
-            g.drawImage(image, width - image.getWidth(), (height - image.getHeight()) / 2, null);
+            if (typePanel == IN_LEFT) {
+                g.drawImage(image, width - image.getWidth(), (height - image.getHeight()) / 2, null);
+            }
+            else {
+                g.drawImage(image, 0, (height - image.getHeight()) / 2, null);
+            }
         }
     }
 }

@@ -2,17 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e56953-8474-420a-9cd6-b5d47ee7cdb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/Chat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/core/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/core/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/main/UIResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/main/UIResources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/AddContactForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/AddContactForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BigButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BigButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BlackPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BlackPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/BottomBlackPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/BottomBlackPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ChangePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ChangePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/CodeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/CodeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/CodeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/CodeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/CodeInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/CodeInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton$BTN_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/EditContactForm$DeleteButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/EditContactForm$DeleteButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/EditContactForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/EditContactForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/EditPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/EditPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/FacePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/FacePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/FullNamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/FullNamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/IconPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/IconPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/InputMessageForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/InputMessageForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ListItemForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/LogoPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/LogoPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/MessagesForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/images/button-send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/NamePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/OutputMessageForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/OutputMessageForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/PhoneNumberFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm$ExitButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm$ExitButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/ProfileForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/PromptTextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/PromptTextField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/RegistrationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/RegistrationForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$PhoneFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$PhoneFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$TextFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput$TextFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Javagram/ui/TextPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Javagram/ui/TextPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UIResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UIResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/BottomBlackPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ControlButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ControlButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FacePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FacePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ListItemForm.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ListItemForm.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MessagesForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MessagesForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MessagesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MessagesForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/NamePanel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../List1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame$ItemRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame$ItemRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/MessageInPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/MessageInPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/out/production/List1/TrianglePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/out/production/List1/TrianglePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/src/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/src/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/src/MessageInPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/src/MessageInPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List1/src/TrianglePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../List1/src/TrianglePanel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,19 +97,25 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="251" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../List1" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\skillbox\Javagram\res\buttons" />
-      <recent name="$PROJECT_DIR$/res" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/images" />
       <recent name="$PROJECT_DIR$/res/mask" />
       <recent name="$PROJECT_DIR$/res/buttons" />
       <recent name="$PROJECT_DIR$/res/fonts" />
       <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\skillbox\Javagram\res\buttons" />
+      <recent name="$PROJECT_DIR$/res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,21 +157,14 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

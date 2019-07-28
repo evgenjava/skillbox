@@ -78,7 +78,7 @@ public class ControlPanel {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        btnDown = new ControlButton(new Dimension(18, 18), ControlButton.BTN_TYPE.HIDE);
-        btnClose = new ControlButton(new Dimension(18, 18), ControlButton.BTN_TYPE.CLOSE);
+        btnDown = new ControlButton(new Dimension(18, 18), ControlButton.HIDE);
+        btnClose = new ControlButton(new Dimension(18, 18), ControlButton.CLOSE);
     }
 }

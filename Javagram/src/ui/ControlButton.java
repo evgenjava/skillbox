@@ -11,40 +11,46 @@ import java.io.IOException;
 
 public class ControlButton extends JButton {
 
-    public static enum BTN_TYPE {BACK, CLOSE, EDIT, HIDE, PLUS, SEARCH, SETTINGS};
+    public static final int BACK = 100;
+    public static final int CLOSE = 101;
+    public static final int EDIT = 102;
+    public static final int HIDE = 103;
+    public static final int PLUS = 104;
+    public static final int SEARCH = 105;
+    public static final int SETTINGS = 106;
 
-    private BufferedImage icon;
+    private ImageIcon imageIcon;
     private Dimension size;
 
-    public ControlButton(Dimension size, BTN_TYPE type) {
+    public ControlButton(Dimension size, int type) {
         this.size = size;
         switch(type) {
             case BACK:
-                setIcon(UIResources.ICON_BACK);
+                loadIcon(UIResources.ICON_BACK);
                 setBackground(Color.BLACK);
                 break;
             case CLOSE:
-                setIcon(UIResources.ICON_CLOSE);
+                loadIcon(UIResources.ICON_CLOSE);
                 setOpaque(false);
                 break;
             case EDIT:
-                setIcon(UIResources.ICON_EDIT);
+                loadIcon(UIResources.ICON_EDIT);
                 setBackground(Color.WHITE);
                 break;
             case HIDE:
-                setIcon(UIResources.ICON_HIDE);
+                loadIcon(UIResources.ICON_HIDE);
                 setOpaque(false);
                 break;
             case PLUS:
-                setIcon(UIResources.ICON_PLUS);
-                setBackground(new Color(242, 242, 242));
+                loadIcon(UIResources.ICON_PLUS);
+                setBackground(UIResources.GRAY_COLOR);
                 break;
             case SEARCH:
-                setIcon(UIResources.ICON_SEARCH);
+                loadIcon(UIResources.ICON_SEARCH);
                 setBackground(Color.WHITE);
                 break;
             case SETTINGS:
-                setIcon(UIResources.ICON_SETTINGS);
+                loadIcon(UIResources.ICON_SETTINGS);
                 setBackground(UIResources.LIGHT_BLUE_COLOR);
                 break;
         }
@@ -52,22 +58,10 @@ public class ControlButton extends JButton {
         setPreferredSize(size);
         setMinimumSize(size);
         setMaximumSize(size);
+        setIcon(imageIcon);
     }
 
-    private void setIcon(String fileName) {
-        try {
-            icon = ImageIO.read(new File(fileName));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        if (icon != null) {
-
-            g.drawImage(icon, (size.width - icon.getWidth()) / 2, (size.height - icon.getHeight()) / 2, null);
-        }
+    private void loadIcon(String fileName) {
+        imageIcon = new ImageIcon(fileName);
     }
 }

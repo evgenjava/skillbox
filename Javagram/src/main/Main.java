@@ -2,6 +2,7 @@ package main;
 
 import core.Chat;
 import core.Contact;
+import core.Message;
 import core.UserProfile;
 import ui.*;
 
@@ -111,10 +112,14 @@ public class Main {
         return messagesForm;
     }
 
-    public static List<Chat> createChatList() {
-        List<Chat> list = new ArrayList<>();
+    public static ArrayList<Chat> createChatList() {
+        ArrayList<Chat> list = new ArrayList<>();
         for (int i = 0; i < names.length; i++) {
-            list.add(new Chat(new Contact(names[i], "+79992125549")));
+            Chat chat = new Chat(new Contact(names[i], "+79992125549"));
+            for (int j = 0; j < 5; j++) {
+                chat.addMessage("message " + i);
+            }
+            list.add(chat);
         }
         return list;
     }

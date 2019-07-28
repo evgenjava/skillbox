@@ -81,12 +81,17 @@
                         <border type="none"/>
                         <children/>
                       </grid>
-                      <grid id="b4fc1" binding="pnlContacts" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                      <scrollpane id="d565f" binding="pnlChatList">
                         <constraints border-constraint="Center"/>
                         <properties/>
                         <border type="none"/>
-                        <children/>
-                      </grid>
+                        <children>
+                          <component id="b99ae" class="javax.swing.JList" binding="list">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
                     </children>
                   </grid>
                   <grid id="fc" binding="pnlChat" layout-manager="BorderLayout" hgap="0" vgap="0">
@@ -168,9 +173,11 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="7e6a6" binding="pnlMessages" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                      <grid id="7e6a6" binding="pnlMessages" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
                         <constraints border-constraint="Center"/>
-                        <properties/>
+                        <properties>
+                          <background color="-1"/>
+                        </properties>
                         <border type="none"/>
                         <children/>
                       </grid>
