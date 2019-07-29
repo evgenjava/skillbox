@@ -6,12 +6,14 @@ import java.awt.*;
 
 public class MessageInPanel extends MessagePanel {
 
-    public MessageInPanel(Message message) {
+    public MessageInPanel(Message message, int widthParent) {
         super(message, MessagePanel.IN);
+        setComponentSize(this, new Dimension(widthParent, height + 14));
         pnlContainer.add(triangle, BorderLayout.WEST);
         pnlContainer.add(pnlMessage, BorderLayout.CENTER);
-        add(pnlContainer, BorderLayout.CENTER);
-        add(pnlTime, BorderLayout.SOUTH);
+        sPanel.add(pnlContainer, BorderLayout.CENTER);
+        sPanel.add(pnlTime, BorderLayout.SOUTH);
+        add(sPanel, BorderLayout.WEST);
     }
 
 }

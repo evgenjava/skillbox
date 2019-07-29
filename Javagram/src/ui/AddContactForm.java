@@ -1,11 +1,14 @@
 package ui;
 
+import core.Chat;
 import core.Contact;
 import core.UserProfile;
+import main.App;
 import main.UIResources;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class AddContactForm {
     private JPanel rootPanel;
@@ -23,7 +26,15 @@ public class AddContactForm {
     private BigButton btnAdd;
     private IconPanel textFieldIcon;
     private EditPanel editPanel;
-    private Contact contact;
+
+    private ActionListener btnAddListener = (e) -> {
+        String name = txtFirstName.getText() + " " + txtLastName.getText();
+        Contact contact = new Contact(name, txtPhoneInput.getText());
+        Chat chat = new Chat(contact);
+        chat.setOnline(true);
+        App.getInstance().getChatList().add(chat);
+        bottomBlackPanel.getBackButton().doClick();
+    };
 
     public JPanel getRootPanel() {
         return rootPanel;
@@ -41,6 +52,7 @@ public class AddContactForm {
         txtFirstName = new TextInput(txtPhoneInput.getWidth() + IconPanel.WIDTH, TextInput.NAME_INPUT, "Имя");
         txtLastName = new TextInput(txtPhoneInput.getWidth() + IconPanel.WIDTH, TextInput.NAME_INPUT, "Фамилия");
         btnAdd = new BigButton("ДОБАВИТЬ");
+
 
     }
 
@@ -63,6 +75,11 @@ public class AddContactForm {
         blackPanel.addComponent(btnAdd, 40);
         rootPanel.add(blackPanel, BorderLayout.CENTER);
         rootPanel.add(bottomBlackPanel, BorderLayout.SOUTH);
+        btnAdd.addActionListener(btnAddListener);
+    }
+
+    public void setBackListener(ActionListener l) {
+        bottomBlackPanel.setBackListener(l);
     }
 
     /**

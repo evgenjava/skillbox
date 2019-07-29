@@ -18,7 +18,7 @@ public class FullNamePanel extends JPanel {
     private int width;
 
     public FullNamePanel(String fullName) {
-        txtFullName = new TextInput(250, TextInput.FULLNAME_INPUT, "Фамилия Имя");
+        txtFullName = new TextInput(350, TextInput.FULLNAME_INPUT, "");
         txtFullName.setText(fullName);
         width = 66 + txtFullName.getWidth() + 140;
         loadImage();
@@ -47,5 +47,9 @@ public class FullNamePanel extends JPanel {
         g.drawImage(mask,20, 0, null);
         g.drawLine(0, 56, 29, 56);
         g.drawLine(77, 56, width, 56);
+    }
+
+    public String getName() {
+        return txtFullName.getText();
     }
 }

@@ -20,14 +20,11 @@ public class CodeForm {
     private IconPanel textFieldIcon;
     private EditPanel editPanel;
 
-
-    private ChangePanel changePanel;
-
     private void createUIComponents() {
         // TODO: place custom component creation code here
         mainPanel = new LogoPanel(LogoPanel.MINI);
         panePhone = new TextPane(new Dimension(380, 60), "");
-        paneWelcom = new TextPane(new Dimension(380, 80), welcomInput);
+        paneWelcom = new TextPane(new Dimension(380, 100), welcomInput);
         txtCode = new CodeInput();
         btnNext = new BigButton("ПРОДОЛЖИТЬ");
         textFieldIcon = new IconPanel(IconPanel.ICON_LOCK);
@@ -42,6 +39,7 @@ public class CodeForm {
         panePhone.setForeground(Color.WHITE);
         paneWelcom.setFontSize(16.0F);
         panePhone.setForeground(Color.WHITE);
+        paneWelcom.setForeground(Color.WHITE);
         mainPanel.addComponent(panePhone, 180);
         mainPanel.addComponent(paneWelcom, 25);
         editPanel.addIcon(textFieldIcon);
@@ -50,14 +48,10 @@ public class CodeForm {
         mainPanel.addComponent(btnNext, 35);
         rootPanel.add(mainPanel, BorderLayout.CENTER);
 
-        btnNext.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (changePanel != null) {
-                    changePanel.next(txtCode.getPassword().toString());
-                }
-            }
-        });
+
+    }
+    public void setChangeListener(ActionListener listener) {
+        btnNext.addActionListener(listener);
     }
 
     public void setPhoneNumber(String number) {
@@ -68,8 +62,8 @@ public class CodeForm {
         return rootPanel;
     }
 
-    public void setChangePanel(ChangePanel changePanel) {
-        this.changePanel = changePanel;
+    public String getCode() {
+        return new String(txtCode.getPassword());
     }
 
     /**

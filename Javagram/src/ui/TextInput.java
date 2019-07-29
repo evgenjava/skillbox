@@ -95,7 +95,6 @@ public class TextInput extends PromptTextField {
         @Override
         public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
             char c = str.charAt(0);
-            System.out.println(offs);
             if (Character.isDigit(c) || Character.isSpaceChar(c) || symbols.indexOf(c) >= 0) {
                 super.insertString(offs, str, a);
             }

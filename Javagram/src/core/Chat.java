@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Chat {
     private Contact with;
-    private List<Message>  chat = new ArrayList<>();
+    private ArrayList<Message>  chat = new ArrayList<>();
+    private boolean isOnline = false;
 
     public Chat(Contact with) {
         this.with = with;
@@ -18,15 +19,23 @@ public class Chat {
         return with.getName();
     }
 
-    public void addMessage(String msg) {
-        chat.add(new Message(msg));
+    public void addMessage(Message msg) {
+        chat.add(msg);
     }
 
-    public List<Message> getMessages() {
+    public ArrayList<Message> getMessages() {
         return chat;
     }
 
     public Message getLastMessage() {
-        return chat.get(chat.size() - 1);
+        return chat.size() > 0 ? chat.get(chat.size() - 1) : null;
+    }
+
+    public boolean isOnline() {
+        return isOnline;
+    }
+
+    public void setOnline(boolean online) {
+        isOnline = online;
     }
 }

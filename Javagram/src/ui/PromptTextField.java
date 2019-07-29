@@ -29,7 +29,7 @@ public class PromptTextField extends JTextField implements FocusListener {
     public void focusGained(FocusEvent e) {
         if (this.getText().isEmpty()) {
             setForeground(Color.WHITE);
-            super.setText("");
+            this.setText("");
             showPrompt = false;
         }
     }
@@ -38,7 +38,7 @@ public class PromptTextField extends JTextField implements FocusListener {
     public void focusLost(FocusEvent e) {
         if (this.getText().isEmpty()) {
             setForeground(UIResources.PROMPT_COLOR);
-            super.setText(prompt);
+            this.setText(prompt);
             showPrompt = true;
         }
     }
@@ -46,5 +46,10 @@ public class PromptTextField extends JTextField implements FocusListener {
     @Override
     public String getText() {
         return showPrompt ? "" : super.getText();
+    }
+
+    @Override
+    public void setText(String t) {
+        super.setText(t);
     }
 }

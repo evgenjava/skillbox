@@ -74,6 +74,7 @@
                       <grid id="97202" binding="pnlAddButton" layout-manager="FlowLayout" hgap="20" vgap="10" flow-align="0">
                         <constraints border-constraint="South"/>
                         <properties>
+                          <background color="-2039584"/>
                           <maximumSize width="2147483647" height="50"/>
                           <minimumSize width="0" height="50"/>
                           <preferredSize width="0" height="50"/>
@@ -81,17 +82,12 @@
                         <border type="none"/>
                         <children/>
                       </grid>
-                      <scrollpane id="d565f" binding="pnlChatList">
+                      <component id="d64" class="javax.swing.JList" binding="list">
                         <constraints border-constraint="Center"/>
-                        <properties/>
-                        <border type="none"/>
-                        <children>
-                          <component id="b99ae" class="javax.swing.JList" binding="list">
-                            <constraints/>
-                            <properties/>
-                          </component>
-                        </children>
-                      </scrollpane>
+                        <properties>
+                          <background color="-2039584"/>
+                        </properties>
+                      </component>
                     </children>
                   </grid>
                   <grid id="fc" binding="pnlChat" layout-manager="BorderLayout" hgap="0" vgap="0">
@@ -173,7 +169,7 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="7e6a6" binding="pnlMessages" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                      <grid id="7e6a6" binding="pnlMessages" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
                         <constraints border-constraint="Center"/>
                         <properties>
                           <background color="-1"/>

@@ -17,6 +17,7 @@ public class MessagePanel extends JPanel {
 
     protected final JPanel pnlContainer = new JPanel(new BorderLayout());
     protected final JPanel pnlMessage = new JPanel(new BorderLayout());
+    protected final JPanel sPanel = new JPanel(new BorderLayout());
 
     protected final Font timeFont = UIResources.getFont(UIResources.OPEN_SANS_LIGHT);
     protected final DateFormat format = new SimpleDateFormat("dd.MM.YYYY hh:mm");
@@ -60,7 +61,8 @@ public class MessagePanel extends JPanel {
         lblTime.setForeground(UIResources.DARK_GRAY_COLOR);
         lblTime.setText(format.format(new Date()));
         pnlTime.add(lblTime);
-        setComponentSize(this, new Dimension(width + 20, height + 14));
+        setOpaque(false);
+        setComponentSize(sPanel, new Dimension(width + 20, height + 14));
         setComponentSize(pnlContainer, new Dimension(width + 20, height));
         setComponentSize(pnlMessage, new Dimension(width, height));
         setComponentSize(pnlTime, new Dimension(width, 14));

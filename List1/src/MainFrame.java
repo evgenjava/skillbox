@@ -33,8 +33,8 @@ public class MainFrame extends JFrame {
         for (int i = 0; i < items.length; i++) {
             //listModel.add(i, new Contact(items[i], "+79992125549"));
             Message msg = new Message(items[i]);
-            addOut(new MessageOutPanel(msg), 20);
-            addIn(new MessageInPanel(msg), 20);
+            addOut(new MessageOutPanel(msg, 600), 10);
+            addIn(new MessageInPanel(msg, 600), 10);
         }
         //list.setModel(listModel);
         //list.setCellRenderer(new ItemRenderer());
@@ -62,13 +62,13 @@ public class MainFrame extends JFrame {
 
     public void addIn(JComponent component, int deltaY){
         rootPane.add(Box.createRigidArea(new Dimension(0, deltaY)));
-        component.setAlignmentX(Box.LEFT_ALIGNMENT);
+        component.setAlignmentX(Box.CENTER_ALIGNMENT);
         rootPane.add(component);
     }
 
     public void addOut(JComponent component, int deltaY){
         rootPane.add(Box.createRigidArea(new Dimension(0, deltaY)));
-        component.setAlignmentX(Box.RIGHT_ALIGNMENT);
+        component.setAlignmentX(Box.CENTER_ALIGNMENT);
         rootPane.add(component);
     }
 }

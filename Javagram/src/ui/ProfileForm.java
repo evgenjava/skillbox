@@ -1,11 +1,13 @@
 package ui;
 
 import core.UserProfile;
+import main.App;
 import main.UIResources;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 
 public class ProfileForm {
@@ -21,7 +23,12 @@ public class ProfileForm {
     private TextInput txtFirstName;
     private TextInput txtLastName;
     private BigButton btnSave;
-    private UserProfile userProfile;
+
+    private ActionListener btnSaveListener = (e) -> {
+        UserProfile user = App.getInstance().getUser();
+        user.setFirstName(txtFirstName.getText());
+        user.setLastName(txtLastName.getText());
+    };
 
 
     private void createUIComponents() {
@@ -29,23 +36,20 @@ public class ProfileForm {
         blackPanel = new BlackPanel();
         bottomBlackPanel = new BottomBlackPanel();
         settingProfilePane = new TextPane(new Dimension(450, 50), settingProfile);
-        txtFirstName = new TextInput(300, TextInput.NAME_INPUT, "Имя");
-        txtLastName = new TextInput(300, TextInput.NAME_INPUT, "Фамилия");
+        txtFirstName = new TextInput(300, TextInput.NAME_INPUT, "");
+        txtLastName = new TextInput(300, TextInput.NAME_INPUT, "");
         btnSave = new BigButton("СОХРАНИТЬ");
         btnExit = new ExitButton();
-        phonePane = new TextPane(new Dimension(150, 30), "+7999 212 55 49");
+        phonePane = new TextPane(new Dimension(250, 30), "");
 
     }
 
-    public ProfileForm(UserProfile uf) {
-        this.userProfile = uf;
+    public ProfileForm() {
         createUIComponents();
         settingProfilePane.setForeground(UIResources.LIGHT_BLUE_COLOR);
         settingProfilePane.setFontSize(40.0F);
         phonePane.setForeground(UIResources.PROMPT_COLOR);
         phonePane.setFontSize(18.0F);
-        txtFirstName.setText(uf.getFirstName());
-        txtLastName.setText(uf.getLastName());
         JPanel eastPanel = createEastPanel();
         eastPanel.add(phonePane);
         eastPanel.add(btnExit);
@@ -56,6 +60,7 @@ public class ProfileForm {
         blackPanel.addComponent(btnSave, 120);
         rootPanel.add(blackPanel, BorderLayout.CENTER);
         rootPanel.add(bottomBlackPanel, BorderLayout.SOUTH);
+        btnSave.addActionListener(btnSaveListener);
     }
 
     public JPanel getRootPanel() {
@@ -78,6 +83,7 @@ public class ProfileForm {
     private class ExitButton extends JButton {
 
         private final String caption = "ВЫЙТИ";
+
         public ExitButton() {
 
             Border border = BorderFactory.createMatteBorder(0, 0, 1, 0, UIResources.LIGHT_BLUE_COLOR);
@@ -87,16 +93,36 @@ public class ProfileForm {
             Font font = UIResources.getFont(UIResources.OPEN_SANS_REGULAR);
             setFont(font.deriveFont(15.0f));
             FontMetrics fontMetrics = getFontMetrics(font.deriveFont(15.0f));
-            Dimension size  = new Dimension(fontMetrics.stringWidth(caption), fontMetrics.getHeight());
+            Dimension size = new Dimension(fontMetrics.stringWidth(caption) + 10, fontMetrics.getHeight());
             setMaximumSize(size);
             setMinimumSize(size);
             setPreferredSize(size);
             setText(caption);
 
         }
+    }
 
+    public void setUser(UserProfile user) {
+        txtFirstName.setText(user.getFirstName());
+        txtLastName.setText(user.getLastName());
+        phonePane.setText(user.getPhoneNumber());
 
+    }
 
+    public String getFirstName() {
+        return txtFirstName.getText();
+    }
+
+    public String getLastName() {
+        return txtLastName.getText();
+    }
+
+    public void setBackListener(ActionListener l) {
+        bottomBlackPanel.setBackListener(l);
+    }
+
+    public void setExitListener(ActionListener l) {
+        btnExit.addActionListener(l);
     }
 
     {

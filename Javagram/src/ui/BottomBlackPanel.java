@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -46,8 +47,12 @@ public class BottomBlackPanel extends JPanel {
         add(eastPanel, BorderLayout.EAST);
     }
 
+    public void setBackListener(ActionListener l) {
+        btnBack.addActionListener(l);
+    }
 
-
-
+    public JButton getBackButton() {
+        return btnBack;
+    }
 
 }

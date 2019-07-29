@@ -1,16 +1,21 @@
 package ui;
 
+import core.Chat;
 import core.Contact;
 import core.UserProfile;
+import main.App;
+import main.MainFrame;
 import main.UIResources;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class EditContactForm {
 
@@ -24,10 +29,22 @@ public class EditContactForm {
     private BigButton btnSave;
     private FullNamePanel pnlFullName;
     private JPanel pnlContainer;
-    private Contact contact;
+    private Chat chat;
 
-    public EditContactForm(Contact contact) {
-        this.contact = contact;
+
+    private ActionListener btnSaveListener = (e) -> {
+        String name = pnlFullName.getName();
+        chat.getWith().setName(pnlFullName.getName());
+    };
+
+    private ActionListener btnDeleteListener = (e) -> {
+        ArrayList<Chat> charList = App.getInstance().getChatList();
+        charList.remove(chat);
+        bottomBlackPanel.getBackButton().doClick();
+    };
+
+    public EditContactForm(Chat chat) {
+        this.chat = chat;
         createUIComponents();
         editContactPane.setForeground(UIResources.LIGHT_BLUE_COLOR);
         editContactPane.setFontSize(42.0F);
@@ -47,6 +64,8 @@ public class EditContactForm {
 
         rootPanel.add(blackPanel, BorderLayout.CENTER);
         rootPanel.add(bottomBlackPanel, BorderLayout.SOUTH);
+        btnSave.addActionListener(btnSaveListener);
+        btnDel.addActionListener(btnDeleteListener);
     }
 
     public JPanel getRootPanel() {
@@ -58,10 +77,10 @@ public class EditContactForm {
         blackPanel = new BlackPanel();
         bottomBlackPanel = new BottomBlackPanel();
         editContactPane = new TextPane(new Dimension(600, 50), editContact);
-        phonePane = new TextPane(new Dimension(200, 30), contact.getPhone());
+        phonePane = new TextPane(new Dimension(200, 30), chat.getWith().getPhone());
         btnDel = new DeleteButton();
         btnSave = new BigButton("СОХРАНИТЬ");
-        pnlFullName = new FullNamePanel(contact.getName());
+        pnlFullName = new FullNamePanel(chat.getWith().getName());
         pnlContainer = new JPanel(new FlowLayout(FlowLayout.CENTER));
     }
 
@@ -100,6 +119,10 @@ public class EditContactForm {
                 g.drawImage(iconTrash, 10, 8, null);
             }
         }
+    }
+
+    public void setBackListener(ActionListener l) {
+        bottomBlackPanel.setBackListener(l);
     }
 
     {
