@@ -12,7 +12,7 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main {
+public class Loader {
 
     private static AppUser user;
     private static ArrayList<Contact> contacts = new ArrayList<>();
