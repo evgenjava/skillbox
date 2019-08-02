@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
     public static final int WIDTH = 600;
     public static final int HEIGHT = 400;
 
-    private DefaultListModel<Contact> listModel = new DefaultListModel<Contact>();
+    private DefaultListModel<Message> listModel = new DefaultListModel<Message>();
     private JList list = new JList();
     private JComponent rootPane;
     private ArrayList<Contact> listContact = new ArrayList<>();
@@ -18,45 +18,48 @@ public class MainFrame extends JFrame {
     public MainFrame() {
 
         rootPane = getRootPane();
-        rootPane.setLayout(new BoxLayout(rootPane, BoxLayout.Y_AXIS));
+       //rootPane.setLayout(new BoxLayout(rootPane, BoxLayout.Y_AXIS));
         //getRootPane().setLayout(new BorderLayout());
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setLocationByPlatform(true);
         createList();
-        //getRootPane().add(list, BorderLayout.CENTER);
+        getRootPane().add(list, BorderLayout.CENTER);
         setVisible(true);
     }
 
 
     private void createList() {
         for (int i = 0; i < items.length; i++) {
-            //listModel.add(i, new Contact(items[i], "+79992125549"));
-            Message msg = new Message(items[i]);
-            addOut(new MessageOutPanel(msg, 600), 10);
-            addIn(new MessageInPanel(msg, 600), 10);
-        }
-        //list.setModel(listModel);
-        //list.setCellRenderer(new ItemRenderer());
-    }
-
-    private class ItemRenderer implements ListCellRenderer<Contact> {
-
-        @Override
-        public Component getListCellRendererComponent(JList<? extends Contact> list,
-                                                      Contact value, int index,
-                                                      boolean isSelected,
-                                                      boolean cellHasFocus) {
-            ChatItemPanel pnlChat;
-            if (isSelected) {
-                pnlChat = new ChatItemPanel(value, ChatItemPanel.SELECTED_ONLINE);
+            if (i % 2 == 0) {
+                listModel.add(i, new Message(items[i], Message.INPUT));
             }
             else {
-                pnlChat = new ChatItemPanel(value, ChatItemPanel.ONLINE);
+                listModel.add(i, new Message(items[i], Message.OUTPUT));
             }
-            pnlChat.setLastTime(new Date());
-            pnlChat.setText("Last message ... ");
-            return pnlChat;
+            //Message msg = new Message(items[i], Message.INPUT);
+            //addOut(new MessageOutPanel(msg, 600), 10);
+            //addIn(new MessageInPanel(msg, 600), 10);
+        }
+        list.setModel(listModel);
+        list.setCellRenderer(new ItemRenderer());
+    }
+
+    private class ItemRenderer implements ListCellRenderer<Message> {
+
+        @Override
+        public Component getListCellRendererComponent(JList<? extends Message> list,
+                                                      Message value, int index,
+                                                      boolean isSelected, boolean cellHasFocus) {
+
+            if (value.getType() == Message.INPUT) {
+                return new MessageInPanel(value, 600);
+            }
+            else {
+                return new MessageOutPanel(value, 600);
+            }
+
         }
     }
 
