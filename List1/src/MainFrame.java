@@ -19,13 +19,14 @@ public class MainFrame extends JFrame {
 
         rootPane = getRootPane();
        //rootPane.setLayout(new BoxLayout(rootPane, BoxLayout.Y_AXIS));
-        //getRootPane().setLayout(new BorderLayout());
+        rootPane.setLayout(new FlowLayout());
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setLocationByPlatform(true);
-        createList();
-        getRootPane().add(list, BorderLayout.CENTER);
+        //createList();
+        //rootPane.add(list, BorderLayout.CENTER);
+        rootPane.add(new CustomLabel("ПРОДОЛЖИТЬ"));
         setVisible(true);
     }
 

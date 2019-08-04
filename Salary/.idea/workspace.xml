@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d66f98c0-f2b1-45fc-bb69-ea4e8731cbb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Salary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharCodes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CharCodes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharCodes/out/production/CharCodes/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CharCodes/out/production/CharCodes/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharCodes/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CharCodes/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Fio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fio01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Fio01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Javagram/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/core/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/core/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/core/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/core/UserProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/main/UIResources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BigButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BlackPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/BottomBlackPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/CodeInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ControlPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/EditPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/FacePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/IconPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/InputMessageForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/LogoPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/MessagesForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/OutputMessageForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PhoneNumberFrom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ProfileForm$ExitButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/ProfileForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/PromptTextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/RegistrationForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput$PhoneFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput$TextFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Javagram/out/production/Javagram/ui/TextPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Phone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +53,11 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Loader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="480">
               <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
             </state>
           </provider>
@@ -57,10 +90,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="187" />
-    <option name="y" value="140" />
-    <option name="width" value="3563" />
-    <option name="height" value="2000" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -75,6 +106,11 @@
               <item name="Salary" type="b2602c69:ProjectViewProjectNode" />
               <item name="Salary" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Salary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -82,6 +118,10 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,20 +201,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="56" width="1425" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1053" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17948718" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18376069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
@@ -182,20 +217,24 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="480">
           <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
         </state>
       </provider>
