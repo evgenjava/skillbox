@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.TreeSet;
 
-public class Loader {
+public class Main {
 
     private static final int[] regions = {1, 2, 102, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 113, 14, 15, 16, 116, 17, 18, 19, 20, 21, 121, 22, 23, 93, 123,
@@ -30,12 +30,18 @@ public class Loader {
     };
 
     private static ArrayList<String> numbers = new ArrayList<>();
+    private static ArrayList<String> sortNumbers = new ArrayList<>();
     private static HashSet<String> numbersHash = new HashSet<>();
     private static TreeSet<String> numbersTree = new TreeSet<>();
 
     public static void main(String[] args) throws IOException {
         generateFederal();
         generateSpecSeries();
+        sortNumbers.addAll(numbers);
+        Collections.sort(sortNumbers);
+        numbersHash.addAll(numbers);
+        numbersTree.addAll(numbers);
+
         String number;
         long nanos;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -53,7 +59,7 @@ public class Loader {
 
             //двоичный поиск
             nanos = System.nanoTime();
-            int index = Collections.binarySearch(numbers, number.toUpperCase());
+            int index = Collections.binarySearch(sortNumbers, number.toUpperCase());
             nanos = System.nanoTime() - nanos;
             isThisNumber = index >= 0;
             System.out.println("Двоичный поиск в ArrayList: " + isThisNumber + " (" + nanos + " наносекунд)");
@@ -77,19 +83,16 @@ public class Loader {
         for (int i = 0; i < federal.length; i++) {
             for (int j = 1; j <= 999; j++) {
                 if (j < 10) {
-                    numbers.add(federal[i].charAt(0) + "00" + Integer.toString(j) + federal[i].substring(1));
-                    numbersHash.add(federal[i].charAt(0) + "00" + Integer.toString(j) + federal[i].substring(1));
-                    numbersTree.add(federal[i].charAt(0) + "00" + Integer.toString(j) + federal[i].substring(1));
+                    numbers.add(federal[i].charAt(0) + "00" + j + federal[i].substring(1));
+
                 }
                 else if (j >= 10 && j < 100) {
-                    numbers.add(federal[i].charAt(0) + "0" + Integer.toString(j) + federal[i].substring(1));
-                    numbersHash.add(federal[i].charAt(0) + "0" + Integer.toString(j) + federal[i].substring(1));
-                    numbersTree.add(federal[i].charAt(0) + "0" + Integer.toString(j) + federal[i].substring(1));
+                    numbers.add(federal[i].charAt(0) + "0" + j + federal[i].substring(1));
+
                 }
                 else {
                     numbers.add(federal[i].charAt(0) + Integer.toString(j) + federal[i].substring(1));
-                    numbersHash.add(federal[i].charAt(0) + Integer.toString(j) + federal[i].substring(1));
-                    numbersTree.add(federal[i].charAt(0) + Integer.toString(j) + federal[i].substring(1));
+
                 }
             }
         }
@@ -107,19 +110,13 @@ public class Loader {
             for (int j = 0; j < specSeries.length; j++) {
                 for (int k = 1; k <= 999 ; k++) {
                     if (k < 10) {
-                        numbers.add(specSeries[j].charAt(0) + "00" + Integer.toString(k) + specSeries[j].substring(1) + region);
-                        numbersHash.add(specSeries[j].charAt(0) + "00" + Integer.toString(k) + specSeries[j].substring(1) + region);
-                        numbersTree.add(specSeries[j].charAt(0) + "00" + Integer.toString(k) + specSeries[j].substring(1) + region);
+                        numbers.add(specSeries[j].charAt(0) + "00" + k + specSeries[j].substring(1) + region);
                     }
                     else if (k >=10 && k < 100) {
-                        numbers.add(specSeries[j].charAt(0) + "0" + Integer.toString(k) + specSeries[j].substring(1) + region);
-                        numbersHash.add(specSeries[j].charAt(0) + "0" + Integer.toString(k) + specSeries[j].substring(1) + region);
-                        numbersTree.add(specSeries[j].charAt(0) + "0" + Integer.toString(k) + specSeries[j].substring(1) + region);
+                        numbers.add(specSeries[j].charAt(0) + "0" + k + specSeries[j].substring(1) + region);
                     }
                     else {
                         numbers.add(specSeries[j].charAt(0) + Integer.toString(k) + specSeries[j].substring(1) + region);
-                        numbersHash.add(specSeries[j].charAt(0) + Integer.toString(k) + specSeries[j].substring(1) + region);
-                        numbersTree.add(specSeries[j].charAt(0) + Integer.toString(k) + specSeries[j].substring(1) + region);
                     }
                 }
 
