@@ -1,11 +1,5 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.file.CopyOption;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+import java.io.*;
+import java.nio.file.*;
 
 public class Loader {
 
@@ -37,5 +31,11 @@ public class Loader {
                         StandardCopyOption.REPLACE_EXISTING);
             }
         }
+    }
+
+    public static void copy(String source, String target) throws FileNotFoundException {
+        File file = new File(source);
+        FileInputStream fis = new FileInputStream(file);
+
     }
 }
