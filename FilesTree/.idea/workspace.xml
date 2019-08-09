@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="911e5ae3-d564-4d03-9352-e86ca47c1fe0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilesTree/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilesTree/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +30,6 @@
         <option value="$PROJECT_DIR$/../FilesCopy/FilesCopy.iml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="741" />
   </component>
   <component name="ProjectId" id="1PBbvHwxWllP5jaLUTfTkQ3BvzO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
