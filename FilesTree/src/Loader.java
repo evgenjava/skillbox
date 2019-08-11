@@ -19,7 +19,7 @@ public class Loader {
         File [] fileList = file.listFiles();
         for (File f : fileList) {
             if (f.isDirectory()) {
-                //System.out.println(tabs + f.getName());
+
                 System.out.println(f.getPath());
                 printFiles(f, tabs + "  ");
             }

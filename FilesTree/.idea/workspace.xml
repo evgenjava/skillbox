@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="911e5ae3-d564-4d03-9352-e86ca47c1fe0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../FilesCopy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesCopy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilesCopy/out/production/FilesCopy/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesCopy/out/production/FilesCopy/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilesCopy/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesCopy/src/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +39,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/java0-pro/BankAccount" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,7 +85,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
