@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="911e5ae3-d564-4d03-9352-e86ca47c1fe0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FilesCopy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesCopy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesCopy/out/production/FilesCopy/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesCopy/out/production/FilesCopy/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesCopy/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesCopy/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-    </list>
+    <list default="true" id="911e5ae3-d564-4d03-9352-e86ca47c1fe0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
