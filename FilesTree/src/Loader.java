@@ -24,8 +24,6 @@ public class Loader {
                 printFiles(f, tabs + "  ");
             }
             else {
-
-                //System.out.println(tabs + f.getName() + " - " + f.length() + " байт");
                 System.out.println(f.getPath() + " - " + f.length() + " байт");
             }
         }
