@@ -38,12 +38,10 @@ public class Loader {
             }
         }
         else {
-
             File f = new File(source);
             System.out.println(source + " --> " + target + "/" + f.getName());
             Files.copy(Paths.get(source), Paths.get(target + "/" + f.getName()),
                             StandardCopyOption.REPLACE_EXISTING);
-
         }
     }
 
@@ -60,6 +58,10 @@ public class Loader {
             fileTarget.mkdir();
         }
 
+        if (!fileSource.canRead()) {
+            System.out.println("Не хватает прав на чтение файла - " + fileSource.getPath());
+            return;
+        }
         if (fileSource.isDirectory()) {
             File[] fileList = fileSource.listFiles();
             for (File f : fileList) {
@@ -72,7 +74,6 @@ public class Loader {
             }
         }
         else {
-
             File f = new File(source);
             System.out.println(source + " --> " + target + "/" + f.getName());
             copy(source, target + "/" + f.getName());
