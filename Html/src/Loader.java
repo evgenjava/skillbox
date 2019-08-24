@@ -19,8 +19,11 @@ public class Loader {
                 System.out.println(attr);
             }
             else {
-                int index = attr.indexOf("./");
-                System.out.println(PATH + attr.substring(index + 2));
+                int index = 0;
+                while(!Character.isLetterOrDigit(attr.charAt(index))) {
+                    ++index;
+                }
+                System.out.println(PATH + attr.substring(index));
             }
         }
     }

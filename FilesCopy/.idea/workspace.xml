@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28bba017-080b-4d49-aa83-6974eddbf48c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilesCopy/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilesCopy/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesTree/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="28bba017-080b-4d49-aa83-6974eddbf48c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FormattedOutput" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
