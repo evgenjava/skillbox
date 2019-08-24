@@ -22,7 +22,11 @@ public class Main {
             input = reader.readLine().trim();
             if (input.equalsIgnoreCase("exit")) break;
             if (input.equalsIgnoreCase("export")) {
-                export();
+                System.out.println("Введите путь и имя файла для сохранения телефонной книги : ");
+                String path = reader.readLine().trim();
+                if (path.length() > 0) {
+                    export(path);
+                }
                 continue;
             }
             if (input.equalsIgnoreCase("LIST")) {
@@ -114,7 +118,7 @@ public class Main {
         return number.replaceAll("[\\D]+","");
     }
 
-    private static void export() throws IOException {
+    private static void export(String path) throws IOException {
         JSONObject book = new JSONObject();
         for (String name : phoneBook1.keySet()) {
             JSONArray numberArray = new JSONArray();
@@ -123,7 +127,7 @@ public class Main {
         }
         String strbook = JSONObject.toJSONString(book);
         System.out.println(strbook);
-        FileWriter fr = new FileWriter(new File("res/book.json"));
+        FileWriter fr = new FileWriter(new File(path));
         fr.write(strbook);
         fr.flush();
         fr.close();

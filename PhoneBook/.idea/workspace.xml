@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c68397-1f0e-484b-959c-7567772a4b50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Html/Html.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PhoneBook/Loader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PhoneBook/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PhoneBook/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/res/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +30,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -84,7 +81,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
