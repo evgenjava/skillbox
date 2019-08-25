@@ -9,11 +9,15 @@ import java.net.URI;
 import java.net.URL;
 
 public class Loader {
-    public static final String PATH = "https://pngicon.ru/ikonki";
 
     public static void main(String[] args) throws IOException {
-        String htmlFile = "res/png.html";
-        Document document = Jsoup.parse(new File(htmlFile), "utf-8");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите адрес сайта откуда загружать картинки : ");
+        String path = reader.readLine().trim();
+        if (path.charAt(path.length() - 1) != '/') {
+            path = path + "/";
+        }
+        Document document = Jsoup.parse(new URL(path), 10000);
         Elements elements = document.select("img");
         for (Element element : elements) {
             String attr = element.attr("src");
@@ -23,13 +27,14 @@ public class Loader {
             }
             else {
                 int index = 0;
-                while (!Character.isLetter(attr.charAt(index)))
+                while (!Character.isLetterOrDigit(attr.charAt(index)))
                     ++index;
-                url = new URL(PATH + attr.substring(index));
+                url = new URL(path + attr.substring(index));
+
+
             }
             System.out.println(url);
-
-            try {
+          try {
                 InputStream inputStream =url.openStream();
                 FileOutputStream out = new FileOutputStream(new File("img/" + attr.substring(attr.lastIndexOf("/") + 1)));
                 out.write(inputStream.readAllBytes());
@@ -38,8 +43,7 @@ public class Loader {
 
             }
             catch (IOException e) {
-                System.out.println();
-                System.out.println("--------" + e.getMessage());
+                System.out.println("Не удалось открыть - " + e.getMessage());
             }
         }
     }
