@@ -12,6 +12,7 @@ public class Loader {
     public static void main(String[] args) throws IOException {
         String htmlFile = "res/webdev.html";
         Document  document = Jsoup.parse(new File(htmlFile), "utf-8");
+
         Elements elements = document.select("img");
         for (Element element : elements) {
             String attr = element.attr("src");
